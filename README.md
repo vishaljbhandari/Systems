@@ -1,6 +1,3 @@
-# Shell-System-Monitoring
-Collection of System Monitoring Scripts
-
-List Of Scripts [Order]:[Name][ScriptName]
-
-1: 
+#All System Related Contents
+1) Environment Related Settings
+2) Scripts
