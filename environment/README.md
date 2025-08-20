@@ -1,6 +1,8 @@
-# Shell-System-Monitoring
-Collection of System Monitoring Scripts
+# Environment, Settings
 
-List Of Scripts [Order]:[Name][ScriptName]
-
-1: 
+1: Git
+2: Oracle
+3: Visual Studio
+4: Linux
+5: Windows
+6: Code Blocks
