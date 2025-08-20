@@ -1,0 +1,17 @@
+git fetch origin master
+git fetch
+git pull
+
+--------
+
+git add file1 file2 file3 
+git commit -am "commit message" 
+git push
+git push --force
+
+--------
+
+git diff	# gives all differences
+git diff --name-only	# gives differences in files names 
+
+git commit --amend

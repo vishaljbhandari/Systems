@@ -1,0 +1,46 @@
+acumen@localhost:~/WORKSPACE> ssh-keygen -t rsa -b 4096 -C "vishaljbhandari@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/acumen/.ssh/id_rsa): 
+/home/acumen/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/acumen/.ssh/id_rsa
+Your public key has been saved in /home/acumen/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:c48l3F1daC50/K8qGHYmEhZYy7ky8sabQsMnbpOcr2A vishaljbhandari@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|     o.      . ..|
+|    ...o    . = o|
+|      +.   . + .o|
+|      o. . ......|
+| .. o...S + o.. .|
+|  =+.o. +oo=    .|
+|.E *+  o *. .  . |
+|..O. o  . .   .  |
+| ..=+      ...   |
++----[SHA256]-----+
+
+
+acumen@localhost:~/WORKSPACE> cat /home/acumen/.ssh/id_rsa.pub
+*********
+
+---------------------------------------------------
+acumen@localhost:~/WORKSPACE> git clone git@github.com:vishaljbhandari/learn_cpp.git
+Cloning into 'learn_cpp'...
+remote: Enumerating objects: 2793, done.
+remote: Counting objects: 100% (2793/2793), done.
+remote: Compressing objects: 100% (1761/1761), done.
+remote: Total 2793 (delta 1221), reused 2546 (delta 980), pack-reused 0
+Receiving objects: 100% (2793/2793), 6.36 MiB | 3.73 MiB/s, done.
+Resolving deltas: 100% (1221/1221), done.
+acumen@localhost:~/WORKSPACE> ls -ltr 
+
+
+Now create a ssh key using *.pub key under github account settings
+
+
+then go to any repository and copy ssh command, like
+
+git@github.com:vishaljbhandari/learn_cpp.git

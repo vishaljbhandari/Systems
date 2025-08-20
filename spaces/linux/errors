@@ -1,0 +1,42 @@
+ERROR 1  ------------------
+acumen@localhost:~/WORKSPACE/REPOSITORIES/learn_cpp> git fetch origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+------ Solution --
+acumen@localhost:~/WORKSPACE/LinuxSpace> ssh-keygen -t rsa -b 4096 -C "vishaljbhandari@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/acumen/.ssh/id_rsa): 
+/home/acumen/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/acumen/.ssh/id_rsa
+Your public key has been saved in /home/acumen/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:V5qvCqMe09JGpi5sOsuqME1ZxQtp2jgepfj9urIDJeQ vishaljbhandari@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|     o.          |
+| .  =..          |
+|o. B.. .    .    |
+|oEBo. .    +     |
+| =o+  o S +      |
+|.oo .*   . .     |
+|oo. =.*     .    |
+|+.*. *.o   .     |
+|B*.**o  ...      |
++----[SHA256]-----+
+acumen@localhost:~/WORKSPACE/LinuxSpace> cat /home/acumen/.ssh/id_rsa.pub
+ssh-rsa XXXXXXXXXXXXXXXXXXAAB3NzaC1yc2EAAAADAQABAAACAQCt3kwCIhqyb/xVC/rLCh7oiPBmdpExxxxxxxxxxxxxxxxxx8bVOu1flzt0fNDm/mu26KRcHx5ciuzKOTIg702JMazpw23G1IVu4MQAtmLF3tVdcEhc4QiYpzgOzKqxgYCfRv6m4rrblxId6e4mXnSwgAWmUA28eN++bYuGtDTgQzWUFJpYbVGTqSWAui0nLtYfS976V8Q2zsVTJlZlecn1ea4G8FLLBZya9Ef9apBh9hVPv7wcDDFBcgwgshAmVPbZ8Ulbn98kSCOWIhPaRmnrF8NFRrWV1uj8NgXL+5oA+nseY4aWpJVqAAt+d9gbf+hEpqU8zy7SuoutZUh3ongmI8QU7gol6GV2kv2HoqqeX5lK5QQD8L0ATUHyY9aIPiM5IokAJ8Prm/k6Jcjzalf7zxnxOE+u9dlHqVrgjVYqTaHQ6G93cUWv4AVwrlMdk4JGCUkqc+3duV9q3fBXPWIQp8VSxvo4gdNgKdHKMHFcXMntxIqxY1s0Kb/QihLf0aSRldVg+BU+1GdrPCuja+vnq4WDlW/V+u8LHpTx/enYbeBxZ2XaoDHDO+sGQ40gqEg5hXbjjXG8D0ebndgK1jitV1IM4J3UvAvOMGas3aTdOlcEdPHqzTBEw4qIp+7CC3Q== vishaljbhandari@gmail.com
+
+Copy above text and add it as ssh key into your git account under https://github.com/settings/keys
+add a new ssh key, name it and save it
+
+post this you would be able to login and interact with git
+
+you can also do reverse
+get key from above link which was previously created for the same system, copy it and save it to the file 
+
