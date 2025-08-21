@@ -1,0 +1,100 @@
+acumen@Ubuntu:~$ wget -qO - https://apt.packages.shiftkey.dev/gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/shiftkey-packages.gpg > /dev/null
+gpg: no valid OpenPGP data found.
+acumen@Ubuntu:~$ sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-packages.gpg] https://apt.packages.shiftkey.dev/ubuntu/ any main" > /etc/apt/sources.list.d/shiftkey-packages.list'
+acumen@Ubuntu:~$ sudo apt update && sudo apt install github-desktop
+Ign:1 https://apt.packages.shiftkey.dev/ubuntu any InRelease
+Hit:2 https://deb.nodesource.com/node_20.x nodistro InRelease                                                                   
+Hit:3 http://security.ubuntu.com/ubuntu noble-security InRelease                                                                
+Hit:4 http://in.archive.ubuntu.com/ubuntu noble InRelease                                                 
+Hit:5 http://in.archive.ubuntu.com/ubuntu noble-updates InRelease
+Ign:1 https://apt.packages.shiftkey.dev/ubuntu any InRelease
+Hit:6 http://in.archive.ubuntu.com/ubuntu noble-backports InRelease
+Ign:1 https://apt.packages.shiftkey.dev/ubuntu any InRelease
+Err:1 https://apt.packages.shiftkey.dev/ubuntu any InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 13.107.246.58 443]
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+W: Failed to fetch https://apt.packages.shiftkey.dev/ubuntu/dists/any/InRelease  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 13.107.246.58 443]
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package github-desktop
+acumen@Ubuntu:~$ wget -qO - https://mirror.mwt.me/shiftkey-desktop/gpgkey | gpg --dearmor | sudo tee /usr/share/keyrings/mwt-desktop.gpg > /dev/null
+acumen@Ubuntu:~$ sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/mwt-desktop.gpg] https://mirror.mwt.me/shiftkey-desktop/deb/ any main" > /etc/apt/sources.list.d/mwt-desktop.list'
+acumen@Ubuntu:~$ sudo apt update && sudo apt install github-desktop
+Hit:1 https://deb.nodesource.com/node_20.x nodistro InRelease
+Ign:2 https://apt.packages.shiftkey.dev/ubuntu any InRelease                                                                                                                       
+Hit:3 http://in.archive.ubuntu.com/ubuntu noble InRelease                                                                                                                          
+Hit:4 http://in.archive.ubuntu.com/ubuntu noble-updates InRelease                                                      
+Hit:5 http://in.archive.ubuntu.com/ubuntu noble-backports InRelease                                                    
+Hit:6 http://security.ubuntu.com/ubuntu noble-security InRelease                                                       
+Ign:2 https://apt.packages.shiftkey.dev/ubuntu any InRelease        
+Get:7 https://mirror.mwt.me/shiftkey-desktop/deb any InRelease [1,228 B]
+Get:8 https://mirror.mwt.me/shiftkey-desktop/deb any/main amd64 Packages [610 B]
+Ign:2 https://apt.packages.shiftkey.dev/ubuntu any InRelease
+Err:2 https://apt.packages.shiftkey.dev/ubuntu any InRelease                                                                                                                           
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 13.107.246.58 443]
+Fetched 1,838 B in 7s (250 B/s)                                                                                                                                                        
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+W: Failed to fetch https://apt.packages.shiftkey.dev/ubuntu/dists/any/InRelease  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 13.107.246.58 443]
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  gyp handlebars libjs-async libjs-d3-format libjs-events libjs-is-typedarray libjs-prettify libjs-psl libjs-regenerate libjs-source-map libjs-sprintf-js libjs-typedarray-to-buffer
+  libre2-10 libssl-dev libuv1-dev node-abab node-abbrev node-ampproject-remapping node-ansi-escapes node-ansi-regex node-ansi-styles node-aproba node-are-we-there-yet node-argparse
+  node-arrify node-asap node-async node-async-each node-asynckit node-auto-bind node-babel-plugin-add-module-exports node-balanced-match node-base64-js node-binary-extensions
+  node-blueimp-md5 node-brace-expansion node-busboy node-camelcase node-caniuse-lite node-chownr node-chrome-trace-event node-ci-info node-cjs-module-lexer node-cli-boxes
+  node-cli-cursor node-clone node-clone-deep node-collection-visit node-color-convert node-color-name node-colors node-combined-stream node-commander node-commondir
+  node-concat-stream node-config-chain node-console-control-strings node-convert-source-map node-core-js node-core-js-pure node-css-jss node-cssom node-cssstyle node-d3-array
+  node-d3-collection node-d3-color node-d3-delaunay node-d3-dispatch node-d3-dsv node-d3-force node-d3-format node-d3-geo node-d3-hierarchy node-d3-interpolate node-d3-path
+  node-d3-quadtree node-d3-queue node-d3-scale node-d3-shape node-d3-time node-d3-time-format node-d3-timer node-data-uri-to-buffer node-decompress-response node-deep-is
+  node-defaults node-define-property node-delayed-stream node-delegates node-depd node-diff node-domelementtype node-domhandler node-electron-to-chromium node-encoding
+  node-end-of-stream node-entities node-err-code node-error-ex node-es-module-lexer node-escape-string-regexp node-eslint-utils node-eslint-visitor-keys node-esquery node-estraverse
+  node-esutils node-events node-extsprintf node-fancy-log node-fast-deep-equal node-fast-json-stable-stringify node-fast-levenshtein node-fetch node-find-root node-find-up
+  node-flatted node-for-in node-for-own node-foreground-child node-fs-readdir-recursive node-fs-write-stream-atomic node-fs.realpath node-function-bind node-functional-red-black-tree
+  node-get-caller-file node-get-stream node-get-value node-glob node-globals node-got node-graceful-fs node-growl node-has-flag node-has-unicode node-has-value node-has-values
+  node-hoist-non-react-statics node-hosted-git-info node-iconv-lite node-ieee754 node-iferr node-imurmurhash node-indent-string node-inflight node-ini node-interpret node-ip
+  node-ip-regex node-is-arrayish node-is-binary-path node-is-buffer node-is-descriptor node-is-extendable node-is-extglob node-is-path-cwd node-is-plain-obj node-is-plain-object
+  node-is-promise node-is-stream node-is-typedarray node-is-windows node-isexe node-isobject node-kind-of node-levn node-loader-runner node-locate-path node-lodash-packages
+  node-log-driver node-lowercase-keys node-lru-cache node-map-visit node-md5-hex node-md5-o-matic node-memfs node-merge-stream node-mimic-response node-minimatch node-minimist
+  node-minipass node-mixin-deep node-mute-stream node-n3 node-negotiator node-neo-async node-npm-run-path node-object-inspect node-object-visit node-once node-optimist
+  node-optionator node-osenv node-p-cancelable node-p-limit node-p-locate node-p-map node-parse5 node-pascalcase node-path-dirname node-path-exists node-path-is-absolute
+  node-path-is-inside node-path-type node-pify node-pkg-dir node-postcss-value-parser node-prelude-ls node-promise-inflight node-promise-retry node-promzard node-proto-list node-prr
+  node-psl node-pump node-punycode node-querystringify node-quick-lru node-randombytes node-react-display-name node-react-is node-read node-rechoir node-regenerate
+  node-regenerate-unicode-properties node-regenerator-transform node-regexpp node-regjsgen node-repeat-string node-require-directory node-require-from-string node-requires-port
+  node-resolve node-resolve-cwd node-resolve-from node-restore-cursor node-resumer node-retry node-run-queue node-rw node-sellside-emitter node-serialize-javascript node-set-blocking
+  node-set-immediate-shim node-shallow-equal node-shebang-command node-shebang-regex node-shell-quote node-sigmund node-signal-exit node-slash node-slice-ansi node-source-list-map
+  node-source-map node-source-map-support node-spdx-correct node-spdx-exceptions node-spdx-expression-parse node-spdx-license-ids node-sprintf-js node-ssri node-stack-utils
+  node-strip-bom node-strip-json-comments node-stylis node-supports-color node-tapable node-terser node-text-table node-through node-time-stamp node-time-zone node-to-fast-properties
+  node-tough-cookie node-tslib node-type-check node-typedarray node-typedarray-to-buffer node-uglify-js node-undici node-unicode-canonical-property-names-ecmascript
+  node-unicode-match-property-value-ecmascript node-unicode-property-aliases-ecmascript node-unique-filename node-universalify node-unset-value node-uri-js node-url-parse node-uuid
+  node-v8flags node-validate-npm-package-license node-wcwidth.js node-webidl-conversions node-webpack-sources node-wordwrap node-wrappy node-write-file-atomic node-xtend node-y18n
+  node-yallist node-yaml
+Use 'sudo apt autoremove' to remove them.
+Suggested packages:
+  gir1.2-gnomekeyring-1.0 libgnome-keyring0
+The following NEW packages will be installed:
+  github-desktop
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 130 MB of archives.
+After this operation, 458 MB of additional disk space will be used.
+Get:1 https://mirror.mwt.me/shiftkey-desktop/deb any/main amd64 github-desktop amd64 3.4.12-linux1 [130 MB]
+Fetched 130 MB in 7s (18.8 MB/s)                                                                                                                                                       
+Selecting previously unselected package github-desktop.
+(Reading database ... 244158 files and directories currently installed.)
+Preparing to unpack .../github-desktop_3.4.12-linux1_amd64.deb ...
+Unpacking github-desktop (3.4.12-linux1) ...
+Setting up github-desktop (3.4.12-linux1) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for gnome-menus (3.36.0-1.1ubuntu3) ...
+Processing triggers for desktop-file-utils (0.27-2build1) ...
+acumen@Ubuntu:~$ 
+
