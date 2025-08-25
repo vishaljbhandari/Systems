@@ -1,0 +1,15 @@
+sudo dnf update
+sudo dnf install gcc-c++
+g++ --version
+ 
+sudo dnf install codelite
+ 
+sudo dnf install git -y
+sudo dnf install git-all -y
+git --version
+
+sudo dnf install cmake
+cmake --version
+
+sudo dnf install cppcheck
+cppcheck --version
