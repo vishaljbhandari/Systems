@@ -1,0 +1,68 @@
+The crontab is a list of commands that you want to run on a regular schedule.
+
+because it uses the job scheduler cron to execute tasks
+
+cron itself is named after “chronos, ” the Greek word for time.
+
+cron is the system process which will automatically perform tasks for you according to a set schedule. 
+
+The schedule is called the crontab, which is also the name of the program used to edit/manage that schedule. 
+
+Linux Crontab Format
+	MIN HOUR DOM MON DOW CMD
+	
+Crontab Fields and Allowed Ranges (Linux Crontab Syntax)
+
+Field    Description    Allowed Value
+MIN      Minute field    0 to 59
+HOUR     Hour field      0 to 23
+DOM      Day of Month    1-31
+MON      Month field     1-12
+DOW      Day Of Week     0-6
+CMD      Command         Any command to be executed.
+
+
+Scheduling a Job For a Specific Time 
+The basic usage of cron is to execute a job in a specific time. 
+execute full-backup shell scripton 10th June 08:30 AM. The time field uses 24 hours format. 
+30 08 10 06 * /home/maverick/full-backup
+
+To view/list your crontab entries 
+Login as root user (su – root) and do "crontab -l"
+
+To edit a crontab entries, use "crontab -e"
+By default this will edit the current logged-in users crontab.
+
+To view crontab entries of other Linux users
+Login to root and use -u {username} -l.
+
+To schedule a job for every minute using Cron.
+* * * * * CMD
+
+To schedule a job for certain range of time (e.g. Only on Weekdays)
+00 09-18 * * * CMD
+
+To schedule a background Cron job for every 10 minutes
+*/10 * * * * CMD
+
+Cron special keywords and its meaning
+Keyword    Equivalent
+@yearly    0 0 1 1 *
+@daily     0 0 * * *
+@hourly    0 * * * *
+@reboot    Run at startup.
+
+To schedule a job for first minute of every year using @yearly
+@yearly CMD
+
+To schedule a Cron job beginning of every month using @monthly
+@monthly CMD
+
+To schedule a Cron job beginning of every month using @daily
+@daily CMD
+
+To schedule a Cron job beginning of every month using @hourly
+@hourly CMD
+
+To execute a linux command after every reboot using @reboot
+@reboot CMD

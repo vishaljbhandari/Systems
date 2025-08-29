@@ -1,0 +1,200 @@
+Head command in Linux with examples
+Difficulty Level : Easy
+Last Updated : 22 Feb, 2022
+Read
+Discuss
+
+It is the complementary of Tail command. The head command, as the name implies, print the top N number of data of the given input. By default, it prints the first 10 lines of the specified files. If more than one file name is provided then data from each file is preceded by its file name. 
+
+Syntax: 
+ 
+
+head [OPTION]... [FILE]...
+Let us consider two files having name state.txt and capital.txt contains all the names of the Indian states and capitals respectively. 
+ 
+
+$ cat state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+$ cat capital.txt
+Hyderabad
+Itanagar
+Dispur
+Patna
+Raipur
+Panaji
+Gandhinagar
+Chandigarh
+Shimla
+Srinagar
+Without any option, it displays only the first 10 lines of the file specified. 
+Example: 
+ 
+
+
+$ head state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Options 
+
+ 
+
+
+
+1. -n num: Prints the first ‘num’ lines instead of first 10 lines. num is mandatory to be specified in command otherwise it displays an error. 
+ 
+
+$ head -n 5 state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+2. -c num: Prints the first ‘num’ bytes from the file specified. Newline count as a single character, so if head prints out a newline, it will count it as a byte. num is mandatory to be specified in command otherwise displays an error. 
+ 
+
+$ head -c 6 state.txt
+Andhra
+3. -q: It is used if more than 1 file is given. Because of this command, data from each file is not precedes by its file name. 
+ 
+
+Without using -q option
+$ head state.txt capital.txt
+==> state.txt <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+
+==> capital.txt <==
+Hyderabad
+Itanagar
+Dispur
+Patna
+Raipur
+Panaji
+Gandhinagar
+Chandigarh
+Shimla
+Srinagar
+
+
+With using -q option
+$ head -q  state.txt capital.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Hyderabad
+Itanagar
+Dispur
+Patna
+Raipur
+Panaji
+Gandhinagar
+Chandigarh
+Shimla
+Srinagar
+4. -v: By using this option, data from the specified file is always preceded by its file name. 
+ 
+
+$ head -v state.txt
+==> state.txt <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+ 
+
+Applications of head Command
+
+ 
+
+Print line between M and N lines(M>N): For this purpose, we use the head, tail, and pipeline(|) commands. The command is: head -M file_name | tail +N since the head command takes first M lines and from M lines tail command cuts lines starting from +N till the end, we can also use head -M file_name | tail +(M-N+1) command since the head command takes first M lines and from M lines tail command cuts (M-N+1) lines starting from the end. Let say from the state.txt file we have to print lines between 10 and 20. 
+ 
+$ head -n 20 state.txt | tail -10
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+How to use the head with pipeline(|): The head command can be piped with other commands. In the following example, the output of the ls command is piped to head to show only the three most recently modified files or folders. 
+ 
+Display all recently modified or recently used files.
+$ ls -t
+e.txt 
+d.txt
+c.txt
+b.txt  
+a.txt
+
+Cut three most recently used file.
+$ ls -t | head -n 3
+e.txt
+d.txt
+c.txt
+It can also be piped with one or more filters for additional processing. For example, the sort filter could be used to sort the three most recently used files or folders in the alphabetic order. 
+ 
+$ ls -t | head -n 3 | sort
+c.txt
+d.txt
+e.txt
+There are number of other filters or commands along which we use head command. Mainly, it can be used for viewing huge log files in Unix.

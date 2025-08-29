@@ -1,0 +1,209 @@
+date command in Linux with examples
+Difficulty Level : Basic
+Last Updated : 28 Jan, 2022
+Read
+Discuss
+
+date command is used to display the system date and time. date command is also used to set date and time of the system. By default the date command displays the date in the time zone on which unix/linux operating system is configured.You must be the super-user (root) to change the date and time. 
+
+Syntax: 
+ 
+
+date [OPTION]... [+FORMAT]
+date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
+Options with Examples 
+1: date (no option) : With no options, the date command displays the current date and time, including the abbreviated day name, abbreviated month name, day of the month, the time separated by colons, the time zone name, and the year. 
+ 
+
+Command: 
+$date
+Output: 
+Tue Oct 10 22:55:01 PDT 2017
+Note : Here unix system is configured in pacific daylight time. 
+
+
+2:-u Option: Displays the time in GMT(Greenwich Mean Time)/UTC(Coordinated Universal Time )time zone. 
+ 
+
+Command: 
+$date -u
+Output :
+Wed Oct 11 06:11:31 UTC 2017
+3: –date or -d Option: Displays the given date string in the format of date. But this will not affect the system’s actual date and time value.Rather it uses the date and time given in the form of string. 
+Syntax: 
+ 
+
+$date --date=" string "
+ 
+
+Command: 
+$date --date="2/02/2010"
+$date --date="Feb 2 2010"
+Output: 
+Tue Feb  2 00:00:00 PST 2010
+Tue Feb  2 00:00:00 PST 2010
+4:Using –date option for displaying past dates: 
+ 
+
+Date and time of 2 years ago. 
+ 
+Command: 
+$date --date="2 year ago"
+Output: 
+Sat Oct 10 23:42:15 PDT 2015
+ 
+Date and time of 5 seconds ago. 
+ 
+Command: 
+$date --date="5 sec ago"
+Output: 
+Tue Oct 10 23:45:02 PDT 2017
+ 
+Date and time of previous day. 
+ 
+Command: 
+$date --date="yesterday"
+Output: 
+Mon Oct  9 23:48:00 PDT 2017
+ 
+
+Date and time of 2 months ago. 
+ 
+Command: 
+$date --date="2 month ago"
+Output: 
+Thu Aug 10 23:54:51 PDT 2017
+ 
+Date and time of 10 days ago. 
+ 
+Command: 
+$date --date="10 day ago"
+Output: 
+Sat Sep 30 23:56:55 PDT 2017
+ 
+5:Using –date option for displaying future date: 
+ 
+
+Date and time of upcoming particular week day. 
+ 
+Command: 
+$date --date="next tue"
+Output: 
+Tue Oct 17 00:00:00 PDT 2017
+ 
+Date and time after two days. 
+ 
+Command: 
+$date --date="2 day"
+Output: 
+Fri Oct 13 00:05:52 PDT 2017
+ 
+Date and time of next day. 
+ 
+Command: 
+$date --date="tomorrow"
+Output: 
+Thu Oct 12 00:08:47 PDT 2017
+ 
+
+Date and time after 1 year on the current day. 
+ 
+Command: 
+$date --date="1 year"
+Output: 
+Thu Oct 11 00:11:38 PDT 2018
+6:-s or –set Option: To set the system date and time -s or –set option is used. 
+Syntax: 
+ 
+
+$date --set="date to be set"
+ 
+
+Command: 
+$date 
+Output: 
+Wed Oct 11 15:23:26 PDT 2017
+Command: 
+$date --set="Tue Nov 13 15:23:34 PDT 2018"
+$date
+Output: 
+Tue Nov 13 15:23:34 PDT 2018
+7:–file or -f Option: This is used to display the date string present at each line of file in the date and time format.This option is similar to –date option but the only difference is that in –date we can only give one date string but in a file we can give multiple date strings at each line. 
+Syntax: 
+ 
+
+$date --file=file.txt
+ 
+
+$cat >> datefile
+ Sep 23 2018
+ Nov 03 2019
+Command: 
+$date --file=datefile
+Output: 
+Sun Sep 23 00:00:00 PDT 2018
+Sun Nov  3 00:00:00 PDT 2019
+8:-r Option: This is used to display the last modified timestamp of a datefile . 
+Syntax: 
+ 
+
+$date -r file.txt
+We can modify the timestamp of a datefile by using touch command. 
+ 
+
+$touch datefile
+ 
+
+$date -r datefile
+Wed Oct 11 15:54:18 PDT 2017
+//this is the current date and time
+$touch datefile
+//The timestamp of datefile is changed using touch command.
+This was done few seconds after the above date command’s output.
+$date -r datefile
+Wed Oct 11 15:56:23 PDT 2017
+//display last modified time of datefile
+9: List of Format specifiers used with date command: 
+ 
+
+%D: Display date as mm/dd/yy.       
+%d: Display the day of the month (01 to 31).       
+%a: Displays the abbreviated name for weekdays (Sun to Sat).
+%A: Displays full weekdays (Sunday to Saturday).
+%h: Displays abbreviated month name (Jan to Dec).
+%b: Displays abbreviated month name (Jan to Dec).
+%B: Displays full month name(January to December).
+%m: Displays the month of year (01 to 12).
+%y: Displays last two digits of the year(00 to 99).
+%Y: Display four-digit year. 
+%T: Display the time in 24 hour format as HH:MM:SS.
+%H: Display the hour.
+%M: Display the minute.
+%S: Display the seconds.
+Syntax: 
+ 
+
+$date +%[format-option]
+Examples: 
+ 
+
+Command: 
+$date "+%D"
+Output: 
+10/11/17
+Command: 
+$date "+%D %T"
+Output: 
+10/11/17 16:13:27
+Command: 
+$date "+%Y-%m-%d"
+Output: 
+2017-10-11
+Command: 
+$date "+%Y/%m/%d"
+Output: 
+2017/10/11
+Command: 
+$date "+%A %B %d %T %y"
+Output: 
+Thursday October 07:54:29 12 17

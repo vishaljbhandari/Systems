@@ -1,0 +1,112 @@
+The Linux ‘tar’ stands for tape archive, is used to create Archive and extract the Archive files. tar command in Linux is one of the important command which provides archiving functionality in Linux. We can use Linux tar command to create compressed or uncompressed Archive files and also maintain and modify them. 
+
+Syntax: 
+
+tar [options] [archive-file] [file or directory to be archived]
+Options: 
+-c : Creates Archive 
+-x : Extract the archive 
+-f : creates archive with given filename 
+-t : displays or lists files in archived file 
+-u : archives and adds to an existing archive file 
+-v : Displays Verbose Information 
+-A : Concatenates the archive files 
+-z : zip, tells tar command that creates tar file using gzip 
+-j : filter archive tar file using tbzip 
+-W : Verify a archive file 
+-r : update or add file or directory in already existed .tar file 
+
+What is an Archive file? 
+An Archive file is a file that is composed of one or more files along with metadata. Archive files are used to collect multiple data files together into a single file for easier portability and storage, or simply to compress files to use less storage space. 
+
+
+Examples: 
+1. Creating an uncompressed tar Archive using option -cvf : This command creates a tar file called file.tar which is the Archive of all .c files in current directory. 
+
+$ tar cvf file.tar *.c
+Output : 
+
+os2.c
+os3.c
+os4.c
+2. Extracting files from Archive using option -xvf : This command extracts files from Archives. 
+
+$ tar xvf file.tar
+Output :  
+
+os2.c
+os3.c
+os4.c
+3. gzip compression on the tar Archive, using option -z : This command creates a tar file called file.tar.gz which is the Archive of .c files.  
+
+$ tar cvzf file.tar.gz *.c
+4. Extracting a gzip tar Archive *.tar.gz using option -xvzf : This command extracts files from tar archived file.tar.gz files.  
+
+$ tar xvzf file.tar.gz
+5. Creating compressed tar archive file in Linux using option -j : This command compresses and creates archive file less than the size of the gzip. Both compress and decompress takes more time then gzip.  
+
+$ tar cvfj file.tar.tbz example.cpp
+Output :  
+
+$tar cvfj file.tar.tbz example.cpp
+example.cpp
+$tar tvf file.tar.tbz
+-rwxrwxrwx root/root        94 2017-09-17 02:47 example.cpp
+6. Untar single tar file or specified directory in Linux : This command will Untar a file in current directory or in a specified directory using -C option.  
+
+
+$ tar xvfj file.tar 
+or 
+$ tar xvfj file.tar -C path of file in directory 
+7. Untar multiple .tar, .tar.gz, .tar.tbz file in Linux : This command will extract or untar multiple files from the tar, tar.gz and tar.bz2 archive file. For example the above command will extract “fileA” “fileB” from the archive files.  
+
+$ tar xvf file.tar "fileA" "fileB" 
+or 
+$ tar zxvf file1.tar.gz "fileA" "fileB"
+or 
+$ tar jxvf file2.tar.tbz "fileA" "fileB"
+8. Check size of existing tar, tar.gz, tar.tbz file in Linux : The above command will display the size of archive file in Kilobytes(KB).  
+
+$ tar czf file.tar | wc -c
+or 
+$ tar czf file1.tar.gz | wc -c
+or 
+$ tar czf file2.tar.tbz | wc -c
+9. Update existing tar file in Linux  
+
+$ tar rvf file.tar *.c
+Output :  
+
+os1.c
+10. list the contents and specify the tarfile using option -tf : This command will list the entire list of archived file. We can also list for specific content in a tarfile  
+
+$ tar tf file.tar
+Output :  
+
+example.cpp
+11. Applying pipe to through ‘grep command’ to find what we are looking for : This command will list only for the mentioned text or image in grep from archived file.  
+
+$ tar tvf file.tar | grep "text to find" 
+or
+$ tar tvf file.tar | grep "filename.file extension"
+12. We can pass a file name as an argument to search a tarfile : This command views the archived files along with their details.  
+
+$ tar tvf file.tar filename 
+13. Viewing the Archive using option -tvf  
+
+$ tar tvf file.tar
+Output :  
+
+-rwxrwxrwx root/root       191 2017-09-17 02:20 os2.c
+-rwxrwxrwx root/root       218 2017-09-17 02:20 os3.c
+-rwxrwxrwx root/root       493 2017-09-17 02:20 os4.c
+What are wildcards in Linux 
+Alternatively referred to as a ‘wild character’ or ‘wildcard character’, a wildcard is a symbol used to replace or represent one or more characters. Wildcards are typically either an asterisk (*), which represents one or more characters or question mark (?),which represents a single character. 
+
+Example : 
+
+14. To search for an image in .png format : This will extract only files with the extension .png from the archive file.tar. The –wildcards option tells tar to interpret wildcards in the name of the files 
+to be extracted; the filename (*.png) is enclosed in single-quotes to protect the wildcard (*) from being expanded incorrectly by the shell. 
+
+$ tar tvf file.tar --wildcards '*.png' 
+Note: In above commands ” * ” is used in place of file name to take all the files present in that particular directory.  
