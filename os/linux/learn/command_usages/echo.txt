@@ -1,0 +1,55 @@
+echo command in linux is used to display line of text/string that are passed as an argument . 
+
+This is a built in command that is mostly used in shell scripts and batch files to output status text to the screen or a file. 
+
+Syntax :
+echo [option] [string]
+
+
+Displaying a text/string : Syntax :
+echo [string]
+echo "Hello, This is me"
+
+Options of echo command NOTE 
+-e here enables the interpretation of backslash escapes 
+
+1. \b : it removes all the spaces in between the text
+Example : echo -e "Geeks \bfor \bGeeks"
+Output: GeeksforGeeks
+
+2. \c : suppress trailing new line with backspace interpreter ‘-e‘ to continue without emitting new line. Example : echo -e "Geeks \cfor Geeks"
+Output: Geek
+text after \c is not printed and omitted trailing new line. 
+3. \n : this option creates new line from where it is used. 
+Example : echo -e "Geeks \nfor \nGeeks"
+Output: Geeks
+for
+Geeks
+
+4. \t : this option is used to create horizontal tab spaces. 
+Example : echo -e "Geeks \tfor \tGeeks"
+Output : Geeks		for		Geeks
+
+5. \r : carriage return with backspace interpreter ‘-e‘ to have specified carriage return in output. 
+Example : echo -e "Geeks \rfor Geeks"
+Output : for Geeks
+text before \r is not printed. 
+
+6. \v : this option is used to create vertical tab spaces. 
+Example : echo -e "Geeks \vfor \vGeeks"
+Output : 
+Geeks
+	for
+		Geeks
+		
+7. \a : alert return with backspace interpreter ‘-e‘ to have sound alert. 
+Example : echo -e "\aGeeks for Geeks
+Output : Geeks for Geeks
+it will produce an alert sound or Bel.
+
+8. echo * : this command will print all files/folders, similar to ls command . 
+Example : echo *
+
+9. -n : this option is used to omit echoing trailing newline . 
+Example : echo -n "Geeks for Geeks"
+Output : Geeks for Geeks$ shell prompt

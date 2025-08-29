@@ -1,0 +1,48 @@
+Secure Shell (SSH) is a cryptographic network protocol for secure data
+communication, remote command-line login, remote command execution, and
+other secure network services between two networked computers that connects,
+via a secure channel over an insecure network, a server and a client (running SSH
+server and SSH client programs, respectively).
+
+
+
+
+
+
+
+SSH Client Version:
+Sometimes it may be necessary to identify the SSH client that you are currently running and it’s corresponding
+version number, which can be identified as shown below. Please note that Linux comes with OpenSSH.
+$ ssh -V
+OpenSSH_3.9p1, OpenSSL 0.9.7a Feb 19 2003
+$ ssh -V
+ssh: SSH Secure Shell 3.2.9.1 (non-commercial version) on i686-pc-linux-gnu
+
+Login to remote host:
+The First time when you login to the remotehost from a localhost, it will display the host key not found
+message and you can give “yes” to continue. The host key of the remote host will be added under
+.ssh2/hostkeys directory of your home directory, as shown below.
+localhost$ ssh -l jsmith remotehost.example.com
+
+File transfer to/from remote host:
+Another common use of ssh client is to copy files from/to remote host using scp.
+Copy file from the remotehost to the localhost:
+ localhost$scp jsmith@remotehost.example.com:/home/jsmith/remotehostfile.txt remotehostfile.txt
+Copy file from the localhost to the remotehost:
+ localhost$scp localhostfile.txt jsmith@remotehost.example.com:/home/jsmith/localhostfile.txt
+
+ Debug SSH Client:
+Sometimes it is necessary to view debug messages to troubleshoot any SSH connection issues. For this purpose,
+pass -v (lowercase v) option to the ssh as shown below.
+Example without debug message:
+ localhost$ ssh -l jsmith remotehost.example.com
+ warning: Connecting to remotehost.example.com failed: No address associated to the name
+ localhost$
+Example with debug message:
+ locaclhost$ ssh -v -l jsmith remotehost.example.com
+ debug: SshConfig/sshconfig.c:2838/ssh2_parse_config_ext: Metaconfig parsing stopped at line 3.
+ debug: SshConfig/sshconfig.c:637/ssh_config_set_param_verbose: Setting variable 'VerboseMode' to 'FALSE'.
+ debug: SshConfig/sshconfig.c:3130/ssh_config_read_file_ext: Read 17 params from config file.
+ debug: Ssh2/ssh2.c:1707/main: User config file not found, using defaults. (Looked for '/home/jsmith/.ssh2/ssh2_config')
+ debug: Connecting to remotehost.example.com, port 22... (SOCKS not used)
+ warning: Connecting to remotehost.example.com failed: No address associated to the name

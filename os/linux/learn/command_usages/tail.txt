@@ -1,0 +1,205 @@
+It is the complementary of head command.The tail command, as the name implies, print the last N number of data of the given input. By default it prints the last 10 lines of the specified files. If more than one file name is provided then data from each file is precedes by its file name.
+
+Syntax:
+
+tail [OPTION]... [FILE]...
+Let us consider two files having name state.txt and capital.txt contains all the names of the Indian states and capitals respectively.
+
+$ cat state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+Without any option it display only the last 10 lines of the file specified.
+Example:
+
+
+$ tail state.txt
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+Options:
+
+
+
+1. -n num: Prints the last ‘num’ lines instead of last 10 lines. num is mandatory to be specified in command otherwise it displays an error. This command can also be written as without symbolizing ‘n’ character but ‘-‘ sign is mandatory.
+
+$ tail -n 3 state.txt
+Uttar Pradesh
+Uttarakhand
+West Bengal
+       OR
+$ tail -3 state.txt
+Uttar Pradesh
+Uttarakhand
+West Bengal
+Tail command also comes with an ‘+’ option which is not present in the head command. With this option tail command prints the data starting from specified line number of the file instead of end. For command: tail +n file_name, data will start printing from line number ‘n’ till the end of the file specified.
+
+$ tail +25 state.txt
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+2. -c num: Prints the last ‘num’ bytes from the file specified. Newline count as a single character, so if tail prints out a newline, it will count it as a byte. In this option it is mandatory to write -c followed by positive or negative num depends upon the requirement. By +num, it display all the data after skipping num bytes from starting of the specified file and by -num, it display the last num bytes from the file specified.
+Note: Without positive or negative sign before num, command will display the last num bytes from the file specified.
+
+With negative num
+$ tail -c -6 state.txt
+Bengal
+        OR
+$ tail -c 6 state.txt
+Bengal
+
+With positive num
+$ tail -c +263 state.txt
+Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+3. -q: It is used if more than 1 file is given. Because of this command, data from each file is not precedes by its file name.
+
+Without using -q option
+$ tail state.txt capital.txt
+  state.txt
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+  capital.txt
+Dispur
+Patna
+Raipur
+Panaji
+Gandhinagar
+Chandigarh
+Shimla
+Srinagar
+Ranchi
+
+
+With using -q option
+$ tail -q state.txt capital.txt
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West BengalDispur
+Patna
+Raipur
+Panaji
+Gandhinagar
+Chandigarh
+Shimla
+Srinagar
+Ranchi
+Bengaluru
+4. -f: This option is mainly used by system administration to monitor the growth of the log files written by many Unix program as they are running. This option shows the last ten lines of a file and will update when new lines are added. As new lines are written to the log, the console will update with the new lines. The prompt doesn’t return even after work is over so, we have to use the interrupt key to abort this command. In general, the applications writes error messages to log files. You can use the -f option to check for the error messages as and when they appear in the log file.
+
+$ tail -f logfile
+5. -v: By using this option, data from the specified file is always preceded by its file name.
+
+$ tail -v state.txt
+==> state.txt <==
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+6. –version: This option is used to display the version of tail which is currently running on your system.
+
+$ tail --version
+tail (GNU coreutils) 8.26
+Packaged by Cygwin (8.26-1)
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later .
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Paul Rubin, David MacKenzie, Ian Lance Taylor,
+and Jim Meyering.
+
+Applications of tail Command
+
+1. How to use tail with pipes(|): The tail command can be piped with many other commands of the unix. In the following example output of the tail command is given as input to the sort command with -r option to sort the last 7 state names coming from file state.txt in the reverse order.
+
+$ tail -n 7 state.txt
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+$ tail -n 7 state.txt | sort -r
+West Bengal
+Uttarakhand
+Uttar Pradesh
+Tripura
+Telangana
+Tamil Nadu
+Sikkim
+It can also be piped with one or more filters for additional processing. Like in the following example, we are using cat, head and tail command and whose output is stored in the file name list.txt using directive(>).
+
+$ cat state.txt | head -n 20 | tail -n 5  > list.txt
+
+$ cat list.txt
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+
+What is happening in this command let’s try to explore it. First cat command gives all the data present in the file state.txt and after that pipe transfers all the output coming from cat command to the head command. Head command gives all the data from start(line number 1) to the line number 20 and pipe transfer all the output coming from head command to tail command. Now, tail command gives last 5 lines of the data and the output goes to the file name list.txt via directive operator.
+
+

@@ -1,0 +1,125 @@
+mv command in Linux with examples
+Difficulty Level : Basic
+Last Updated : 18 Mar, 2021
+Read
+Discuss
+
+mv stands for move. mv is used to move one or more files or directories from one place to another in a file system like UNIX. It has two distinct functions: 
+(i) It renames a file or folder. 
+(ii) It moves a group of files to a different directory. 
+No additional space is consumed on a disk during renaming. This command normally works silently means no prompt for confirmation. 
+
+Syntax: 
+
+mv [Option] source destination
+Let us consider 4 files having names a.txt, b.txt, and so on till d.txt. 
+To rename the file a.txt to geek.txt(not exist): 
+
+$ ls
+a.txt  b.txt  c.txt  d.txt
+
+$ mv a.txt geek.txt
+
+$ ls
+b.txt  c.txt  d.txt  geek.txt
+If the destination file doesn’t exist, it will be created. In the above command mv simply replaces the source filename in the directory with the destination filename(new name). If the destination file exist, then it will be overwrite and the source file will be deleted. By default, mv doesn’t prompt for overwriting the existing file, So be careful !! 
+
+
+Let’s try to understand with an example, moving geeks.txt to b.txt(exist): 
+
+$ ls
+b.txt  c.txt  d.txt  geek.txt
+
+$ cat geek.txt
+India
+
+$ cat b.txt
+geeksforgeeks
+
+$ mv geek.txt b.txt
+
+$ ls
+b.txt  c.txt  d.txt
+
+$ cat b.txt
+India
+Options: 
+1. -i (Interactive): Like in cp, the -i option makes the command ask the user for confirmation before moving a file that would overwrite an existing file, you have to press y for confirm moving, any other key leaves the file as it is. This option doesn’t work if the file doesn’t exist, it simply rename it or move it to new location. 
+
+$ ls
+b.txt  c.txt  d.txt  geek.txt
+
+$ cat geek.txt
+India
+
+$ cat b.txt
+geeksforgeeks
+
+$ mv -i geek.txt b.txt
+mv: overwrite 'b.txt'? y
+
+$ ls
+b.txt  c.txt  d.txt
+
+$ cat b.txt
+India
+2. -f (Force): mv prompts for confirmation overwriting the destination file if a file is write-protected. The -f option overrides this minor protection and overwrites the destination file forcefully and deletes the source file. 
+
+$ ls
+b.txt  c.txt  d.txt  geek.txt
+
+$ cat b.txt
+geeksforgeeks
+
+$ ls -l b.txt
+-r--r--r--+ 1 User User 13 Jan  9 13:37 b.txt
+
+$ mv geek.txt b.txt
+mv: replace 'b.txt', overriding mode 0444 (r--r--r--)? n
+
+$ ls
+b.txt  c.txt  d.txt  geek.txt
+
+$ mv -f geek.txt b.txt
+
+$ ls
+b.txt  c.txt  d.txt
+
+$ cat b.txt
+India
+3. -n (no-clobber): With -n option, mv prevent an existing file from being overwritten. 
+In the following example the effect is for nothing to happen as a file would be overwritten. 
+
+$ ls
+b.txt  c.txt  d.txt  geek.txt
+
+$ cat b.txt
+geeksforgeeks
+
+$ mv -n geek.txt b.txt
+
+$ ls
+b.txt  c.txt  d.txt  geek.txt
+
+$ cat b.txt
+geeksforgeeks
+4. -b(backup): With this option, it is easier to take a backup of an existing file that will be overwritten as a result of the mv command. This will create a backup file with the tilde character(~) appended to it. 
+
+$ ls
+b.txt  c.txt  d.txt  geek.txt
+
+$ mv -b geek.txt b.txt
+
+$ ls
+b.txt  b.txt~  c.txt  d.txt
+5. –version: This option is used to display the version of mv which is currently running on your system. 
+
+$ mv --version
+mv (GNU coreutils) 8.26
+Packaged by Cygwin (8.26-2)
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later .
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Mike Parker, David MacKenzie, and Jim Meyering.

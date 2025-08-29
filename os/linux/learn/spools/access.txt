@@ -1,0 +1,9 @@
+# To give shared drive access to your user
+usermod -aG vboxsf <youruser>
+
+usermod -a -G groupname username
+
+
+
+# Creating user with directory
+useradd -m -d /PATH/TO/FOLDER USERNAME
