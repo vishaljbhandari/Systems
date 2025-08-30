@@ -1,0 +1,5 @@
+    for (; obj; obj=obj->prev)
+    {
+        tchar *old = StrNewCopy(objectname);
+        objectname = REALLOC (objectname, (StrLen(old)+StrLen(obj->name)+2)*sizeof(tchar));
+        sprintf (objectname, _T("/%s%s"), obj->name, old);

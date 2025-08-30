@@ -1,0 +1,31 @@
+First, generate a public key for use to log-in to the remote system without a password:
+
+ssh-keygen -t rsa -b 4096 -C "your_username"
+
+This will generate a 4096-bit RSA key in your ~/.ssh/ directory with your user-name as the label. Then, add this new key to your ssh-agent so that it is used when you connect via SSH.
+
+ssh-agent -s
+ssh-add ~/.ssh/id_rsa
+If you set a custom name during key generation, replace id_rsa with that name.
+
+Now, copy your public key contents to your clipboard.
+
+clip < ~/.ssh/id_rsa.pub
+Next, log-in to the remote server with ssh -p YOURPORT user@remote.host and edit the remote user's authorized_keys file.
+
+vim .ssh/autorized_keys
+Paste in the contents you just copied to your clipboard. This allows connections from your computer to the remote host without password, instead using certificates (usually much more secure, anyway).
+
+Now, you need to make a script, example-script.sh, in your remote host's home directory(make sure to chmod a+x example-script.sh afterward to set it as executable).
+
+#!/usr/bin/env bash
+CURRENT=$(df / | awk '/\// { print $5}' | sed 's/%//g')
+mail -s 'Disk Space Alert' username@example.com << EOF
+Disk usage is at:  $CURRENT%
+EOF
+And now, create a script in your local home directory, local-script.sh to run the command later easily(again, make sure to make it executable after).
+
+#!/usr/bin/env bash
+ssh -P YOURPORT user@remote.host ./example-script.sh
+This script allows you to run ./local-script.sh from your home directory to run your remote script in just one line. You can then add this as an alias to your .bashrc file so that you can just run local-script or whatever other alias you may want. You can also use the absolute path(/home/your_username/local-script.sh) in crontab to make it run at a specific time every day.
+

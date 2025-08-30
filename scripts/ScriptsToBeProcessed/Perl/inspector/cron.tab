@@ -1,0 +1,3 @@
+#CRON TAB ENTRY
+
+cd $path/dp-Inspector/ && perl dp-Inspector.pl inspect.conf

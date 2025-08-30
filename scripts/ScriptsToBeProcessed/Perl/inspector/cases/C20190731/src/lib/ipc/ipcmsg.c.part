@@ -1,0 +1,5 @@
+    
+    DbgFcnInEx(FCN_IPC, _T("handle:%d"), Handle);
+    if (!th)
+        RETURN_INT(-1);
+    

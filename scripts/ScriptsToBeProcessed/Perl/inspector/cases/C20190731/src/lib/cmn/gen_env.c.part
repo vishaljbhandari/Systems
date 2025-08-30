@@ -1,0 +1,5 @@
+        while ((len = GetEnvironmentVariable(valueName, envString, buflen)) > buflen)
+        {
+            envString = REALLOC(envString, (buflen = len + 16)*sizeof(tchar));
+        }
+

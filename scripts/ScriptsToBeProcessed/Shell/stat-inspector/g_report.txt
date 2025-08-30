@@ -1,0 +1,58 @@
+commit 2219c1a75cf2493e482c0d9750f09a5243413c7b
+Author: vemuripr@hpeswlab.net <vemuripr@hpeswlab.net>
+Date:   Wed Jul 10 16:32:38 2019 +0530
+
+    AGMID15012: loading of srdx library failing
+
+commit 83a0d1c3c8dcfcc891dffca95166eee461462b06
+Author: Rajat Nair <rajat.nair@microfocus.com>
+Date:   Wed Jul 10 14:10:05 2019 +0530
+
+    NOCRID:NOCRID Possible fix for RS build issue (#3035)
+
+commit 59cdd63a61f68df7e507ab230a4b8f84d0baa85a
+Author: Deeksha R Kamath <deeksha.r-kamath@microfocus.com>
+Date:   Wed Jul 10 13:53:21 2019 +0530
+
+    AGMID=AGMCR10D14826 Fix for DP_1040 Upgrade failure (#3032)
+
+commit 661fee8ee2b1c1f8acd443545145aa2f12540b26
+Merge: 3a6bb394e0 b81fcbf63c
+Author: Ram <rammohan.p@hpe.com>
+Date:   Wed Jul 10 03:37:11 2019 -0400
+
+    Merge branch 'master' of github.houston.softwaregrp.net:DP/sources
+
+commit 3a6bb394e0c2a37e599e281c456de9d2f273d316
+Author: Ram <rammohan.p@hpe.com>
+Date:   Wed Jul 10 03:36:05 2019 -0400
+
+    AGMRQ10D7121:AGMCR10D14382 Reverting Unit test back to original
+
+commit b81fcbf63c0ccd4081c03812d6912518b7ca7cc1
+Author: RAKESH SAGAR <rakesh.sagar@microfocus.com>
+Date:   Wed Jul 10 13:05:18 2019 +0530
+
+    QCCR2A83832: changing http status code check and success/failure message (#2837)
+    
+    * changing http statu code check and success/failure message
+    
+    * adding code to log debug message along with httpstatus code in debug file.
+    
+    * adding internationalzation code
+    
+    * rectifying code mistake.
+    
+    * addressing code review comments
+    
+    * removing extra string formatter and acronym.
+    
+    * indenting code and changing tab size to two
+    
+    * replacing tabs with spaces and grammatical rectification
+
+commit d1ed5976799e29f07779ac73b150869a9114d5f4
+Author: VEMURI PRAVEEN <vemuri-praveen@microfocus.com>
+Date:   Wed Jul 10 12:03:21 2019 +0530
+
+    Packaging failure in vs2008 solved (#3030)

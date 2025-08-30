@@ -1,0 +1,135 @@
+wc command in Linux with examples
+Difficulty Level : Easy
+Last Updated : 19 Jul, 2022
+Read
+Discuss
+
+wc stands for word count. As the name implies, it is mainly used for counting purpose.
+
+It is used to find out number of lines, word count, byte and characters count in the files specified in the file arguments.
+By default it displays four-columnar output.
+First column shows number of lines present in a file specified, second column shows number of words present in the file, third column shows number of characters present in file and fourth column itself is the file name which are given as argument.
+Syntax:
+
+wc [OPTION]... [FILE]...
+Let us consider two files having name state.txt and capital.txt containing 5 names of the Indian states and capitals respectively.
+
+$ cat state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+
+$ cat capital.txt
+Hyderabad
+Itanagar
+Dispur
+Patna
+Raipur
+Passing only one file name in the argument.
+
+
+$ wc state.txt
+ 5  7 58 state.txt
+       OR
+$ wc capital.txt
+ 5  5 39 capital.txt
+Passing more than one file name in the argument.
+
+$ wc state.txt capital.txt
+  5   7  58 state.txt
+  5   5  39 capital.txt
+ 10  12  97 total
+Note : When more than file name is specified in argument then command will display four-columnar output for all individual files plus one extra row displaying total number of lines, words and characters of all the files specified in argument, followed by keyword total. Options: 1. -l: This option prints the number of lines present in a file. With this option wc command displays two-columnar output, 1st column shows number of lines present in a file and 2nd itself represent the file name.
+
+With one file name
+$ wc -l state.txt
+5 state.txt
+
+With more than one file name
+$ wc -l state.txt capital.txt
+  5 state.txt
+  5 capital.txt
+ 10 total
+2. -w: This option prints the number of words present in a file. With this option wc command displays two-columnar output, 1st column shows number of words present in a file and 2nd is the file name.
+
+With one file name
+$ wc -w state.txt
+7 state.txt
+
+With more than one file name
+$ wc -w state.txt capital.txt
+  7 state.txt
+  5 capital.txt
+ 12 total
+3. -c: This option displays count of bytes present in a file. With this option it display two-columnar output, 1st column shows number of bytes present in a file and 2nd is the file name.
+
+With one file name
+$ wc -c state.txt
+58 state.txt
+
+With more than one file name
+$ wc -c state.txt capital.txt
+ 58 state.txt
+ 39 capital.txt
+ 97 total
+4. -m: Using -m option ‘wc’ command displays count of characters from a file.
+
+With one file name
+$ wc -m state.txt
+56 state.txt
+
+With more than one file name
+$ wc -m state.txt capital.txt
+ 58 state.txt
+ 39 capital.txt
+ 97 total
+5. -L: The ‘wc’ command allow an argument -L, it can be used to print out the length of longest (number of characters) line in a file. So, we have the longest character line Arunachal Pradesh in a file state.txt and Hyderabad in the file capital.txt. But with this option if more than one file name is specified then the last row i.e. the extra row, doesn’t display total but it display the maximum of all values displaying in the first column of individual files. Note: A character is the smallest unit of information that includes space, tab and newline.
+
+With one file name
+$ wc -L state.txt
+17 state.txt
+
+With more than one file name
+$ wc -L state.txt capital.txt
+ 17 state.txt
+ 10 capital.txt
+ 17 total
+6. –version: This option is used to display the version of wc which is currently running on your system.
+
+$ wc --version
+wc (GNU coreutils) 8.26
+Packaged by Cygwin (8.26-1)
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later .
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Paul Rubin and David MacKenzie.
+Applications of wc Command
+
+1. To count all files and folders present in directory: As we all know ls command in unix is used to display all the files and folders present in the directory, when it is piped with wc command with -l option it display count of all files and folders present in current directory.
+
+$ ls gfg
+a.txt 
+b.txt  
+c.txt  
+d.txt  
+e.txt  
+geeksforgeeks  
+India
+
+$ ls gfg | wc -l
+7
+2. Display number of word count only of a file: We all know that this can be done with wc command having -w option, wc -w file_name, but this command shows two-columnar output one is count of words and other is file name.
+
+$ wc -w  state.txt
+7 state.txt
+So to display 1st column only, pipe(|) output of wc -w command to cut command with -c option. Or use input redirection(<).
+
+$ wc -w  state.txt | cut -c1
+7
+      OR
+$ wc -w < state.txt
+7

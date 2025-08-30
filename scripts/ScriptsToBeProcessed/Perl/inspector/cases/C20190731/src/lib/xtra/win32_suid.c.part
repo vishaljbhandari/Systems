@@ -1,0 +1,5 @@
+        {
+            retval = ERROR_NOT_ENOUGH_MEMORY;
+            goto exit;
+        }
+

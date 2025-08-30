@@ -1,0 +1,11 @@
+key,value,mandatory,help text
+id,,1,Stream Id (Identify stream uniquely (It will take largest possible value if not specified))
+name,,1,Stream Name(Space Will be replaced by underscore)
+title,,1,Stream Title
+table_name,,1,Stream Table Name (It should be Stream name)
+description,,1,Stream Description
+is_advanced_query_enabled,,0,If Advance Query is to be enabled 1 for Yes or 0 for No (No by default)
+is_logging_enabled,,0,If Logging is to be enabled then set 1 else 0(default)
+create_manual_alarm,,0,If use can create manual alarm set 1 else 0(default)
+is_primary_view,,0,If it is to be a primary view then set 1 else 0(default)
+is_pagination_enabled,,0,If pagination is to be enabled set 1 else 0(default)

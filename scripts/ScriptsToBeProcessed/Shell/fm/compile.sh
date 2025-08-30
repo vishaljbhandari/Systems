@@ -1,0 +1,1 @@
+g++ -g3 -lrt $1 -I$BOOSTINSTALLDIR/include/ -L$BOOSTINSTALLDIR/lib

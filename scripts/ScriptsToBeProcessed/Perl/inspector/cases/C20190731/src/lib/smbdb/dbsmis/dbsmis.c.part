@@ -1,0 +1,5 @@
+        }
+
+         DbgPlain(DBG_IRDB+100, _T("Upadated IRDBfile: %s"), NSD(curr_fname));
+    }
+

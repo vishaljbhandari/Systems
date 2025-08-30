@@ -1,0 +1,249 @@
+SORT command is used to sort a file, arranging the records in a particular order. By default, the sort command sorts file assuming the contents are ASCII. Using options in the sort command can also be used to sort numerically. 
+
+SORT command sorts the contents of a text file, line by line.
+sort is a standard command-line program that prints the lines of its input or concatenation of all files listed in its argument list in sorted order.
+The sort command is a command-line utility for sorting lines of text files. It supports sorting alphabetically, in reverse order, by number, by month, and can also remove duplicates.
+The sort command can also sort by items not at the beginning of the line, ignore case sensitivity, and return whether a file is sorted or not. Sorting is done based on one or more sort keys extracted from each line of input.
+By default, the entire input is taken as the sort key. Blank space is the default field separator.
+The sort command follows these features as stated below:  
+
+Lines starting with a number will appear before lines starting with a letter.
+Lines starting with a letter that appears earlier in the alphabet will appear before lines starting with a letter that appears later in the alphabet.
+Lines starting with a uppercase letter will appear before lines starting with the same letter in lowercase.
+
+Command : 
+$ cat > file.txt
+abhishek
+chitransh
+satish
+rajan
+naveen
+divyam
+harsh
+
+Sorting a file: Now use the sort command 
+
+Syntax : 
+
+$ sort filename.txt
+Command:
+$ sort file.txt
+
+Output :
+abhishek
+chitransh
+divyam
+harsh
+naveen 
+rajan
+satish
+Note: This command does not actually change the input file, i.e. file.txt. 
+
+Sort function with mix file i.e. uppercase and lower case: When we have a mix file with both uppercase and lowercase letters then first the upper case letters would be sorted following with the lower case letters.
+
+Example: 
+
+Create a file mix.txt 
+
+Command :
+$ cat > mix.txt
+abc
+apple
+BALL
+Abc
+bat
+Now use the sort command 
+
+Command :
+$ sort mix.txt
+Output :
+Abc                                                                                                                                                    
+BALL                                                                                                                                                   
+abc                                                                                                                                                    
+apple                                                                                                                                                  
+bat
+Options with sort function:
+
+1. -o Option: Unix also provides us with special facilities like if you want to write the output to a new file, output.txt, redirects the output like this or you can also use the built-in sort option -o, which allows you to specify an output file. 
+
+
+Using the -o option is functionally the same as redirecting the output to a file. 
+
+Note: Neither one has an advantage over the other. 
+
+Example: The input file is the same as mentioned above. 
+
+Syntax:
+
+$ sort inputfile.txt > filename.txt
+$ sort -o filename.txt inputfile.txt
+Command:
+$ sort file.txt > output.txt 
+$ sort -o output.txt file.txt
+$ cat output.txt
+
+Output :
+abhishek
+chitransh
+divyam
+harsh
+naveen 
+rajan
+satish
+
+2. -r Option: Sorting In Reverse Order: You can perform a reverse-order sort using the -r flag. the -r flag is an option of the sort command which sorts the input file in reverse order i.e. descending order by default. 
+
+Example: The input file is the same as mentioned above. 
+
+Syntax : 
+
+$ sort -r inputfile.txt
+Command :
+$ sort -r file.txt
+Output :
+satish
+rajan
+naveen 
+harsh
+divyam
+chitransh
+abhishek
+3. -n Option: To sort a file numerically used –n option. -n option is also predefined in Unix as the above options are. This option is used to sort the file with numeric data present inside. 
+
+Example : 
+
+Let us consider a file with numbers: 
+
+Command :
+$ cat > file1.txt
+50
+39
+15
+89
+200
+Syntax:
+
+$ sort -n filename.txt
+Command :
+$ sort -n file1.txt
+Output :
+15
+39
+50
+89
+200
+4. -nr option: To sort a file with numeric data in reverse order we can use the combination of two options as stated below. 
+
+Example: The numeric file is the same as above. 
+
+Syntax : 
+
+$ sort -nr filename.txt
+Command :
+$ sort -nr file1.txt
+Output :
+200
+89
+50
+39
+15
+5. -k Option: Unix provides the feature of sorting a table on the basis of any column number by using -k option. 
+
+Use the -k option to sort on a certain column. For example, use “-k 2” to sort on the second column. 
+
+Example : 
+
+Let us create a table with 2 columns 
+
+$ cat > employee.txt
+manager  5000
+clerk    4000
+employee  6000
+peon     4500
+director 9000
+guard     3000
+Syntax :
+
+$ sort -k filename.txt
+Command :
+$ sort -k 2n employee.txt
+guard    3000
+clerk    4000
+peon     4500
+manager  5000
+employee 6000
+director 9000
+6. -c option: This option is used to check if the file given is already sorted or not & checks if a file is already sorted pass the -c option to sort. This will write to standard output if there are lines that are out of order. The sort tool can be used to understand if this file is sorted and which lines are out of order 
+
+Example : 
+
+Suppose a file exists with a list of cars called cars.txt. 
+
+Audi
+Cadillac
+BMW
+Dodge
+Syntax :
+
+$ sort -c filename.txt
+Command :
+$ sort -c cars.txt
+Output :
+sort: cars.txt:3: disorder: BMW
+ Note : If there is no output then the file is considered to be already sorted 
+ 
+7. -u option: To sort and remove duplicates pass the -u option to sort. This will write a sorted list to standard output and remove duplicates. 
+This option is helpful as the duplicates being removed give us a redundant file. 
+
+Example: Suppose a file exists with a list of cars called cars.txt. 
+
+Audi
+BMW
+Cadillac
+BMW
+Dodge
+Syntax :
+
+$ sort -u filename.txt
+Command :
+$ sort -u cars.txt
+$ cat cars.txt
+Output :
+Audi
+BMW
+Cadillac
+Dodge
+8. -M Option: To sort by month pass the -M option to sort. This will write a sorted list to standard output ordered by month name. 
+
+Example: 
+
+Suppose the following file exists and is saved as months.txt 
+
+$ cat > months.txt
+February 
+January 
+March 
+August 
+September 
+
+Syntax :
+$ sort -M filename.txt
+Using The -M option with sort allows us to order this file.
+
+Command :
+$ sort -M months.txt
+$ cat months.txt
+Output :
+January
+February
+March
+August
+September
+Application and uses of sort command:
+
+It can sort any type of file be it table file text file numeric file and so on.
+Sorting can be directly implemented from one file to another without the present work being hampered.
+Sorting of table files on the basis of columns has been made way simpler and easier.
+So many options are available for sorting in all possible ways.
+The most beneficial use is that a particular data file can be used many times as no change is made in the input file provided.
+Original data is always safe and not hampered.

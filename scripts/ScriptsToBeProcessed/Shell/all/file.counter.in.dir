@@ -1,0 +1,36 @@
+#----------------------------
+# THIS SCRIPT CREATES MULTIPLE FILES FOR TESTING PURPOSE IN GIVEN DIRECTORY
+# THEN TOUCH THOSE FILE INTO SUCCESS DIRECTORY
+#---------------------------
+if [ $# -lt 2 ]
+then
+        echo "Usage: scriptlauncher $0 FILE DIR"
+        exit 1
+fi
+
+file=$1
+dir=$2
+
+        if [ ! -d $dir ]
+        then
+        	echo $dir "is not exists"
+		fi
+curr=`pwd`
+count=0
+sum=0
+if [ -f  $file ]
+then
+cd $dir
+	for filename in `cat $curr/$file`
+    do  
+		sum=`cat $filename | wc -l`	    
+    	if [ $sum -ne 0 ]
+		then
+			sum=`expr $sum - 1`
+		fi
+		count=`expr $count + $sum`
+   	done
+	echo "TOTAL RECORDS ARE : "$count;
+else
+        echo "SPECIFIED DIRECTORY NOT FOUND"
+fi

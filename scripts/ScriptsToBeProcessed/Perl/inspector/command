@@ -1,0 +1,2 @@
+sed -i -e 's/\r$//' *.sh && chmod 755  *.sh
+sed -i -e 's/\r$//' *.pl && chmod 755  *.pl

@@ -1,0 +1,16 @@
+sqlplus $DB_USER/$DB_PASSWORD<<EOF
+whenever sqlerror exit 5;
+whenever oserror exit 5;
+
+DELETE FROM ASN1_PARSER_CONFIGURATION WHERE PARSER_NAME = 'ALLTEL.ROAMEX' AND ID LIKE '%RECORD_HEADER_LENGTH%' ;
+
+INSERT INTO ASN1_PARSER_CONFIGURATION VALUES ('ALLTEL.ROAMEX','RECORD_HEADER_LENGTH','4') ;
+commit ;
+
+EOF
+
+if [ $? -ne 0 ]
+then
+    exit 1
+fi
+

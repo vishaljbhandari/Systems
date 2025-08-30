@@ -1,0 +1,5 @@
+            space += dwListLen;
+
+            lpszFileList = (tchar*)REALLOC(lpszFileList, (size+1)*sizeof(tchar));
+        }
+

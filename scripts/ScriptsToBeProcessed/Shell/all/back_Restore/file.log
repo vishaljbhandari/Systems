@@ -1,0 +1,163 @@
+
+------------ Mon Jan 27 13:18:47  2014 ----------
+Action Type : BACKUP 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+-----------------
+Root Directory is : /home/vishalb/newtest/abc 
+Number of files for BACKUP are 3 
+File two/one/three/twoonethree.file - BACKUP Done 
+File three/one/threeone.file - BACKUP Done 
+File one/two/three/one/onethreeone.file - BACKUP Done 
+
+------------ Mon Jan 27 13:22:04  2014 ----------
+Action Type : RESTORE 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+-----------------
+Root Directory is : /home/vishalb/newtest/abc 
+Number of files for RESTORE are 3 
+File two/one/three/twoonethree.file - RESTORE Done 
+File three/one/threeone.file - RESTORE Done 
+File one/two/three/one/onethreeone.file - RESTORE Done 
+
+------------ Mon Jan 27 13:23:05  2014 ----------
+Action Type : RESTORE 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+-----------------
+Root Directory is : /home/vishalb/newtest/abc 
+Number of files for RESTORE are 3 
+File two/one/three/twoonethree.file - RESTORE Done 
+File three/one/threeone.file - RESTORE Done 
+File one/two/three/one/onethreeone.file - RESTORE Done 
+
+------------ Mon Jan 27 13:29:04  2014 ----------
+Action Type : APPEND 
+Input File : file 
+Extention Tocken : .bck 
+Wrong ACTION Type : Use BACKUP or RESTORE
+-----------------
+
+------------ Mon Jan 27 13:29:15  2014 ----------
+Action Type : BACKUP 
+Input File : file 
+Extention Tocken : .bck 
+File Does not Exist: file 
+-----------------
+
+------------ Mon Jan 27 13:30:13  2014 ----------
+Action Type : BACKUP 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+-----------------
+Root Directory Doesnt Exist: ~ 
+-----------------
+
+------------ Mon Jan 27 13:30:36  2014 ----------
+Action Type : BACKUP 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+-----------------
+Root Directory is : /home/vishalb/ 
+Number of files for BACKUP are 3 
+File Doesnt Exist: /home/vishalb//two/one/three/twoonethree.file ---------------- SKIPPED
+File Doesnt Exist: /home/vishalb//three/one/threeone.file ---------------- SKIPPED
+File Doesnt Exist: /home/vishalb//one/two/three/one/onethreeone.file ---------------- SKIPPED
+
+------------ Mon Jan 27 13:38:27  2014 ----------
+Action Type : BACKUP 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+
+------------ Mon Jan 27 13:39:09  2014 ----------
+Action Type : BACKUP 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+
+------------ Mon Jan 27 13:39:38  2014 ----------
+Action Type : BACKUP 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+
+------------ Mon Jan 27 13:42:21  2014 ----------
+Action Type : BACKUP 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+Root Directory is : /home/vishalb/newtest/abc 
+Number of files for BACKUP are 3
+File two/one/three/twoonethree.file - BACKUP Done 
+File three/one/threeone.file - BACKUP Done 
+File one/two/three/one/onethreeone.file - BACKUP Done 
+
+------------ Mon Jan 27 13:42:58  2014 ----------
+Action Type : RESTORE 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+Root Directory is : /home/vishalb/newtest/abc 
+Number of files for RESTORE are 3
+File two/one/three/twoonethree.file - RESTORE Done 
+File three/one/threeone.file - RESTORE Done 
+File one/two/three/one/onethreeone.file - RESTORE Done 
+
+------------ Mon Jan 27 13:43:57  2014 ----------
+Action Type : RESTORE 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+Root Directory Doesnt Exist: [vishalb@vishalb newtest]$ ./back_Restore.sh BACKUP file 
+-----------------
+
+------------ Mon Jan 27 13:44:24  2014 ----------
+Action Type : RESTORE 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+Root Directory is : /home/vishalb/newtest/abc 
+Number of files for RESTORE are 3
+File two/one/three/twoonethree.file - RESTORE Done 
+File three/one/threeone.file - RESTORE Done 
+File one/two/three/one/onethreeone.file - RESTORE Done 
+
+------------ Mon Jan 27 13:45:34  2014 ----------
+Action Type : BACKUP 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+Root Directory is : /home/vishalb/newtest/abc 
+Number of files for BACKUP are 3
+File two/one/three/twoonethree.file - BACKUP Done 
+File three/one/threeone.file - BACKUP Done 
+File one/two/three/one/onethreeone.file - BACKUP Done 
+
+------------ Mon Jan 27 13:46:08  2014 ----------
+Action Type : BACKUP 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+Root Directory is : /home/vishalb/newtest/abc 
+Number of files for BACKUP are 3
+File two/one/three/twoonethree.file - BACKUP Done 
+File three/one/threeone.file - BACKUP Done 
+File one/two/three/one/onethreeone.file - BACKUP Done 
+
+------------ Mon Jan 27 13:46:32  2014 ----------
+Action Type : BACKUP 
+Input File : file 
+Extention Tocken : .bck 
+Datafile is /home/vishalb/newtest/file.data 
+Root Directory is : /home/vishalb/newtest/abc 
+Number of files for BACKUP are 3
+File two/one/three/twoonethree.file - BACKUP Done 
+File three/one/threeone.file - BACKUP Done 
+File Doesnt Exist: /home/vishalb/newtest/abc/one/two/three/one/onethreeone.filej ---------------- SKIPPED

@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>
+DP - USER STAT GIT Report As On __XXXXXX__</title><meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+	border-top: none;
+    border-left: none;
+	border-right: none;
+	border-bottom: 1px #333 solid;
+	text-align: left;
+	outline: none;
+	font-size: 12px;
+}
+
+.CRITICAL {
+  background-color: #770;
+}
+.HIGH {
+  background-color: #772;
+}
+
+.MEDIUM {
+  background-color: #774;
+}
+
+.LOW {
+  background-color: #776;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+table, th, td {
+  border: 1px solid black;
+    
+}
+table{
+width: 100%;
+border: 1px solid #222;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<img src="https://598d8f3cda4c5fed8f27-d10999d18a3b8ba163ad6d48476ec57a.ssl.cf5.rackcdn.com/mf_logo_blue.svg" width="240px" height="60px" style="display:inline; clear:left"/>
+<h2 style="display:inline; clear:left; font-size:76px; padding:15px 25px; color:#009;">DP INSPECTOR REPORT</h2>
+<hr/>

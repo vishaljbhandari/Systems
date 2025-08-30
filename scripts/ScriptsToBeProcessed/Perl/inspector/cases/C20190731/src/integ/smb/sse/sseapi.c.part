@@ -1,0 +1,5 @@
+
+        CTs = REALLOC (CTs, (iCount + 1) * sizeof (int));
+        Serials = REALLOC (Serials, (iCount + 1) * sizeof (int));
+
+        CTs[iCount] = pSrcDevice[i]->ctgid;

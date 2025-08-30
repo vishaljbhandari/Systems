@@ -1,0 +1,5 @@
+        // Receive data
+        if (size > bufsize)
+            buf = REALLOC(buf, bufsize = size*2);
+
+        if (IpcReceiveData(h, buf, size) != size)

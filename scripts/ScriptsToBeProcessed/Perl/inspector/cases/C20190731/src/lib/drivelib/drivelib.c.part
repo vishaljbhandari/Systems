@@ -1,0 +1,5 @@
+
+                dwBufferSize += sizeof(DISK_EXTENT);
+                lpOutBuffer = (BYTE *) REALLOC (lpOutBuffer,
+                                        dwBufferSize * sizeof (BYTE));
+            }

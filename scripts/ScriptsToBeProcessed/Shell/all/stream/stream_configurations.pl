@@ -1,0 +1,30 @@
+#!/bin/perl
+use warnings;
+use strict;
+package Configs;
+
+ TARGET SYSTEM RELATED CONFIGURATIONS
+
+my %CONNECTION = (
+	DB_USER => '@DB_USER',
+	DB_PASSWORD => '@DB_PASSWORD',
+	DB_CONNECTION_STRING => '@DB_CONNECTION_STRING',
+	SQL_COMMAND => '@SQL_COMMAND'
+);
+
+
+ STREAM RELATED CONFIGURATIONS
+
+my %STREAM = (
+	Id => 9999,
+        Name => '@NAME_OF_STREAM',
+        Title => '@TITLE_OF_STREAM',
+	Table => '@STREAM_TABLE',
+	Description => '@DESCRIPTION_OF_STREAM'
+);
+
+
+ SCRIPT RELATED CONFIGURATIONS
+my $LOGFILE=$ENV{'RANGERHOME'}."/LOG/".$STREAM{Name}.".log";
+my $TMPFILE=$ENV{'RANGERHOME'}."/tmp/".$STREAM{Name}.".log";
+my $SCTREAM_INSTALL_FILE=$STREAM{Name}."_install.sql";

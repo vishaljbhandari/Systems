@@ -1,0 +1,5 @@
+        OSLOG(OpenProcessToken, _T("self, TOKEN_QUERY"));
+        goto exit;
+    }
+    
+    while (ok = GetTokenInformation(procToken, TokenUser, tokenUser, size, &size), !ok && GetLastError() == ERROR_INSUFFICIENT_BUFFER)

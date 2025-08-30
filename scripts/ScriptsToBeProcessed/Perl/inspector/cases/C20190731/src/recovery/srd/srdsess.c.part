@@ -1,0 +1,5 @@
+                if (pObject->NrSessions != 0)
+                {
+                    pObject = REALLOC(pObject, sizeof(SrdObject) + pObject->NrSessions * sizeof(PSrdSession));
+                }
+

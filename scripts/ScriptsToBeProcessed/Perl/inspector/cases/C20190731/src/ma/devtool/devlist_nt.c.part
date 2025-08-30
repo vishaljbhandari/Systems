@@ -1,0 +1,5 @@
+            {
+                DbgPlain(DBG_UNEXPECTED, __FCN_FMT__ _T("DeviceIOControl failed [error = %d] insufficient buffer (%d bytes). enlarging..."), __FCN__, errorCode, buffersize);
+                buffer = REALLOC(buffer, buffersize + SYSTEM_INQUIRY_REALLOC);
+                buffersize += SYSTEM_INQUIRY_REALLOC;
+            }

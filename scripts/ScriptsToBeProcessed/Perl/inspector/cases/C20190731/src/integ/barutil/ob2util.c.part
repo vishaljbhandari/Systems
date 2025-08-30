@@ -1,0 +1,5 @@
+        }
+
+        refDomain = REALLOC (refDomain, refDomainLen*sizeof(tchar));
+        if (!refDomain)
+        {

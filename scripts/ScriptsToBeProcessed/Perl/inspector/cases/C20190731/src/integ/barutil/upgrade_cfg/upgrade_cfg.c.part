@@ -1,0 +1,5 @@
+                                if (count==allocated)
+                                {
+                                    sapPar = (SAPPAR *) REALLOC(sapPar, (10+allocated)*sizeof(SAPPAR));
+                                    memset(sapPar+allocated,0,10*sizeof(SAPPAR));
+                                    allocated+=10;

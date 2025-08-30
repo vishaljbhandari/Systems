@@ -1,0 +1,50 @@
+
+<h2>Summary Report</h2>
+
+<button class="collapsible">Stat Report</button>
+<div class="content">
+  <p>Tabular Errors</p>
+</div>
+<button class="collapsible">Git Report</button>
+<div class="content">
+  <p>Tabular Revision Reports</p>
+</div>
+
+
+
+
+
+<h2>Error - User Mapping</h2>
+
+
+<button class="collapsible">Error 1</button>
+<div class="content">
+  <p>  Error Information
+  Revision History on that File</p>
+</div>
+<button class="collapsible">Error 2</button>
+<div class="content">
+  <p>  Error Information
+  Revision History on that File</p>
+</div>
+<button class="collapsible">Error 3</button>
+<div class="content">
+  <p>  Error Information
+  Revision History on that File</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

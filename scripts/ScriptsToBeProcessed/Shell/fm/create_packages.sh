@@ -1,0 +1,9 @@
+sqlplus $DB_USER/$DB_PASSWORD  @create_mapping_table.sql
+sqlplus $DB_USER/$DB_PASSWORD  @migrate_rules.sql
+sqlplus $DB_USER/$DB_PASSWORD  @migrate_gprs_rules.sql
+sqlplus $DB_USER/$DB_PASSWORD  @migrate_recharge_rules.sql
+sqlplus $DB_USER/$DB_PASSWORD  @migrate_alarms.sql
+sqlplus $DB_USER/$DB_PASSWORD  @migrate_grouping_rules.sql
+sqlplus $DB_USER/$DB_PASSWORD  @migrate_precheck_rules.sql
+sqlplus $DB_USER/$DB_PASSWORD  @migrate_archived_alarms.sql
+sqlplus $DB_USER/$DB_PASSWORD  @migrate_users.sql

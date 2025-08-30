@@ -1,0 +1,5 @@
+		    if (dwError==ERROR_INSUFFICIENT_BUFFER)
+		    {
+			    pArrNtmsObjs=(NTMS_GUID *)REALLOC(pArrNtmsObjs, sizeof(NTMS_GUID)*dwArrSize);
+                if (pArrNtmsObjs==NULL)
+                {

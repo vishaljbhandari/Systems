@@ -1,0 +1,161 @@
+ZIP command in Linux with examples
+Last Updated : 19 Feb, 2021
+Read
+Discuss
+
+ZIP is a compression and file packaging utility for Unix. Each file is stored in single .zip {.zip-filename} file with the extension .zip.
+
+zip is used to compress the files to reduce file size and also used as file package utility. zip is available in many operating systems like unix, linux, windows etc.
+If you have a limited bandwidth between two servers and want to transfer the files faster, then zip the files and transfer.
+The zip program puts one or more compressed files into a single zip archive, along with information about the files (name, path, date, time of last modification, protection, and check information to verify file integrity). An entire directory structure can be packed into a zip archive with a single command.
+Compression ratios of 2:1 to 3:1 are common for text files. zip has one compression method (deflation) and can also store files without compression. zip automatically chooses the better of the two for each file to be compressed.
+The program is useful for packaging a set of files for distribution; for archiving files; and for saving disk space by temporarily compressing unused files or directories.
+Syntax :
+
+zip [options] zipfile files_list
+Syntax for  Creating a zip file:
+
+$zip myfile.zip filename.txt
+Extracting files from zip file 
+
+
+Unzip will list, test, or extract files from a ZIP archive, commonly found on Unix systems. The default behavior (with no options) is to extract into the current directory (and sub-directories below it) all files from the specified ZIP archive.
+
+Syntax :
+$unzip myfile.zip 
+Options :
+1. -d Option: Removes the file from the zip archive.  After creating a zip file, you can remove a file from the archive using the -d option.
+Suppose we have following files in my current directory are listed below:
+hello1.c
+hello2.c
+hello3.c
+hello4.c
+hello5.c
+hello6.c
+hello7.c
+hello8.c
+
+Syntax :
+
+$zip –d filename.zip file.txt
+Command :
+$zip –d myfile.zip hello7.c
+After removing hello7.c from myfile.zip file, the files can be restored with unzip command
+
+Command:
+$unzip myfile.zip
+$ls command
+Output :
+hello1.c
+hello2.c
+hello3.c
+hello4.c
+hello5.c
+hello6.c
+hello8.c
+The hello7.c file is removed from zip file
+2.-u Option: Updates the file in the zip archive. This option can be used to update the specified list of files or add new files to the existing zip file. Update an existing entry in the zip archive only if it has been modified more recently than the version already in the zip archive.
+Syntax:
+
+$zip –u filename.zip file.txt
+
+Suppose we have following files in my current directory are listed below:
+hello1.c
+hello2.c
+hello3.c
+hello4.c
+
+Command :
+$zip –u myfile.zip hello5.c
+After updating hello5.c from myfile.zip file, the files can be restored with unzip command
+
+Command:
+$unzip myfile.zip
+$ls command
+Output :
+hello1.c
+hello2.c
+hello3.c
+hello4.c
+hello5.c
+The hello5.c file is updated to the zip file
+3. -m Option: Deletes the original files after zipping. Move the specified files into the zip archive actually, this deletes the target directories/files after making the specified zip archive. If a directory becomes empty after removal of the files, the directory is also removed. No deletions are done until zip has created the archive without error. This is useful for conserving disk space, but is potentially dangerous removing all input files.
+Syntax :
+
+$zip –m filename.zip file.txt
+
+Suppose we have following files in my current directory are listed below:
+hello1.c
+hello2.c
+hello3.c
+hello4.c
+
+Command :
+$zip –m myfile.zip *.c
+After this command has been executed by the terminal here is the result:
+
+
+Command:
+$ls command
+Output :
+myfile.zip
+//No other files of .c(extension) has been found
+4.-r Option: To zip a directory recursively, use the -r option with the zip command and it will recursively zips the files in a directory. This option helps you to zip all the files present in the specified directory.
+
+Syntax:
+
+$zip –r filename.zip directory_name
+Suppose we have following files in my current directory (docs) are listed below:
+unix.pdf
+oracle.pdf
+linux.pdf
+
+Command :
+$zip –r mydir.zip docs
+Output :
+  adding: docs/            //Compressing the directory
+  adding: docs/unix.pdf   // Compressing first file
+  adding: docs/oracle.pdf // Compressing second file
+  adding: docs/linux.pdf  //Compressing third file
+5. -x Option: Exclude the files in creating the zip. Let say you are zipping all the files in the current directory and want to exclude some unwanted files. You can exclude these unwanted files using the -x option.
+
+Syntax :
+
+$zip –x filename.zip file_to_be_excluded
+
+Suppose we have following files in my current directory are listed below:
+hello1.c
+hello2.c
+hello3.c
+hello4.c
+
+Command :
+$zip –x myfile.zip hello3.c
+This command on execution will compress all the files except hello3.c
+
+Command:
+$ls command
+Output :
+myfile.zip //compressed file
+hello3.c   //this file has been excluded while compressing
+6.-v Option: Verbose mode or print diagnostic version info. Normally, when applied to real operations, this option enables the display of a progress indicator during compression and requests verbose diagnostic info about zip file structure oddities.
+When -v is the only command line argument, and either stdin or stdout is not redirected to a file, a diagnostic screen is printed. In addition to the help screen header with program name, version, and release date, some pointers to the Info-ZIP home and distribution sites are given. Then, it shows information about the target environment (compiler type and version, OS version, compilation date and the enabled optional features used to create the zip executable.
+
+Syntax :
+
+$zip –v filename.zip file1.txt
+
+Suppose we have following files in my current directory are listed below:
+hello1.c
+hello2.c
+hello3.c
+hello4.c
+
+Command
+$zip -v file1.zip *.c
+Output :
+adding: hello1.c    (in=0) (out=0) (stored 0%)
+  adding: hello2.c    (in=0) (out=0) (stored 0%)
+  adding: hello3.c    (in=0) (out=0) (stored 0%)
+  adding: hello4.c    (in=0) (out=0) (stored 0%)
+total bytes=0, compressed=0 -> 0% savings

@@ -1,0 +1,5 @@
+                    else
+                    {
+                        sessIds = (tchar**) REALLOC (sessIds, (i+1)*sizeof(tchar *) );
+                        sessIds[i] = StrNewCopy(sessID);
+                        DbgPlain(DBG_SSE_MSG, _T("sessIds[%d]: %s"), i, NS(sessIds[i]));   

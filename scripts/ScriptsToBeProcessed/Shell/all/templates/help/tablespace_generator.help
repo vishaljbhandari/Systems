@@ -1,0 +1,13 @@
+tablespace_name: A valid table space name.
+temporary: 0 for tablespace temporary anything else for permanaent?
+file_type: 0 for smallfile or anything else for big file.
+data_file: A valid file name.
+size: An Integer Size Number
+size_unit: A valid size unit from [ K | M | G | T | P | E ]
+resue_factor: 0 for reuse else anything for NO
+
+               [ AUTOEXTEND
+                   { OFF
+                   | ON [ NEXT integer [ K | M | G | T | P | E ] ]
+                   [ MAXSIZE { UNLIMITED | integer [ K | M | G | T | P | E ] } ]
+                   }

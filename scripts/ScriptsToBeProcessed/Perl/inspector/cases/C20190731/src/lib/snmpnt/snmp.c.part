@@ -1,0 +1,5 @@
+        sprintf(szTemp, _T("%hs\n"), (char *) tmpString);
+
+        szLog = (tchar*) REALLOC(szLog, (strlen(szLog) + strlen(szTemp) + 2)*sizeof(tchar));
+        FREE(tmpString);
+    }

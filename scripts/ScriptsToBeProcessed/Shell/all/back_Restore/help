@@ -1,0 +1,20 @@
+[vishalb@vishalb newtest]$ ./back_Restore.sh BACKUP file
+Datafile is /home/vishalb/newtest/file.data
+Please Enter Root Directory for Relative Linkings
+/home/vishalb/newtest/abc
+Number of files for BACKUP are 3
+File two/one/three/twoonethree.file - BACKUP Done
+File three/one/threeone.file - BACKUP Done
+File one/two/three/one/onethreeone.file - BACKUP Done
+Done, Please check Log File at /home/vishalb/newtest/file.log
+[vishalb@vishalb newtest]$ mv file.data file
+[vishalb@vishalb newtest]$ ./back_Restore.sh RESTORE file
+Datafile is /home/vishalb/newtest/file.data
+Please Enter Root Directory for Relative Linkings
+/home/vishalb/newtest/abc
+Number of files for RESTORE are 3
+File two/one/three/twoonethree.file - RESTORE Done
+File three/one/threeone.file - RESTORE Done
+File one/two/three/one/onethreeone.file - RESTORE Done
+Done, Please check Log File at /home/vishalb/newtest/file.log
+[vishalb@vishalb newtest]$

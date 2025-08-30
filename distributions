@@ -1,0 +1,16 @@
+A Linux distribution, often called a "distro," 
+  a complete operating system built on the Linux kernel. 
+  It includes the kernel, system utilities, libraries, and often a desktop environment, all packaged together for easy installation and use.
+  Think of it as a customized version of the Linux operating system, designed to meet specific needs, like desktop use, server management, or embedded systems.
+    
+Widely used GNU-based or GNU-compatible distributions ------------------
+1) Debian: 
+    >> Ubuntu, a desktop and server distribution derived from Debian, maintained by British company Canonical Ltd.  
+2) Fedora Linux: , sponsored by American company Red Hat
+  >> Red Hat Enterprise Linux (RHEL)
+  >> Fedora
+3) openSUSE, a community distribution mainly sponsored by German company SUSE.
+4) Arch Linux
+5) Gentoo
+6) Alpine Linux
+7) Chimera Linux

@@ -1,0 +1,192 @@
+#!/bin/bash
+#################################################################################
+#
+#
+#
+#
+#################################################################################
+# PROCESS MONITOR SCRIPT VERSION 1.0
+# AUTHOR  : VISHAL BHANDARI
+#
+#
+#
+#################################################################################
+SLEEP_INT=20
+NUMBER_OF_PSTACK=10
+MailList=""
+SUBJECT_HEADER_PREFIX="PROCESS [$PID]"
+LOG_DIRECTORY=$HOME
+
+#################################################################################
+if [ $# -ne 1 ]
+then
+        echo -e "[ERROR] USAGE : $0 PID"
+        exit 1
+fi
+CWD=`pwd`
+NumericReg='^[0-9]+$'
+PID=$1
+if ! [[ $PID =~ $NumericReg ]] ; then
+	echo -e "[ERROR] INVALID PROCESS[$PID] ID NUMBER, MUST BE NUMERIC"
+	exit 33
+fi
+IP_ADDRESS=`ip addr show bond0 | grep 'inet ' | awk -F" " '{print $2}'`
+HOST_NAME=`hostname --long`
+CURRENTTIME=`date +"%Y%m%d%H%M%S"`
+SELFPID=`ps -eaf | grep {$0} | awk -F" " '{ print $2}'`
+if ! [[ $SLEEP_INT =~ $NumericReg ]] ; then
+	SLEEP_INT=20
+fi
+SINGLE_LINE='------------------------------------------------------------------'
+DOUBLE_LINE='=================================================================='
+TERMINATE=0
+
+CURRENTTIME=`date +"%Y%m%d%H%M%S"`
+LOG_PREFIX=pstack
+LOG_SUFFIX=monitor
+LOG_FILE_FORMATE=log
+if [ ! -d $LOG_DIRECTORY ]
+then
+	echo -e "[ERROR] LOG_DIRECTORY : [$LOG_DIRECTORY] DOESNT EXIST"
+	echo -e $HOME
+	LOG_DIRECTORY=$HOME
+	echo -e "[INFO] TAKING CURRENT WORKING DIRECTORY AS LOG DIRECTORY[$LOG_DIRECTORY]"
+else
+        echo -e "[INFO] LOG DIRECTORY[$LOG_DIRECTORY]"
+fi
+LOG_FILE=$LOG_DIRECTORY/$LOG_PREFIX.$LOG_SUFFIX.script.$CURRENTTIME.$LOG_FILE_FORMATE
+TMP_FILE=$LOG_DIRECTORY/.$LOG_PREFIX.$LOG_SUFFIX.tmp.$CURRENTTIME.$LOG_FILE_FORMATE
+PSTACK_FILE=$LOG_DIRECTORY/$LOG_PREFIX.$LOG_SUFFIX.pstack.$CURRENTTIME.$LOG_FILE_FORMATE
+echo -e "[INFO] LOG FILE["$LOG_FILE"]"
+echo -e "[INFO] TMP FILE["$TMP_FILE"]"
+echo -e "[INFO] PSTACK FILE["$PSTACK_FILE"]"
+if ! [[ $NUMBER_OF_PSTACK =~ $NumericReg ]] ; then
+        NUMBER_OF_PSTACK=10
+fi
+CURRENTTIME=`date +"%Y-%m-%d %H:%M:%S"`
+SCRIPT_NAME=$0
+function SignalHandlerSIGHUP(){
+	TERMINATE=1
+	C_T=`date +"%Y-%m-%d %H:%M:%S"`
+        echo -e "[INFO] Script($SCRIPT_NAME) Recieved Signal SIGHUP at $C_T" >> $LOG_FILE
+}
+trap SignalHandlerSIGHUP SIGHUP
+
+function SignalHandlerSIGTERM(){
+        TERMINATE=1
+	C_T=`date +"%Y-%m-%d %H:%M:%S"`
+        echo -e "[INFO] Script($SCRIPT_NAME) Recieved Signal SIGTERM at $C_T" >> $LOG_FILE
+}
+trap SignalHandlerSIGTERM SIGTERM
+
+function SignalHandlerSIGINT(){
+        TERMINATE=1
+        C_T=`date +"%Y-%m-%d %H:%M:%S"`
+        echo -e "[INFO] Script($SCRIPT_NAME) Recieved Signal SIGINT at $C_T" >> $LOG_FILE
+}
+trap SignalHandlerSIGINT SIGINT
+
+function SignalHandlerEXIT(){
+	# MAILING REPORTS
+	MAIL_HEADER="$SUBJECT_HEADER_PREFIX | $CURRENTTIME | MONITOR REPORT"
+	#`uuencode $LOG_FILE $FILE_LIST | mailx -s $MAIL_HEADER $MAILLIST < $LOG_FILE > /dev/null`
+	echo -e "[INFO] MAIL HEADER: $MAIL_HEADER" >> $LOG_FILE
+	echo -e "[INFO] MAIL sent to $MAILLIST" >> $LOG_FILE
+	#rm $TMP_FILE
+
+}
+trap SignalHandlerEXIT EXIT
+
+# =====================================================================================
+
+touch $LOG_FILE
+if [ ! -f $LOG_FILE ]
+then
+	echo -e "[ERROR] LOG FILE [$LOG_FILE] IS MISSING"
+	exit 10
+else
+	echo -e "[INFO] LOG FILE [$LOG_FILE]"
+	> $LOG_FILE
+	
+fi
+
+touch $TMP_FILE
+if [ ! -f $TMP_FILE ]
+then
+	echo -e "[ERROR] TMP FILE [$TMP_FILE] IS MISSING"
+        exit 11
+else
+	echo -e "[INFO] TMP FILE [$TMP_FILE]"
+	> $TMP_FILE
+fi
+
+touch $PSTACK_FILE
+if [ ! -f $PSTACK_FILE ]
+then
+	echo -e "[ERROR] PSTACK FILE [$PSTACK_FILE] IS MISSING"
+        exit 12
+else
+	echo -e "[INFO] PSTACK FILE [$PSTACK_FILE]"
+	echo -e $DOUBLE_LINE > $PSTACK_FILE
+fi
+
+CheckValidProcess()
+{
+	if ps -p $PID > /dev/null
+	then
+		echo -e "[ERROR] INVALID PROCESS ID [$PID] NO SUCH PROCESS" >> $LOG_FILE
+		exit 55
+	fi
+}
+CheckValidProcess $PID
+
+GetPstackFrame()
+{
+	pd=$1
+	if [[ $pd =~ $NumericReg ]] ; then
+		CURR_TIME=`date +"%Y-%m-%d %H:%M:%S"`
+		process=`ps -eaf | grep $pd | grep -v grep | awk -F" " ' { print $8 }'`
+		loc=`pwdx $pd | awk -F": " '{ print$2 }'`
+		echo -e $SINGLE_LINE >> $PSTACK_FILE
+		echo -e "# PROCESS($process) INFO FRAME AS ON TIME($CURR_TIME)" >> $PSTACK_FILE
+		echo -e "RUNNING LOCATION $loc" >> $PSTACK_FILE
+		ps -p $pd -wo lstart,pid,ppid,uid,stime,cmd >> $PSTACK_FILE 
+		echo -e $SINGLE_LINE >> $PSTACK_FILE
+		top | head -7 >> $PSTACK_FILE
+		top | grep $pd >> $PSTACK_FILE
+		echo -e $SINGLE_LINE >> $PSTACK_FILE
+		pstack $pd > $TMP_FILE
+		cat $TMP_FILE >> $PSTACK_FILE
+		threads=`grep 'Thread ' $TMP_FILE | wc -l`
+		
+		echo -e "THREADS - TOTAL: $threads, MAIN: $main" >> $PSTACK_FILE
+
+		# Specific Monitors
+		main=`grep 'main ' $TMP_FILE | wc -l`
+		oracle=`grep Oracle $TMP_FILE | wc -l`
+		slaves=`grep CProfileSlave $TMP_FILE | wc -l`
+		master=`grep CProfileMaster $TMP_FILE | wc -l`
+		echo -e $SINGLE_LINE >> $PSTACK_FILE
+		echo -e "THREADS - MASTER: $master, SLAVES: $slaves, IN_ORACLE: $oracle" >> $PSTACK_FILE
+	
+		# =================
+		rm $TMP_FILE
+		echo -e $DOUBLE_LINE >> $PSTACK_FILE	
+	fi
+}
+
+echo -e "[INFO] PStack Monitor Script [$SELFPID] AS ON $CURRENTTIME" >> $LOG_FILE
+function GetPstacks(){
+	for index in $(seq 1 $NUMBER_OF_PSTACK);
+	do
+		echo -e "SLEEP_INT: $SLEEP_INT, PID: $PID"
+		if [ $TERMINATE -ne 1 ]; then
+			GetPstackFrame $PID
+			sleep $SLEEP_INT
+		fi
+	done
+	cat $PSTACK_FILE >> $LOG_FILE
+	echo -e $DOUBLE_LINE >> $LOG_FILE
+}
+GetPstacks
+

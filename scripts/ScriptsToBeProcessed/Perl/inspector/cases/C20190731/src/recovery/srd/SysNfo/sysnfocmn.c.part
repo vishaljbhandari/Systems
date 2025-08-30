@@ -1,0 +1,5 @@
+                DbgPlain(DBG_SYSNFO, _T("Buffer too small, reserving more space."));
+                bufsize = bufcount + 128;
+                buffer = REALLOC(buffer, bufsize * sizeof(wchar_t));
+                if (NULL == buffer)
+                {

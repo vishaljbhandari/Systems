@@ -1,0 +1,5 @@
+                    DbgPlain(DBG_SYSNFO, _T("Need bigger buffer %d."), bufSize);
+                    bufSize += 20;
+                    buffer = REALLOC(buffer, bufSize * sizeof(WCHAR));
+                    break;
+                case ERROR_NO_MORE_ITEMS:

@@ -1,0 +1,5 @@
+            strLen = strlen(pNAstring);
+        }
+        if ( NULL == (buffer = REALLOC(buffer, sizeof(tchar) * (allocSize += strLen+1))))
+        {
+            va_end(paramList);

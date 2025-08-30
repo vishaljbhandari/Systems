@@ -1,0 +1,42 @@
+# Subex Related Configurations
+COPYRIGHT_YEAR="2013"
+OFFICE_ADDRESS=""
+
+# Release Related Configurations
+RELEASE_ID=254
+WELCOME_TEXT="Thanks For Choosing Subex Release"
+RELEASE_INFO="This release is given to correct xxx"
+TAR_FORMAT="tar.gz"
+TARBALL_CKSUM="2331521801"
+
+# Customer Related Configurations
+CUSTOMER_NAME="DUMMY CUSTOMER"
+
+# Product Related Configurations
+PRODUCT_NAME="ROC DUMMY"
+PRODUCT_VERSION="7.5"
+PRODUCT_PATCH_VERSION="Core 25"
+
+# Developer Related Information
+DEVELOPER_CONTACT="Name, Email-Id"
+DEVELOPER_LEAD_CONTACT="Name, Email-Id"
+DEVELOPER_MANAGER_CONTACT="Name, Email-Id"
+
+# Tester Related Information
+TESTER_CONTACT="Name, Email-Id"
+TESTER_LEAD_CONTACT="Name, Email-Id"
+TESTER_MANAGER_CONTACT="Name, Email-Id"
+
+# Support Related Information
+SUPPORT_CONTACT="Name, Email-Id"
+SUPPORT_LEAD_CONTACT="Name, Email-Id"
+SUPPORT_MANAGER_CONTACT="Name, Email-Id"
+
+
+# Script Related Configurations
+HR_LINE="-------------------------------------------------"
+
+
+
+# Release Requirement
+TOTAL_MEMORY_REQUIRED=4564

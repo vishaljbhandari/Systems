@@ -1,0 +1,5 @@
+            szOneOpt = StrNewCopy(pOpt);
+
+        szA = (tchar **) REALLOC( szA, (++iCount) * sizeof(tchar *) );
+        szA[iCount-1] = szOneOpt;
+

@@ -1,0 +1,5 @@
+if ! grep "^2005/11/12 15:02:19,0,+14106762273,+14106052214,,1,60,2005/11/12 15:01:19,,,,2,4,10.00,8,1,3,1,,0,0,+110226006491005" $RANGERHOME/FMSData/DataRecord/Process/testreceivetimevalidation.cdrdata
+then
+	exit 1
+fi
+

@@ -1,0 +1,1589 @@
+[ Info] Config file conf/inspector.conf
+[ Info] Running directory is /media/sf_VMShare/WorkSpace/dp-Inspector
+Cse Directory : /media/sf_VMShare/WorkSpace/dp-Inspector/cases/
+Last Case Directory : /media/sf_VMShare/WorkSpace/dp-Inspector/cases/C20190807
+
+Last Run Date : 20190807
+
+[INFO] Error Stat Hitory : /media/sf_VMShare/WorkSpace/dp-Inspector/cases/stat_history.db file
+
+
+ >> >> >> All ERRORS >> >> >> >> 
+
+
+[ >> ]  File: [Priority] ErrorId [Project:Module]
+
+  >>    Error Id [FilePath]
+
+	> Date 0 [V1] | [Category:LineNumber]
+	>   At ErrorId:ErrorVersion
+	>   Link Link
+	>   Hash [File] FileHash [Error] 3LineErrorHashCode
+
+
+[ >> ]  File: [snmp.c] src/lib/snmpnt/snmp.c [DP:dpsource]
+
+  >>    Error Id [946705059]
+
+	> Date 20190729 [V1] | [High:Memory Leak]
+	>   At src/lib/snmpnt/snmp.c:265
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493051453
+	>   Hash [File] 9018dd6679b233e1e694eeb17f4342ac7a3e45441d4728c4dc20fd32 [Error] 5e8eeaa020f33b95a8fa8d3b429132a176f74fa1
+
+  >>    Error Id [1148669314]
+
+	> Date 20190729 [V1] | [High:Memory Leak]
+	>   At src/lib/snmpnt/snmp.c:255
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493050732
+	>   Hash [File] 9018dd6679b233e1e694eeb17f4342ac7a3e45441d4728c4dc20fd32 [Error] 7272d6b29aa14d0f76882037615d57dfc9b54c8c
+
+
+[ >> ]  File: [restart.c] src/sm/bsm2/restart.c [DP:dpsource]
+
+  >>    Error Id [2822034902]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/sm/bsm2/restart.c:129
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493056409
+	>   Hash [File] fca4dfd52960cfec435b399ccca603f8ff79274b2d499a92bb2811aa [Error] 70fd3977e60c535939df985d59a29d467e7526cd
+
+
+[ >> ]  File: [sap_common.c] src/integ/sap/sap_common.c [DP:dpsource]
+
+  >>    Error Id [288057562]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/integ/sap/sap_common.c:1483
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493048438
+	>   Hash [File] 69a69a9bc5bada3e495ae6f97ea8a7d2fb949821d145d1440c641cf7 [Error] 982fd4fe646d4ed172623b543084902a9d0b8545
+
+  >>    Error Id [970791510]
+
+	> Date 20190802 [V1] | [High:Memory Leak]
+	>   At src/integ/sap/sap_common.c:1503
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493043714
+	>   Hash [File] 69a69a9bc5bada3e495ae6f97ea8a7d2fb949821d145d1440c641cf7 [Error] 814c9f70c97dd903aadef9bdaa9d3c1c625fd79c
+
+
+[ >> ]  File: [srdutil.c] src/recovery/srd/srdutil.c [DP:dpsource]
+
+  >>    Error Id [74541464]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/recovery/srd/srdutil.c:244
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493036568
+	>   Hash [File] 469006a53a4928fc99b1e9e5e57cbf880b8b9d824c142e5c40e06f3b [Error] 3326e908d1315c72c84f64e8731518c70ebf52f5
+
+  >>    Error Id [2992588358]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/recovery/srd/srdutil.c:317
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493038245
+	>   Hash [File] 469006a53a4928fc99b1e9e5e57cbf880b8b9d824c142e5c40e06f3b [Error] 267e0f7736b5c619cffc782f588129be1562fba2
+
+
+[ >> ]  File: [drwin32.c] src/recovery/omnidr/win32/drwin32.c [DP:dpsource]
+
+  >>    Error Id [4047818885]
+
+	> Date 20190802 [V1] | [High:Memory Leak]
+	>   At src/recovery/omnidr/win32/drwin32.c:4648
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493037475
+	>   Hash [File] 52564782563a8d279b6ccb86260dc285e771f011c87094093c75a6a8 [Error] 43d4de8efcb074b0d95a11ce4e89097d47076103
+
+
+[ >> ]  File: [sapback.c] src/integ/sapnt/sapback.c [DP:dpsource]
+
+  >>    Error Id [2554655199]
+
+	> Date 20190729 [V1] | [High:Memory Leak]
+	>   At src/integ/sapnt/sapback.c:237
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493033123
+	>   Hash [File] 7951f0bc9fa8c56f4a913fa273a810300ee6f48cec38fcb65e40830d [Error] 5c37397dfe3993b8c10d18092492db8399e72564
+
+  >>    Error Id [4069647900]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/integ/sapnt/sapback.c:570
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493047159
+	>   Hash [File] 7951f0bc9fa8c56f4a913fa273a810300ee6f48cec38fcb65e40830d [Error] a5335329a5d1b3f93f2ee3eea1f6c415af0d858a
+
+  >>    Error Id [4078734596]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/integ/sapnt/sapback.c:137
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493040275
+	>   Hash [File] 7951f0bc9fa8c56f4a913fa273a810300ee6f48cec38fcb65e40830d [Error] 9e5125d13513f4b3cafc7c4c8d0ce52011595319
+
+  >>    Error Id [3209056960]
+
+	> Date 20190802 [V1] | [High:Memory Leak]
+	>   At src/integ/sapnt/sapback.c:701
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493045460
+	>   Hash [File] 7951f0bc9fa8c56f4a913fa273a810300ee6f48cec38fcb65e40830d [Error] 4459e0fb9b414d8b69e3605be69e60b0e8e4699a
+
+
+[ >> ]  File: [srdsess.c] src/recovery/srd/srdsess.c [DP:dpsource]
+
+  >>    Error Id [1679502063]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/recovery/srd/srdsess.c:1370
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493043563
+	>   Hash [File] 8f4f07644f1b14f9e73e9c1835a2f4266992a4fde1149a2f50862f26 [Error] dcfd230f6102d2e20f93e6ebc16a5d0158ab1346
+
+
+[ >> ]  File: [strutil.c] src/lib/cmn/strutil.c [DP:dpsource]
+
+  >>    Error Id [820350456]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/lib/cmn/strutil.c:3240
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493047567
+	>   Hash [File] c6ed4da990b6d54c801c45e426a3149bef94bd332596a1df571b0c8f [Error] 77988b8d166e9f78d932b713fd1849b2d3428a4a
+
+  >>    Error Id [2396079781]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/lib/cmn/strutil.c:2126
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493055530
+	>   Hash [File] c6ed4da990b6d54c801c45e426a3149bef94bd332596a1df571b0c8f [Error] a0ddebb17e20fab1106c0aebc60dd751ccf426da
+
+  >>    Error Id [778375080]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/lib/cmn/strutil.c:3259
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493037622
+	>   Hash [File] c6ed4da990b6d54c801c45e426a3149bef94bd332596a1df571b0c8f [Error] 93fdc61337dbb772b808021aed89f7eb6c17a9fc
+
+  >>    Error Id [4151466702]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/lib/cmn/strutil.c:3251
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493041023
+	>   Hash [File] c6ed4da990b6d54c801c45e426a3149bef94bd332596a1df571b0c8f [Error] c1f7dc4e136cb99f4d8bbd5c66b199d21a9cdabe
+
+  >>    Error Id [3636110430]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/lib/cmn/strutil.c:2133
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493038409
+	>   Hash [File] c6ed4da990b6d54c801c45e426a3149bef94bd332596a1df571b0c8f [Error] f1757967474a43db8e46b405db5477529df7875f
+
+
+[ >> ]  File: [sysnfocmn.c] src/recovery/srd/SysNfo/sysnfocmn.c [DP:dpsource]
+
+  >>    Error Id [1994914199]
+
+	> Date 20190802 [V1] | [High:Memory Leak]
+	>   At src/recovery/srd/SysNfo/sysnfocmn.c:2491
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493058586
+	>   Hash [File] 054bc52d73629cab7c1e439d6cbd3b114fef7b6988dc1428d95954cd [Error] 80b2c5a1f4a4b49b254fc9d0ded8867e94e34d34
+
+	> Date 20190807 [V2] | [High:Memory Leak]
+	>   At src/recovery/srd/SysNfo/sysnfocmn.c:1880
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493034855
+	>   Hash [File] 054bc52d73629cab7c1e439d6cbd3b114fef7b6988dc1428d95954cd [Error] 80b2c5a1f4a4b49b254fc9d0ded8867e94e34d34
+
+  >>    Error Id [4104116105]
+
+	> Date 20190802 [V1] | [High:Memory Leak]
+	>   At src/recovery/srd/SysNfo/sysnfocmn.c:2156
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493055149
+	>   Hash [File] 054bc52d73629cab7c1e439d6cbd3b114fef7b6988dc1428d95954cd [Error] 0a558ec7bbb2c8811942d10a6654e205f15daeb9
+
+  >>    Error Id [1155612342]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/recovery/srd/SysNfo/sysnfocmn.c:2327
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493053540
+	>   Hash [File] 054bc52d73629cab7c1e439d6cbd3b114fef7b6988dc1428d95954cd [Error] 5371718b1a3946c390e5665a783564df7669dac7
+
+
+[ >> ]  File: [auditcmn.c] src/db/auditing/auditcmn.c [DP:dpsource]
+
+  >>    Error Id [2145810739]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/db/auditing/auditcmn.c:139
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493044020
+	>   Hash [File] e1b3600e25fb7b9198183dd2d50ec22054e945c456c2a9c5a9943ed5 [Error] 25f2ddfbb2ee61e71abf47012fb71130b0470230
+
+	> Date 20190725 [V2] | [High:Memory Leak]
+	>   At src/db/auditing/auditcmn.c:139
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493044020
+	>   Hash [File] e1b3600e25fb7b9198183dd2d50ec22054e945c456c2a9c5a9943ed5 [Error] 25f2ddfbb2ee61e71abf47012fb71130b0470230
+
+
+[ >> ]  File: [srdparsewin.c] src/recovery/srd/srdparsewin.c [DP:dpsource]
+
+  >>    Error Id [1697190081]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/recovery/srd/srdparsewin.c:285
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493034899
+	>   Hash [File] 5ccf5e3b182ca05b4439fe31696ea2553cc6d41ab80edec90541be05 [Error] 7e18491a73418433a2d38ad1c90aef4ffeb0ba0c
+
+
+[ >> ]  File: [util_cmd.c] src/integ/barutil/util_cmd.c [DP:dpsource]
+
+  >>    Error Id [350083943]
+
+	> Date 20190729 [V1] | [High:Memory Leak]
+	>   At src/integ/barutil/util_cmd.c:1469
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493039287
+	>   Hash [File] 0f53fac958193bfce69ddadd750f21b18faaff68f10bab3e5cfa8502 [Error] 017b7b73e3341a054543beb483422ee557b36261
+
+
+[ >> ]  File: [sysnfop1s.c] src/recovery/srd/SysNfo/SysNfoP1S/sysnfop1s.c [DP:dpsource]
+
+  >>    Error Id [2843667947]
+
+	> Date 20190802 [V1] | [High:Memory Leak]
+	>   At src/recovery/srd/SysNfo/SysNfoP1S/sysnfop1s.c:652
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493036616
+	>   Hash [File] 7b5960f601f308b4b8e8ddc6732e7c4ffaa0d38c581d1ae0bcb52d18 [Error] 2bedac094e329e8cb4dc72ac34a73a457051da31
+
+
+[ >> ]  File: [drivelib.c] src/lib/drivelib/drivelib.c [DP:dpsource]
+
+  >>    Error Id [123317548]
+
+	> Date 20190802 [V1] | [High:Memory Leak]
+	>   At src/lib/drivelib/drivelib.c:308
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493050306
+	>   Hash [File] 9d7d7f25ba1199e392665b1ddec49ff89902e229bac3d9204eeca741 [Error] 5b1e8927060b3d6f0a31e6da9a4b227561786386
+
+  >>    Error Id [3056842306]
+
+	> Date 20190802 [V1] | [High:Memory Leak]
+	>   At src/lib/drivelib/drivelib.c:238
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493058787
+	>   Hash [File] 9d7d7f25ba1199e392665b1ddec49ff89902e229bac3d9204eeca741 [Error] da3cb2e1c8e8d2964dac611e5b3e6f378fb80e42
+
+  >>    Error Id [3089755629]
+
+	> Date 20190729 [V1] | [High:Memory Leak]
+	>   At src/lib/drivelib/drivelib.c:963
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493045325
+	>   Hash [File] 9d7d7f25ba1199e392665b1ddec49ff89902e229bac3d9204eeca741 [Error] 9e0b9b051ceea7d3d3a272a19b842ed38850da77
+
+
+[ >> ]  File: [ob2util.c] src/integ/barutil/ob2util.c [DP:dpsource]
+
+  >>    Error Id [2532110159]
+
+	> Date 20190727 [V1] | [High:Memory Leak]
+	>   At src/integ/barutil/ob2util.c:221
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493045101
+	>   Hash [File] 92b9c7166b64b2456102febbc625d7ebe40721e7afff6ebdfe2715a8 [Error] ad8633a02324900c0b3c96e0873601a8eb9d8b50
+
+	> Date 20190729 [V2] | [High:Memory Leak]
+	>   At src/integ/barutil/ob2util.c:221
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493045101
+	>   Hash [File] 92b9c7166b64b2456102febbc625d7ebe40721e7afff6ebdfe2715a8 [Error] ad8633a02324900c0b3c96e0873601a8eb9d8b50
+
+  >>    Error Id [246950663]
+
+	> Date 20190721 [V1] | [High:Memory Leak]
+	>   At src/integ/barutil/ob2util.c:228
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493034813
+	>   Hash [File] 92b9c7166b64b2456102febbc625d7ebe40721e7afff6ebdfe2715a8 [Error] a3dfd7019e3507be1e1ee147647f33eae04cdd90
+
+	> Date 20190722 [V2] | [High:Memory Leak]
+	>   At src/integ/barutil/ob2util.c:228
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493034813
+	>   Hash [File] 92b9c7166b64b2456102febbc625d7ebe40721e7afff6ebdfe2715a8 [Error] a3dfd7019e3507be1e1ee147647f33eae04cdd90
+
+
+[ >> ]  File: [sseapi.c] src/integ/smb/sse/sseapi.c [DP:dpsource]
+
+  >>    Error Id [3328644224]
+
+	> Date 20190729 [V1] | [High:Memory Leak]
+	>   At src/integ/smb/sse/sseapi.c:4818
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493040704
+	>   Hash [File] da2df590d1aa1806fa18d9d1c7df6490a01aac2d73ada3086bc8a789 [Error] 9cc9511e97d06d872ed81008266ace23e77102e7
+
+  >>    Error Id [1920551681]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/integ/smb/sse/sseapi.c:4975
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493043356
+	>   Hash [File] da2df590d1aa1806fa18d9d1c7df6490a01aac2d73ada3086bc8a789 [Error] 7c7bf6b14eeb94672e949240f3cb55842f9bb913
+
+  >>    Error Id [2298799142]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/integ/smb/sse/sseapi.c:5750
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493050470
+	>   Hash [File] da2df590d1aa1806fa18d9d1c7df6490a01aac2d73ada3086bc8a789 [Error] fb947104f9d2d4108681adb35272db415f6a3c7d
+
+	> Date 20190729 [V2] | [High:Memory Leak]
+	>   At src/integ/smb/sse/sseapi.c:5662
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493050894
+	>   Hash [File] da2df590d1aa1806fa18d9d1c7df6490a01aac2d73ada3086bc8a789 [Error] fb947104f9d2d4108681adb35272db415f6a3c7d
+
+  >>    Error Id [1616622972]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/integ/smb/sse/sseapi.c:6072
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493034951
+	>   Hash [File] da2df590d1aa1806fa18d9d1c7df6490a01aac2d73ada3086bc8a789 [Error] d2140564527c4115df3b7ce91b33773d4867d98b
+
+
+[ >> ]  File: [SysNfoAsr.c] src/recovery/srd/SysNfo/SysNfoAsr/SysNfoAsr.c [DP:dpsource]
+
+  >>    Error Id [2101458257]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/recovery/srd/SysNfo/SysNfoAsr/SysNfoAsr.c:363
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493043172
+	>   Hash [File] 9d2b861867e62c3b0aabbb4c0078aab70ff6f1212957c573f54ad9aa [Error] d41c5f09c32ef52aadae5da258d2b048cc114555
+
+
+[ >> ]  File: [gen_env.c] src/lib/cmn/gen_env.c [DP:dpsource]
+
+  >>    Error Id [1818108821]
+
+	> Date 20190729 [V1] | [High:Memory Leak]
+	>   At src/lib/cmn/gen_env.c:94
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493050682
+	>   Hash [File] 5cd97f62eefb50aee2ba4f94f7ba961d6f49f501c515f6e2674dfdb8 [Error] c461f63c7370cca2c86f2c074eba79f7f12a1e80
+
+
+[ >> ]  File: [smbmsg.c] src/integ/smb/sse/smbmsg.c [DP:dpsource]
+
+  >>    Error Id [323902585]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/integ/smb/sse/smbmsg.c:323
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493033314
+	>   Hash [File] 5186cf0fcae753e88a91cea3c08c540c9847a9015ce1c0877e059373 [Error] 78e43dd9b843b9e17343170df162b463076780d7
+
+
+[ >> ]  File: [sys_sec.c] src/da/win32/sys_secs.c [DP:dpsource]
+
+  >>    Error Id [3856174185]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/da/win32/sys_secs.c:520
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493058379#TEST
+	>   Hash [File] 3f2440320f8349a64db1174097fe50a32945f50cab64c940af9db128 [Error] da39a3ee5e6b4b0d3255bfef95601890afd80709
+
+
+[ >> ]  File: [cntrlbkp.c] src/integ/sap/cntrlbkp.c [DP:dpsource]
+
+  >>    Error Id [2508670690]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/integ/sap/cntrlbkp.c:127
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493033986
+	>   Hash [File] 82dcf1c817b8a0b000f7d2ac2e35ea720fe4fd4bb0e6679d91af5fa6 [Error] 4e74ce4feac45fc8426f9559d22984a95d855338
+
+  >>    Error Id [2218562109]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/integ/sap/cntrlbkp.c:120
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493044326
+	>   Hash [File] 82dcf1c817b8a0b000f7d2ac2e35ea720fe4fd4bb0e6679d91af5fa6 [Error] 70fd3977e60c535939df985d59a29d467e7526cd
+
+
+[ >> ]  File: [mbx.c] src/lib/bargui/mbx.c [DP:dpsource]
+
+  >>    Error Id [339473527]
+
+	> Date 20190729 [V1] | [High:Memory Leak]
+	>   At src/lib/bargui/mbx.c:535
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493043319
+	>   Hash [File] 28d760b181744fe84b1ee1aa6521ce8f34bb171d46fa2ea0003b2d7d [Error] 20c64de71811f150292e979075abd4c78285bb10
+
+  >>    Error Id [2274697326]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/lib/bargui/mbx.c:754
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493049786
+	>   Hash [File] 28d760b181744fe84b1ee1aa6521ce8f34bb171d46fa2ea0003b2d7d [Error] cbee38e72726dd85512a58ba263ff0911f8a921d
+
+	> Date 20190807 [V2] | [High:Memory Leak]
+	>   At src/lib/bargui/mbx.c:643
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493053213
+	>   Hash [File] 28d760b181744fe84b1ee1aa6521ce8f34bb171d46fa2ea0003b2d7d [Error] cbee38e72726dd85512a58ba263ff0911f8a921d
+
+
+[ >> ]  File: [srdw2k.c] src/recovery/srd/SysNfo/SysNfoW2K/srdw2k.c [DP:dpsource]
+
+  >>    Error Id [4294959727]
+
+	> Date 20190802 [V1] | [High:Memory Leak]
+	>   At src/recovery/srd/SysNfo/SysNfoW2K/srdw2k.c:1442
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493053359
+	>   Hash [File] 8e5488f5b7ebdf855327171017e2ca66a1d0015bc05bc9b67ec68aab [Error] 7e473a960e8e99b38cc297b9e968c42347f21ca8
+
+
+[ >> ]  File: [barguicommon.c] src/lib/bargui/barguicommon.c [DP:dpsource]
+
+  >>    Error Id [4264105947]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/lib/bargui/barguicommon.c:2432
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493055781
+	>   Hash [File] 93316b65f1da67645f83ab6ec2699e3fa2a8c6e05d9afadd08aa9351 [Error] 0e5934620d7d573e429cc4dd08e3e50ea3c51f7b
+
+
+[ >> ]  File: [dbsa.c] src/lib/smbdb/dbsa/dbsa.c [DP:dpsource]
+
+  >>    Error Id [3292787593]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/lib/smbdb/dbsa/dbsa.c:1043
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493046596
+	>   Hash [File] 161fea15b4f356152b8c7365437aed0371becdadde32bf1f8d6392e6 [Error] f3245da3c69dbadc32229dea22c20ce129b259b8
+
+  >>    Error Id [504340502]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/lib/smbdb/dbsa/dbsa.c:844
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493053856
+	>   Hash [File] 161fea15b4f356152b8c7365437aed0371becdadde32bf1f8d6392e6 [Error] 9e8af2303052996868b88f2461f6d5b48b89b1e2
+
+  >>    Error Id [3374060989]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/lib/smbdb/dbsa/dbsa.c:1341
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493054448
+	>   Hash [File] 161fea15b4f356152b8c7365437aed0371becdadde32bf1f8d6392e6 [Error] 93ef830488b65e3081ab2087effb7a950fcf86e7
+
+
+[ >> ]  File: [upgrade_cfg.c] src/integ/barutil/upgrade_cfg/upgrade_cfg.c [DP:dpsource]
+
+  >>    Error Id [3386406085]
+
+	> Date 20190729 [V1] | [High:Memory Leak]
+	>   At src/integ/barutil/upgrade_cfg/upgrade_cfg.c:3295
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493035569
+	>   Hash [File] 53efe434b8acd52895f087700447d4b56f93188bf72294c9d40f7f81 [Error] 1e8e8e07a7611d4fc5ae336e86a70ce172d4aa31
+
+	> Date 20190807 [V2] | [High:Memory Leak]
+	>   At src/integ/barutil/upgrade_cfg/upgrade_cfg.c:2696
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493046427
+	>   Hash [File] 53efe434b8acd52895f087700447d4b56f93188bf72294c9d40f7f81 [Error] 1e8e8e07a7611d4fc5ae336e86a70ce172d4aa31
+
+  >>    Error Id [116450707]
+
+	> Date 20190802 [V1] | [High:Memory Leak]
+	>   At src/integ/barutil/upgrade_cfg/upgrade_cfg.c:613
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493036268
+	>   Hash [File] 53efe434b8acd52895f087700447d4b56f93188bf72294c9d40f7f81 [Error] c4e6d47e9b38b47c44516d0e784e8d407887e24c
+
+
+[ >> ]  File: [catalog.c] src/ma/xma/catalog.c [DP:dpsource]
+
+  >>    Error Id [499584236]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/ma/xma/catalog.c:2765
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493040484
+	>   Hash [File] 56b5f736e969f44d6f088e241934b30a1933fea75c9e4528a61a948e [Error] da39a3ee5e6b4b0d3255bfef95601890afd80709
+
+
+[ >> ]  File: [backint.c] src/integ/sap/backint.c [DP:dpsource]
+
+  >>    Error Id [4168185278]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/integ/sap/backint.c:2139
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493051730
+	>   Hash [File] 9846838c1a4dde753120b839ea1f722179417bdbf256eb7977552467 [Error] 9b853d362535739081b80c946294788947567a7c
+
+
+[ >> ]  File: [ipcmsg.c] src/lib/ipc/ipcmsg.c [DP:dpsource]
+
+  >>    Error Id [3721917622]
+
+	> Date 20190729 [V1] | [High:Memory Leak]
+	>   At src/lib/ipc/ipcmsg.c:520
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493052335
+	>   Hash [File] 127c291bab344ac360a940d0aa7069914b25977c2e6073128c9285c6 [Error] c3e1c5636428890bd4e88d713a6ae2a2deea6610
+
+
+[ >> ]  File: [dbsmis.c] src/lib/smbdb/dbsmis/dbsmis.c [DP:dpsource]
+
+  >>    Error Id [4056241165]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/lib/smbdb/dbsmis/dbsmis.c:1455
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493049383
+	>   Hash [File] b16a89a2ad58a9efc13817b135ac12b361b1b5301d3127ec4f206cfe [Error] 4b86370b42646d0cf39f5936ba036d279dc34ffe
+
+  >>    Error Id [1864422349]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/lib/smbdb/dbsmis/dbsmis.c:1537
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493054527
+	>   Hash [File] b16a89a2ad58a9efc13817b135ac12b361b1b5301d3127ec4f206cfe [Error] ca0d4a47a5479e5250ac602cc153f8a1be82663e
+
+
+[ >> ]  File: [logArchive.c] src/integ/db2/libob2db2/logArchive.c [DP:dpsource]
+
+  >>    Error Id [1347906646]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/integ/db2/libob2db2/logArchive.c:340
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493052534
+	>   Hash [File] c0e8d45c5dd5b94dd5a50ea67351708e10bde403eb35ae0024d4eec9 [Error] 23cb970aeca135f695fb3c8b0ea2360dd679f06b
+
+
+[ >> ]  File: [devlist_nt.c] src/ma/devtool/devlist_nt.c [DP:dpsource]
+
+  >>    Error Id [235810904]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/ma/devtool/devlist_nt.c:119
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493048619
+	>   Hash [File] ceef70a96408a26f94e018e73e88c3eb603e6ba1fb2b73f7cae095a1 [Error] 68f34d4510021d34b2bfc9817ad11b20088d14fc
+
+
+[ >> ]  File: [ssedbxp.c] src/integ/smb/sse/ssedbxp.c [DP:dpsource]
+
+  >>    Error Id [1651536600]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/integ/smb/sse/ssedbxp.c:808
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493049257
+	>   Hash [File] 15a5d7a29317a10376b830875dc498cb2657b3135f550b5bcd574786 [Error] a27e9ed1b5676275a06bedff55b3efe497fc2f09
+
+  >>    Error Id [602666367]
+
+	> Date 20190802 [V1] | [High:Memory Leak]
+	>   At src/integ/smb/sse/ssedbxp.c:93
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493034832
+	>   Hash [File] 15a5d7a29317a10376b830875dc498cb2657b3135f550b5bcd574786 [Error] 35da94f22b6763d6fc5dd5f21b9434a6b8841b73
+
+
+[ >> ]  File: [main.c] src/integ/db2/db2arch/main.c [DP:dpsource]
+
+  >>    Error Id [710120324]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/integ/db2/db2arch/main.c:345
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493056277
+	>   Hash [File] da5dbcece9b086ecbfb2a7a37097d1e7f8f3b9026c5c47c575493dfa [Error] 23cb970aeca135f695fb3c8b0ea2360dd679f06b
+
+
+[ >> ]  File: [gen_parser.c] src/lib/parse/gen_parser.c [DP:dpsource]
+
+  >>    Error Id [1715951840]
+
+	> Date 20190802 [V1] | [High:Memory Leak]
+	>   At src/lib/parse/gen_parser.c:1778
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493041907
+	>   Hash [File] e0a196c45f2d3a69d76e4f1dab34eee14fa5007d24661ced56a226d8 [Error] c577e13c00dd4bb8771a0cfcbc55572e1c27829b
+
+
+[ >> ]  File: [win32.c] src/lib/cmn/win32.c [DP:dpsource]
+
+  >>    Error Id [3390580879]
+
+	> Date 20190807 [V1] | [High:Memory Leak]
+	>   At src/lib/cmn/win32.c:362
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493046904
+	>   Hash [File] 49c05c86a18a8226891dd315509f50caafd90867d2bdaaea0bdfdb0b [Error] bb1554b8675cbfcce6a52874e9d3f144edc2a89a
+
+
+[ >> ]  File: [sys_sec.c] src/da/win32/sys_sec.c [DP:dpsource]
+
+  >>    Error Id [3856174185]
+
+	> Date 20190722 [V1] | [High:Memory Leak]
+	>   At src/da/win32/sys_sec.c:627
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493054571
+	>   Hash [File] 3f2440320f8349a64db1174097fe50a32945f50cab64c940af9db128 [Error] da39a3ee5e6b4b0d3255bfef95601890afd80709
+
+	> Date 20190723 [V2] | [High:Memory Leak]
+	>   At src/da/win32/sys_sec.c:520
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493058379
+	>   Hash [File] 3f2440320f8349a64db1174097fe50a32945f50cab64c940af9db128 [Error] da39a3ee5e6b4b0d3255bfef95601890afd80709
+
+	> Date 20190724 [V3] | [High:Memory Leak]
+	>   At src/da/win32/sys_sec.c:627
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493054571
+	>   Hash [File] 3f2440320f8349a64db1174097fe50a32945f50cab64c940af9db128 [Error] da39a3ee5e6b4b0d3255bfef95601890afd80709
+
+
+[ >> ]  File: [win32_suid.c] src/lib/xtra/win32_suid.c [DP:dpsource]
+
+  >>    Error Id [3791699552]
+
+	> Date 20190729 [V1] | [High:Memory Leak]
+	>   At src/lib/xtra/win32_suid.c:148
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493052053
+	>   Hash [File] f71bb1521bdf74465e98ffd725c7245db29bb1f8d8817b6d4d1797b4 [Error] 2510cfd06cef0c423dd71716db3c41c791a62e9a
+
+  >>    Error Id [2776203819]
+
+	> Date 20190729 [V1] | [High:Memory Leak]
+	>   At src/lib/xtra/win32_suid.c:155
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493046379
+	>   Hash [File] f71bb1521bdf74465e98ffd725c7245db29bb1f8d8817b6d4d1797b4 [Error] c2c50cab96c23fb9b560e9c8d98848ed8304c07a
+
+
+[ >> ]  File: [scsiop.c] src/recovery/drw/scsiop.c [DP:dpsource]
+
+  >>    Error Id [2762033132]
+
+	> Date 20190802 [V1] | [High:Memory Leak]
+	>   At src/recovery/drw/scsiop.c:416
+	>   Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493034927
+	>   Hash [File] 0b2050689b361e41ff68b27a35bb77e828c77adf32b2cc33059a1644 [Error] 8dffd793d96e948d30881c7866f63e87d3265395
+
+
+
+ >> >> >> All RUN Day >> >> >> >> 
+
+
+[ >> ]  Running Days: 0
+  >>    Error Id [FilePath] : ErrorId
+
+
+[ >> ]  Running Days: 20190721
+  >>    Error Id [246950663] : src/integ/barutil/ob2util.c
+
+
+[ >> ]  Running Days: 20190722
+  >>    Error Id [4168185278] : src/integ/sap/backint.c
+  >>    Error Id [1920551681] : src/integ/smb/sse/sseapi.c
+  >>    Error Id [2298799142] : src/integ/smb/sse/sseapi.c
+  >>    Error Id [288057562] : src/integ/sap/sap_common.c
+  >>    Error Id [323902585] : src/integ/smb/sse/smbmsg.c
+  >>    Error Id [4069647900] : src/integ/sapnt/sapback.c
+  >>    Error Id [2274697326] : src/lib/bargui/mbx.c
+  >>    Error Id [2508670690] : src/integ/sap/cntrlbkp.c
+  >>    Error Id [2145810739] : src/db/auditing/auditcmn.c
+  >>    Error Id [710120324] : src/integ/db2/db2arch/main.c
+  >>    Error Id [1651536600] : src/integ/smb/sse/ssedbxp.c
+  >>    Error Id [3856174185] : src/da/win32/sys_sec.c
+  >>    Error Id [1347906646] : src/integ/db2/libob2db2/logArchive.c
+  >>    Error Id [246950663] : src/integ/barutil/ob2util.c
+
+
+[ >> ]  Running Days: 20190723
+  >>    Error Id [3856174185] : src/da/win32/sys_sec.c
+
+
+[ >> ]  Running Days: 20190724
+  >>    Error Id [3856174185] : src/da/win32/sys_sec.c
+
+
+[ >> ]  Running Days: 20190725
+  >>    Error Id [2145810739] : src/db/auditing/auditcmn.c
+
+
+[ >> ]  Running Days: 20190727
+  >>    Error Id [2532110159] : src/integ/barutil/ob2util.c
+
+
+[ >> ]  Running Days: 20190729
+  >>    Error Id [3791699552] : src/lib/xtra/win32_suid.c
+  >>    Error Id [2776203819] : src/lib/xtra/win32_suid.c
+  >>    Error Id [2532110159] : src/integ/barutil/ob2util.c
+  >>    Error Id [3721917622] : src/lib/ipc/ipcmsg.c
+  >>    Error Id [1818108821] : src/lib/cmn/gen_env.c
+  >>    Error Id [3089755629] : src/lib/drivelib/drivelib.c
+  >>    Error Id [350083943] : src/integ/barutil/util_cmd.c
+  >>    Error Id [2298799142] : src/integ/smb/sse/sseapi.c
+  >>    Error Id [1148669314] : src/lib/snmpnt/snmp.c
+  >>    Error Id [3386406085] : src/integ/barutil/upgrade_cfg/upgrade_cfg.c
+  >>    Error Id [946705059] : src/lib/snmpnt/snmp.c
+  >>    Error Id [3328644224] : src/integ/smb/sse/sseapi.c
+  >>    Error Id [2554655199] : src/integ/sapnt/sapback.c
+  >>    Error Id [339473527] : src/lib/bargui/mbx.c
+
+
+[ >> ]  Running Days: 20190802
+  >>    Error Id [3056842306] : src/lib/drivelib/drivelib.c
+  >>    Error Id [4104116105] : src/recovery/srd/SysNfo/sysnfocmn.c
+  >>    Error Id [970791510] : src/integ/sap/sap_common.c
+  >>    Error Id [3209056960] : src/integ/sapnt/sapback.c
+  >>    Error Id [116450707] : src/integ/barutil/upgrade_cfg/upgrade_cfg.c
+  >>    Error Id [123317548] : src/lib/drivelib/drivelib.c
+  >>    Error Id [1994914199] : src/recovery/srd/SysNfo/sysnfocmn.c
+  >>    Error Id [4047818885] : src/recovery/omnidr/win32/drwin32.c
+  >>    Error Id [1715951840] : src/lib/parse/gen_parser.c
+  >>    Error Id [4294959727] : src/recovery/srd/SysNfo/SysNfoW2K/srdw2k.c
+  >>    Error Id [2843667947] : src/recovery/srd/SysNfo/SysNfoP1S/sysnfop1s.c
+  >>    Error Id [2762033132] : src/recovery/drw/scsiop.c
+  >>    Error Id [602666367] : src/integ/smb/sse/ssedbxp.c
+
+
+[ >> ]  Running Days: 20190807
+  >>    Error Id [74541464] : src/recovery/srd/srdutil.c
+  >>    Error Id [2396079781] : src/lib/cmn/strutil.c
+  >>    Error Id [4151466702] : src/lib/cmn/strutil.c
+  >>    Error Id [1616622972] : src/integ/smb/sse/sseapi.c
+  >>    Error Id [1155612342] : src/recovery/srd/SysNfo/sysnfocmn.c
+  >>    Error Id [1864422349] : src/lib/smbdb/dbsmis/dbsmis.c
+  >>    Error Id [3636110430] : src/lib/cmn/strutil.c
+  >>    Error Id [2992588358] : src/recovery/srd/srdutil.c
+  >>    Error Id [499584236] : src/ma/xma/catalog.c
+  >>    Error Id [4056241165] : src/lib/smbdb/dbsmis/dbsmis.c
+  >>    Error Id [3390580879] : src/lib/cmn/win32.c
+  >>    Error Id [2822034902] : src/sm/bsm2/restart.c
+  >>    Error Id [3292787593] : src/lib/smbdb/dbsa/dbsa.c
+  >>    Error Id [2101458257] : src/recovery/srd/SysNfo/SysNfoAsr/SysNfoAsr.c
+  >>    Error Id [1697190081] : src/recovery/srd/srdparsewin.c
+  >>    Error Id [1679502063] : src/recovery/srd/srdsess.c
+  >>    Error Id [4264105947] : src/lib/bargui/barguicommon.c
+  >>    Error Id [3386406085] : src/integ/barutil/upgrade_cfg/upgrade_cfg.c
+  >>    Error Id [2274697326] : src/lib/bargui/mbx.c
+  >>    Error Id [820350456] : src/lib/cmn/strutil.c
+  >>    Error Id [1994914199] : src/recovery/srd/SysNfo/sysnfocmn.c
+  >>    Error Id [504340502] : src/lib/smbdb/dbsa/dbsa.c
+  >>    Error Id [235810904] : src/ma/devtool/devlist_nt.c
+  >>    Error Id [778375080] : src/lib/cmn/strutil.c
+  >>    Error Id [4078734596] : src/integ/sapnt/sapback.c
+  >>    Error Id [2218562109] : src/integ/sap/cntrlbkp.c
+  >>    Error Id [3374060989] : src/lib/smbdb/dbsa/dbsa.c
+
+[INFO] Git Summary Hitory : /media/sf_VMShare/WorkSpace/dp-Inspector/cases/git_summary_commits.txt file
+
+[INFO] Git Detailed Hitory : /media/sf_VMShare/WorkSpace/dp-Inspector/cases/git_detailed_commits.txt file
+
+
+-- Reporting --
+Run Day 0 [Total Errors: 1 ]
+Run Day 20190721 [Total Errors: 1 ]
+Run Day 20190722 [Total Errors: 14 ]
+Run Day 20190723 [Total Errors: 1 ]
+Run Day 20190724 [Total Errors: 1 ]
+Run Day 20190725 [Total Errors: 1 ]
+Run Day 20190727 [Total Errors: 1 ]
+Run Day 20190729 [Total Errors: 14 ]
+Run Day 20190802 [Total Errors: 13 ]
+Run Day 20190807 [Total Errors: 27 ]
+Average Errors: 7.4 per run
+Start Date [20190723] First Run [20190723]
+End Date [20190802] Last Run [20190802]
+Total Commits in Duration 4
+
+
+[>>] List Of All Errors(With Latest Versions)
+     ----------------------------------------
+ >>  ErrId: [#FilePath][Priority] ErrorId [Project:Module]
+     First Seen [0], Latest Seen [0], Continuity [1] Times Hence <[NEW]> Error
+     Date 0 [V-1] | [:LineNumber] At ErrorId:ErrorVersion
+     Link Link
+     Hash [File] FileHash [Error] 3LineErrorHashCode
+	 >> Git Report Not Available for File ErrorId
+ ---------------------------------------------------------------
+ >>  ErrId: [#946705059][snmp.c] src/lib/snmpnt/snmp.c [DP:dpsource]
+     First Seen [20190729], Latest Seen [20190729], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190729 [V-1] | [:Memory Leak] At src/lib/snmpnt/snmp.c:265
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493051453
+     Hash [File] 9018dd6679b233e1e694eeb17f4342ac7a3e45441d4728c4dc20fd32 [Error] 5e8eeaa020f33b95a8fa8d3b429132a176f74fa1
+	 >> Git Report Not Available for File src/lib/snmpnt/snmp.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#1148669314][snmp.c] src/lib/snmpnt/snmp.c [DP:dpsource]
+     First Seen [20190729], Latest Seen [20190729], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190729 [V-1] | [:Memory Leak] At src/lib/snmpnt/snmp.c:255
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493050732
+     Hash [File] 9018dd6679b233e1e694eeb17f4342ac7a3e45441d4728c4dc20fd32 [Error] 7272d6b29aa14d0f76882037615d57dfc9b54c8c
+	 >> Git Report Not Available for File src/lib/snmpnt/snmp.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#2822034902][restart.c] src/sm/bsm2/restart.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/sm/bsm2/restart.c:129
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493056409
+     Hash [File] fca4dfd52960cfec435b399ccca603f8ff79274b2d499a92bb2811aa [Error] 70fd3977e60c535939df985d59a29d467e7526cd
+	 >> Git Report - Total Commits 3 On This File
+	 	First Instance [Wed Mar 27 15:44:13 2013] By Davor Cretnik [davor.cretnik@comtrade.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Thu Feb  9 17:22:47 2017] By Martin Plaznik [martin.plaznik@hpe.com][20170209] [Lines#2]
+	 	 2  Tue Oct 15 19:19:37 2013] By Jaka Pust [jaka.pust@comtrade.com][20131015] [Lines#17]
+	 	 3  Wed Mar 27 15:44:13 2013] By Davor Cretnik [davor.cretnik@comtrade.com][20130327] [Lines#4]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#288057562][sap_common.c] src/integ/sap/sap_common.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190722], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190722 [V-1] | [:Memory Leak] At src/integ/sap/sap_common.c:1483
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493048438
+     Hash [File] 69a69a9bc5bada3e495ae6f97ea8a7d2fb949821d145d1440c641cf7 [Error] 982fd4fe646d4ed172623b543084902a9d0b8545
+	 >> Git Report Not Available for File src/integ/sap/sap_common.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#970791510][sap_common.c] src/integ/sap/sap_common.c [DP:dpsource]
+     First Seen [20190802], Latest Seen [20190802], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190802 [V-1] | [:Memory Leak] At src/integ/sap/sap_common.c:1503
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493043714
+     Hash [File] 69a69a9bc5bada3e495ae6f97ea8a7d2fb949821d145d1440c641cf7 [Error] 814c9f70c97dd903aadef9bdaa9d3c1c625fd79c
+	 >> Git Report Not Available for File src/integ/sap/sap_common.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#74541464][srdutil.c] src/recovery/srd/srdutil.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/recovery/srd/srdutil.c:244
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493036568
+     Hash [File] 469006a53a4928fc99b1e9e5e57cbf880b8b9d824c142e5c40e06f3b [Error] 3326e908d1315c72c84f64e8731518c70ebf52f5
+	 >> Git Report Not Available for File src/recovery/srd/srdutil.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#2992588358][srdutil.c] src/recovery/srd/srdutil.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/recovery/srd/srdutil.c:317
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493038245
+     Hash [File] 469006a53a4928fc99b1e9e5e57cbf880b8b9d824c142e5c40e06f3b [Error] 267e0f7736b5c619cffc782f588129be1562fba2
+	 >> Git Report Not Available for File src/recovery/srd/srdutil.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#4047818885][drwin32.c] src/recovery/omnidr/win32/drwin32.c [DP:dpsource]
+     First Seen [20190802], Latest Seen [20190802], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190802 [V-1] | [:Memory Leak] At src/recovery/omnidr/win32/drwin32.c:4648
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493037475
+     Hash [File] 52564782563a8d279b6ccb86260dc285e771f011c87094093c75a6a8 [Error] 43d4de8efcb074b0d95a11ce4e89097d47076103
+	 >> Git Report - Total Commits 12 On This File
+	 	First Instance [Tue Jan 12 16:30:47 2010] By Ext Luka Juh [ext_luka_juh@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Wed Jan 15 20:44:53 2014] By Aldin Sehmehmedovic [aldin.sehmehmedovic@comtrade.com][20140115] [Lines#3]
+	 	 2  Fri Jan 25 19:29:15 2013] By Aldin Sehmehmedovic [aldin.sehmehmedovic@comtrade.com][20130125] [Lines#11]
+	 	 3  Fri Aug 24 22:54:42 2012] By Aldin Sehmehmedovic [aldin.sehmehmedovic@hermes-softlab.com][20120824] [Lines#7]
+	 	 4  Fri Jul 27 19:55:21 2012] By Damir Dedic [damir.dedic@hermes-softlab.com][20120727] [Lines#2]
+	 	 5  Wed Jun 23 19:36:46 2010] By Ext Toncek Bezjak [ext_toncek_bezjak@hpe.com][20100623] [Lines#7]
+	 	 6  Wed Jun 23 18:58:40 2010] By Ext Toncek Bezjak [ext_toncek_bezjak@hpe.com][20100623] [Lines#7]
+	 	 7  Fri May  7 20:02:12 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100507] [Lines#2]
+	 	 8  Fri Apr 23 18:47:52 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100423] [Lines#56]
+	 	 9  Wed Mar 10 16:10:00 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100310] [Lines#300]
+	 	 10  Thu Jan 14 19:11:47 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100114] [Lines#20]
+	 	 11  Wed Jan 13 20:36:52 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100113] [Lines#308]
+	 	 12  Tue Jan 12 16:30:47 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100112] [Lines#2]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#2554655199][sapback.c] src/integ/sapnt/sapback.c [DP:dpsource]
+     First Seen [20190729], Latest Seen [20190729], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190729 [V-1] | [:Memory Leak] At src/integ/sapnt/sapback.c:237
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493033123
+     Hash [File] 7951f0bc9fa8c56f4a913fa273a810300ee6f48cec38fcb65e40830d [Error] 5c37397dfe3993b8c10d18092492db8399e72564
+	 >> Git Report - Total Commits 5 On This File
+	 	First Instance [Fri Mar 23 17:27:57 2012] By Andrej Kucler [andrej.kucler@hermes-softlab.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Fri Apr 21 03:28:19 2017] By Nikola Carovic [nikola.carovic@hpe.com][20170420] [Lines#44]
+	 	 2  Thu Mar  9 17:02:33 2017] By Boris Springar [boris.springar@hpe.com][20170309] [Lines#44]
+	 	 3  Thu Sep 11 19:31:07 2014] By Ales Cernigoj [ales.cernigoj@hpe.com][20140911] [Lines#5]
+	 	 4  Thu Aug 28 16:34:42 2014] By Ales Cernigoj [ales.cernigoj@hpe.com][20140828] [Lines#11]
+	 	 5  Fri Mar 23 17:27:57 2012] By Andrej Kucler [andrej.kucler@hermes-softlab.com][20120323] [Lines#638]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#4069647900][sapback.c] src/integ/sapnt/sapback.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190722], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190722 [V-1] | [:Memory Leak] At src/integ/sapnt/sapback.c:570
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493047159
+     Hash [File] 7951f0bc9fa8c56f4a913fa273a810300ee6f48cec38fcb65e40830d [Error] a5335329a5d1b3f93f2ee3eea1f6c415af0d858a
+	 >> Git Report - Total Commits 5 On This File
+	 	First Instance [Fri Mar 23 17:27:57 2012] By Andrej Kucler [andrej.kucler@hermes-softlab.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Fri Apr 21 03:28:19 2017] By Nikola Carovic [nikola.carovic@hpe.com][20170420] [Lines#44]
+	 	 2  Thu Mar  9 17:02:33 2017] By Boris Springar [boris.springar@hpe.com][20170309] [Lines#44]
+	 	 3  Thu Sep 11 19:31:07 2014] By Ales Cernigoj [ales.cernigoj@hpe.com][20140911] [Lines#5]
+	 	 4  Thu Aug 28 16:34:42 2014] By Ales Cernigoj [ales.cernigoj@hpe.com][20140828] [Lines#11]
+	 	 5  Fri Mar 23 17:27:57 2012] By Andrej Kucler [andrej.kucler@hermes-softlab.com][20120323] [Lines#638]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#4078734596][sapback.c] src/integ/sapnt/sapback.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/integ/sapnt/sapback.c:137
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493040275
+     Hash [File] 7951f0bc9fa8c56f4a913fa273a810300ee6f48cec38fcb65e40830d [Error] 9e5125d13513f4b3cafc7c4c8d0ce52011595319
+	 >> Git Report - Total Commits 5 On This File
+	 	First Instance [Fri Mar 23 17:27:57 2012] By Andrej Kucler [andrej.kucler@hermes-softlab.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Fri Apr 21 03:28:19 2017] By Nikola Carovic [nikola.carovic@hpe.com][20170420] [Lines#44]
+	 	 2  Thu Mar  9 17:02:33 2017] By Boris Springar [boris.springar@hpe.com][20170309] [Lines#44]
+	 	 3  Thu Sep 11 19:31:07 2014] By Ales Cernigoj [ales.cernigoj@hpe.com][20140911] [Lines#5]
+	 	 4  Thu Aug 28 16:34:42 2014] By Ales Cernigoj [ales.cernigoj@hpe.com][20140828] [Lines#11]
+	 	 5  Fri Mar 23 17:27:57 2012] By Andrej Kucler [andrej.kucler@hermes-softlab.com][20120323] [Lines#638]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#3209056960][sapback.c] src/integ/sapnt/sapback.c [DP:dpsource]
+     First Seen [20190802], Latest Seen [20190802], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190802 [V-1] | [:Memory Leak] At src/integ/sapnt/sapback.c:701
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493045460
+     Hash [File] 7951f0bc9fa8c56f4a913fa273a810300ee6f48cec38fcb65e40830d [Error] 4459e0fb9b414d8b69e3605be69e60b0e8e4699a
+	 >> Git Report - Total Commits 5 On This File
+	 	First Instance [Fri Mar 23 17:27:57 2012] By Andrej Kucler [andrej.kucler@hermes-softlab.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Fri Apr 21 03:28:19 2017] By Nikola Carovic [nikola.carovic@hpe.com][20170420] [Lines#44]
+	 	 2  Thu Mar  9 17:02:33 2017] By Boris Springar [boris.springar@hpe.com][20170309] [Lines#44]
+	 	 3  Thu Sep 11 19:31:07 2014] By Ales Cernigoj [ales.cernigoj@hpe.com][20140911] [Lines#5]
+	 	 4  Thu Aug 28 16:34:42 2014] By Ales Cernigoj [ales.cernigoj@hpe.com][20140828] [Lines#11]
+	 	 5  Fri Mar 23 17:27:57 2012] By Andrej Kucler [andrej.kucler@hermes-softlab.com][20120323] [Lines#638]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#1679502063][srdsess.c] src/recovery/srd/srdsess.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/recovery/srd/srdsess.c:1370
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493043563
+     Hash [File] 8f4f07644f1b14f9e73e9c1835a2f4266992a4fde1149a2f50862f26 [Error] dcfd230f6102d2e20f93e6ebc16a5d0158ab1346
+	 >> Git Report - Total Commits 4 On This File
+	 	First Instance [Tue Sep 25 18:55:36 2012] By Damir Dedic [damir.dedic@hermes-softlab.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Tue Oct 14 13:06:03 2014] By Samir Uzunovic [samir.uzunovic@hpe.com][20141014] [Lines#2]
+	 	 2  Thu Oct  2 17:14:17 2014] By Samir Uzunovic [samir.uzunovic@hpe.com][20141002] [Lines#6]
+	 	 3  Mon Sep 22 12:56:46 2014] By Samir Uzunovic [samir.uzunovic@hpe.com][20140922] [Lines#9]
+	 	 4  Tue Sep 25 18:55:36 2012] By Damir Dedic [damir.dedic@hermes-softlab.com][20120925] [Lines#85]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#820350456][strutil.c] src/lib/cmn/strutil.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/lib/cmn/strutil.c:3240
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493047567
+     Hash [File] c6ed4da990b6d54c801c45e426a3149bef94bd332596a1df571b0c8f [Error] 77988b8d166e9f78d932b713fd1849b2d3428a4a
+	 >> Git Report - Total Commits 8 On This File
+	 	First Instance [Thu Dec  3 19:53:09 2009] By Ext Ales Cernigoj [ext_ales_cernigoj@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Fri Aug 24 22:56:41 2018] By Sushant Poojary [sushantha.poojary@hpe.com][20180824] [Lines#3]
+	 	 2  Mon Oct  2 14:02:12 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20171002] [Lines#18]
+	 	 3  Fri Sep 22 15:48:04 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20170922] [Lines#2]
+	 	 4  Mon Jul 24 18:01:18 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20170724] [Lines#20]
+	 	 5  Fri Feb  1 18:52:24 2013] By Dusan Sarenac [dusan.sarenac@comtrade.com][20130201] [Lines#10]
+	 	 6  Tue Jul 24 19:16:38 2012] By Joze Lesjak [joze.lesjak@comtrade.com][20120724] [Lines#7]
+	 	 7  Mon Mar 29 14:25:24 2010] By Kuttiraja Veeranan [kuttiraja_veeranan@hpe.com][20100329] [Lines#15]
+	 	 8  Thu Dec  3 19:53:09 2009] By Ext Ales Cernigoj [ext_ales_cernigoj@hpe.com][20091203] [Lines#15]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#2396079781][strutil.c] src/lib/cmn/strutil.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/lib/cmn/strutil.c:2126
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493055530
+     Hash [File] c6ed4da990b6d54c801c45e426a3149bef94bd332596a1df571b0c8f [Error] a0ddebb17e20fab1106c0aebc60dd751ccf426da
+	 >> Git Report - Total Commits 8 On This File
+	 	First Instance [Thu Dec  3 19:53:09 2009] By Ext Ales Cernigoj [ext_ales_cernigoj@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Fri Aug 24 22:56:41 2018] By Sushant Poojary [sushantha.poojary@hpe.com][20180824] [Lines#3]
+	 	 2  Mon Oct  2 14:02:12 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20171002] [Lines#18]
+	 	 3  Fri Sep 22 15:48:04 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20170922] [Lines#2]
+	 	 4  Mon Jul 24 18:01:18 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20170724] [Lines#20]
+	 	 5  Fri Feb  1 18:52:24 2013] By Dusan Sarenac [dusan.sarenac@comtrade.com][20130201] [Lines#10]
+	 	 6  Tue Jul 24 19:16:38 2012] By Joze Lesjak [joze.lesjak@comtrade.com][20120724] [Lines#7]
+	 	 7  Mon Mar 29 14:25:24 2010] By Kuttiraja Veeranan [kuttiraja_veeranan@hpe.com][20100329] [Lines#15]
+	 	 8  Thu Dec  3 19:53:09 2009] By Ext Ales Cernigoj [ext_ales_cernigoj@hpe.com][20091203] [Lines#15]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#778375080][strutil.c] src/lib/cmn/strutil.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/lib/cmn/strutil.c:3259
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493037622
+     Hash [File] c6ed4da990b6d54c801c45e426a3149bef94bd332596a1df571b0c8f [Error] 93fdc61337dbb772b808021aed89f7eb6c17a9fc
+	 >> Git Report - Total Commits 8 On This File
+	 	First Instance [Thu Dec  3 19:53:09 2009] By Ext Ales Cernigoj [ext_ales_cernigoj@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Fri Aug 24 22:56:41 2018] By Sushant Poojary [sushantha.poojary@hpe.com][20180824] [Lines#3]
+	 	 2  Mon Oct  2 14:02:12 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20171002] [Lines#18]
+	 	 3  Fri Sep 22 15:48:04 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20170922] [Lines#2]
+	 	 4  Mon Jul 24 18:01:18 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20170724] [Lines#20]
+	 	 5  Fri Feb  1 18:52:24 2013] By Dusan Sarenac [dusan.sarenac@comtrade.com][20130201] [Lines#10]
+	 	 6  Tue Jul 24 19:16:38 2012] By Joze Lesjak [joze.lesjak@comtrade.com][20120724] [Lines#7]
+	 	 7  Mon Mar 29 14:25:24 2010] By Kuttiraja Veeranan [kuttiraja_veeranan@hpe.com][20100329] [Lines#15]
+	 	 8  Thu Dec  3 19:53:09 2009] By Ext Ales Cernigoj [ext_ales_cernigoj@hpe.com][20091203] [Lines#15]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#4151466702][strutil.c] src/lib/cmn/strutil.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/lib/cmn/strutil.c:3251
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493041023
+     Hash [File] c6ed4da990b6d54c801c45e426a3149bef94bd332596a1df571b0c8f [Error] c1f7dc4e136cb99f4d8bbd5c66b199d21a9cdabe
+	 >> Git Report - Total Commits 8 On This File
+	 	First Instance [Thu Dec  3 19:53:09 2009] By Ext Ales Cernigoj [ext_ales_cernigoj@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Fri Aug 24 22:56:41 2018] By Sushant Poojary [sushantha.poojary@hpe.com][20180824] [Lines#3]
+	 	 2  Mon Oct  2 14:02:12 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20171002] [Lines#18]
+	 	 3  Fri Sep 22 15:48:04 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20170922] [Lines#2]
+	 	 4  Mon Jul 24 18:01:18 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20170724] [Lines#20]
+	 	 5  Fri Feb  1 18:52:24 2013] By Dusan Sarenac [dusan.sarenac@comtrade.com][20130201] [Lines#10]
+	 	 6  Tue Jul 24 19:16:38 2012] By Joze Lesjak [joze.lesjak@comtrade.com][20120724] [Lines#7]
+	 	 7  Mon Mar 29 14:25:24 2010] By Kuttiraja Veeranan [kuttiraja_veeranan@hpe.com][20100329] [Lines#15]
+	 	 8  Thu Dec  3 19:53:09 2009] By Ext Ales Cernigoj [ext_ales_cernigoj@hpe.com][20091203] [Lines#15]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#3636110430][strutil.c] src/lib/cmn/strutil.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/lib/cmn/strutil.c:2133
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493038409
+     Hash [File] c6ed4da990b6d54c801c45e426a3149bef94bd332596a1df571b0c8f [Error] f1757967474a43db8e46b405db5477529df7875f
+	 >> Git Report - Total Commits 8 On This File
+	 	First Instance [Thu Dec  3 19:53:09 2009] By Ext Ales Cernigoj [ext_ales_cernigoj@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Fri Aug 24 22:56:41 2018] By Sushant Poojary [sushantha.poojary@hpe.com][20180824] [Lines#3]
+	 	 2  Mon Oct  2 14:02:12 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20171002] [Lines#18]
+	 	 3  Fri Sep 22 15:48:04 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20170922] [Lines#2]
+	 	 4  Mon Jul 24 18:01:18 2017] By Jernej Mlakar [jernej.mlakar@hpe.com][20170724] [Lines#20]
+	 	 5  Fri Feb  1 18:52:24 2013] By Dusan Sarenac [dusan.sarenac@comtrade.com][20130201] [Lines#10]
+	 	 6  Tue Jul 24 19:16:38 2012] By Joze Lesjak [joze.lesjak@comtrade.com][20120724] [Lines#7]
+	 	 7  Mon Mar 29 14:25:24 2010] By Kuttiraja Veeranan [kuttiraja_veeranan@hpe.com][20100329] [Lines#15]
+	 	 8  Thu Dec  3 19:53:09 2009] By Ext Ales Cernigoj [ext_ales_cernigoj@hpe.com][20091203] [Lines#15]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#1994914199][sysnfocmn.c] src/recovery/srd/SysNfo/sysnfocmn.c [DP:dpsource]
+     First Seen [20190802], Latest Seen [20190807], Continuity [2] Times Hence <[ONGOING]> Error
+     Date 20190807 [V-2] | [:Memory Leak] At src/recovery/srd/SysNfo/sysnfocmn.c:1880
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493034855
+     Hash [File] 054bc52d73629cab7c1e439d6cbd3b114fef7b6988dc1428d95954cd [Error] 80b2c5a1f4a4b49b254fc9d0ded8867e94e34d34
+	 >> Git Report - Total Commits 9 On This File
+	 	First Instance [Mon Nov 16 17:58:15 2009] By Ext Luka Juh [ext_luka_juh@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Sat Jul 21 18:44:30 2012] By Aldin Sehmehmedovic [aldin.sehmehmedovic@hermes-softlab.com][20120721] [Lines#21]
+	 	 2  Mon Jul  2 19:05:49 2012] By Damir Dedic [damir.dedic@hermes-softlab.com][20120702] [Lines#2]
+	 	 3  Wed Dec 14 20:17:32 2011] By Toncek Bezjak [toncek.bezjak@hermes-softlab.com][20111214] [Lines#34]
+	 	 4  Mon May 31 14:48:11 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100531] [Lines#78]
+	 	 5  Fri Apr 23 18:49:44 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100423] [Lines#2]
+	 	 6  Wed Mar 10 17:21:57 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100310] [Lines#2]
+	 	 7  Wed Jan 13 17:18:27 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100113] [Lines#2]
+	 	 8  Tue Jan 12 16:30:47 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100112] [Lines#3]
+	 	 9  Mon Nov 16 17:58:15 2009] By Ext Luka Juh [ext_luka_juh@hpe.com][20091116] [Lines#5453]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#4104116105][sysnfocmn.c] src/recovery/srd/SysNfo/sysnfocmn.c [DP:dpsource]
+     First Seen [20190802], Latest Seen [20190802], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190802 [V-1] | [:Memory Leak] At src/recovery/srd/SysNfo/sysnfocmn.c:2156
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493055149
+     Hash [File] 054bc52d73629cab7c1e439d6cbd3b114fef7b6988dc1428d95954cd [Error] 0a558ec7bbb2c8811942d10a6654e205f15daeb9
+	 >> Git Report - Total Commits 9 On This File
+	 	First Instance [Mon Nov 16 17:58:15 2009] By Ext Luka Juh [ext_luka_juh@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Sat Jul 21 18:44:30 2012] By Aldin Sehmehmedovic [aldin.sehmehmedovic@hermes-softlab.com][20120721] [Lines#21]
+	 	 2  Mon Jul  2 19:05:49 2012] By Damir Dedic [damir.dedic@hermes-softlab.com][20120702] [Lines#2]
+	 	 3  Wed Dec 14 20:17:32 2011] By Toncek Bezjak [toncek.bezjak@hermes-softlab.com][20111214] [Lines#34]
+	 	 4  Mon May 31 14:48:11 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100531] [Lines#78]
+	 	 5  Fri Apr 23 18:49:44 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100423] [Lines#2]
+	 	 6  Wed Mar 10 17:21:57 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100310] [Lines#2]
+	 	 7  Wed Jan 13 17:18:27 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100113] [Lines#2]
+	 	 8  Tue Jan 12 16:30:47 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100112] [Lines#3]
+	 	 9  Mon Nov 16 17:58:15 2009] By Ext Luka Juh [ext_luka_juh@hpe.com][20091116] [Lines#5453]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#1155612342][sysnfocmn.c] src/recovery/srd/SysNfo/sysnfocmn.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/recovery/srd/SysNfo/sysnfocmn.c:2327
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493053540
+     Hash [File] 054bc52d73629cab7c1e439d6cbd3b114fef7b6988dc1428d95954cd [Error] 5371718b1a3946c390e5665a783564df7669dac7
+	 >> Git Report - Total Commits 9 On This File
+	 	First Instance [Mon Nov 16 17:58:15 2009] By Ext Luka Juh [ext_luka_juh@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Sat Jul 21 18:44:30 2012] By Aldin Sehmehmedovic [aldin.sehmehmedovic@hermes-softlab.com][20120721] [Lines#21]
+	 	 2  Mon Jul  2 19:05:49 2012] By Damir Dedic [damir.dedic@hermes-softlab.com][20120702] [Lines#2]
+	 	 3  Wed Dec 14 20:17:32 2011] By Toncek Bezjak [toncek.bezjak@hermes-softlab.com][20111214] [Lines#34]
+	 	 4  Mon May 31 14:48:11 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100531] [Lines#78]
+	 	 5  Fri Apr 23 18:49:44 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100423] [Lines#2]
+	 	 6  Wed Mar 10 17:21:57 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100310] [Lines#2]
+	 	 7  Wed Jan 13 17:18:27 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100113] [Lines#2]
+	 	 8  Tue Jan 12 16:30:47 2010] By Ext Luka Juh [ext_luka_juh@hpe.com][20100112] [Lines#3]
+	 	 9  Mon Nov 16 17:58:15 2009] By Ext Luka Juh [ext_luka_juh@hpe.com][20091116] [Lines#5453]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#2145810739][auditcmn.c] src/db/auditing/auditcmn.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190725], Continuity [2] Times Hence <[ONGOING]> Error
+     Date 20190725 [V-2] | [:Memory Leak] At src/db/auditing/auditcmn.c:139
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493044020
+     Hash [File] e1b3600e25fb7b9198183dd2d50ec22054e945c456c2a9c5a9943ed5 [Error] 25f2ddfbb2ee61e71abf47012fb71130b0470230
+	 >> Git Report Not Available for File src/db/auditing/auditcmn.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#1697190081][srdparsewin.c] src/recovery/srd/srdparsewin.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/recovery/srd/srdparsewin.c:285
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493034899
+     Hash [File] 5ccf5e3b182ca05b4439fe31696ea2553cc6d41ab80edec90541be05 [Error] 7e18491a73418433a2d38ad1c90aef4ffeb0ba0c
+	 >> Git Report Not Available for File src/recovery/srd/srdparsewin.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#350083943][util_cmd.c] src/integ/barutil/util_cmd.c [DP:dpsource]
+     First Seen [20190729], Latest Seen [20190729], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190729 [V-1] | [:Memory Leak] At src/integ/barutil/util_cmd.c:1469
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493039287
+     Hash [File] 0f53fac958193bfce69ddadd750f21b18faaff68f10bab3e5cfa8502 [Error] 017b7b73e3341a054543beb483422ee557b36261
+	 >> Git Report - Total Commits 11 On This File
+	 	First Instance [Wed Oct 17 19:19:28 2012] By Andrej Kucler [andrej.kucler@comtrade.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Thu Jul  4 23:11:27 2019] By Sushant Poojary [sushantha.poojary@microfocus.com][20190704] [Lines#53]
+	 	 2  Thu Jul  4 11:02:25 2019] By Aniruddha Athavale [aniruddha.athavale@hpe.com][20190704] [Lines#53]
+	 	 3  Tue Apr 11 13:12:47 2017] By Boris Springar [boris.springar@hpe.com][20170411] [Lines#2]
+	 	 4  Tue Mar 21 16:14:48 2017] By Milos Milojkovic [milos.milojkovic@hpe.com][20170321] [Lines#5]
+	 	 5  Tue Feb 21 22:21:49 2017] By Matjaz Potocnik [matjaz.potocnik@hpe.com][20170221] [Lines#6]
+	 	 6  Wed Feb 15 19:40:28 2017] By Matevz Mrak [matevz.mrak@hpe.com][20170215] [Lines#47]
+	 	 7  Mon Sep  1 20:11:23 2014] By Antal Nemes [antal.nemes@hpe.com][20140901] [Lines#6]
+	 	 8  Wed Apr  9 02:15:48 2014] By Milos Milojkovic [milos.milojkovic@comtrade.com][20140408] [Lines#2]
+	 	 9  Thu Jan 31 23:10:04 2013] By Andrej Kucler [andrej.kucler@comtrade.com][20130131] [Lines#2]
+	 	 10  Fri Oct 19 11:42:18 2012] By Andrej Kucler [andrej.kucler@comtrade.com][20121019] [Lines#16]
+	 	 11  Wed Oct 17 19:19:28 2012] By Andrej Kucler [andrej.kucler@comtrade.com][20121017] [Lines#2]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#2843667947][sysnfop1s.c] src/recovery/srd/SysNfo/SysNfoP1S/sysnfop1s.c [DP:dpsource]
+     First Seen [20190802], Latest Seen [20190802], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190802 [V-1] | [:Memory Leak] At src/recovery/srd/SysNfo/SysNfoP1S/sysnfop1s.c:652
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493036616
+     Hash [File] 7b5960f601f308b4b8e8ddc6732e7c4ffaa0d38c581d1ae0bcb52d18 [Error] 2bedac094e329e8cb4dc72ac34a73a457051da31
+	 >> Git Report - Total Commits 10 On This File
+	 	First Instance [Mon Nov 16 20:16:17 2009] By Ext Luka Juh [ext_luka_juh@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Mon Jun 17 17:40:29 2019] By VEMURI PRAVEEN [vemuri-praveen@microfocus.com][20190617] [Lines#2]
+	 	 2  Tue Jan 14 18:14:11 2014] By Aldin Sehmehmedovic [aldin.sehmehmedovic@comtrade.com][20140114] [Lines#6]
+	 	 3  Wed Oct  3 13:05:26 2012] By Aldin Sehmehmedovic [aldin.sehmehmedovic@hermes-softlab.com][20121003] [Lines#3]
+	 	 4  Wed Jul 25 02:55:36 2012] By Aldin Sehmehmedovic [aldin.sehmehmedovic@hermes-softlab.com][20120724] [Lines#5]
+	 	 5  Thu May 13 17:03:23 2010] By Ext Damir Dedic [ext_damir_dedic@hpe.com][20100513] [Lines#6]
+	 	 6  Thu Jan 14 15:41:00 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100114] [Lines#59]
+	 	 7  Wed Jan  6 16:24:03 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100106] [Lines#50]
+	 	 8  Tue Jan  5 19:38:36 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100105] [Lines#12]
+	 	 9  Mon Dec 14 15:50:28 2009] By Ext Damir Dedic [ext_damir_dedic@hpe.com][20091214] [Lines#20]
+	 	 10  Mon Nov 16 20:16:17 2009] By Ext Luka Juh [ext_luka_juh@hpe.com][20091116] [Lines#13]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#123317548][drivelib.c] src/lib/drivelib/drivelib.c [DP:dpsource]
+     First Seen [20190802], Latest Seen [20190802], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190802 [V-1] | [:Memory Leak] At src/lib/drivelib/drivelib.c:308
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493050306
+     Hash [File] 9d7d7f25ba1199e392665b1ddec49ff89902e229bac3d9204eeca741 [Error] 5b1e8927060b3d6f0a31e6da9a4b227561786386
+	 >> Git Report - Total Commits 2 On This File
+	 	First Instance [Tue Mar  9 21:26:20 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Thu Mar 11 16:13:01 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100311] [Lines#2]
+	 	 2  Tue Mar  9 21:26:20 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100309] [Lines#25]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#3056842306][drivelib.c] src/lib/drivelib/drivelib.c [DP:dpsource]
+     First Seen [20190802], Latest Seen [20190802], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190802 [V-1] | [:Memory Leak] At src/lib/drivelib/drivelib.c:238
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493058787
+     Hash [File] 9d7d7f25ba1199e392665b1ddec49ff89902e229bac3d9204eeca741 [Error] da3cb2e1c8e8d2964dac611e5b3e6f378fb80e42
+	 >> Git Report - Total Commits 2 On This File
+	 	First Instance [Tue Mar  9 21:26:20 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Thu Mar 11 16:13:01 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100311] [Lines#2]
+	 	 2  Tue Mar  9 21:26:20 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100309] [Lines#25]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#3089755629][drivelib.c] src/lib/drivelib/drivelib.c [DP:dpsource]
+     First Seen [20190729], Latest Seen [20190729], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190729 [V-1] | [:Memory Leak] At src/lib/drivelib/drivelib.c:963
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493045325
+     Hash [File] 9d7d7f25ba1199e392665b1ddec49ff89902e229bac3d9204eeca741 [Error] 9e0b9b051ceea7d3d3a272a19b842ed38850da77
+	 >> Git Report - Total Commits 2 On This File
+	 	First Instance [Tue Mar  9 21:26:20 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Thu Mar 11 16:13:01 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100311] [Lines#2]
+	 	 2  Tue Mar  9 21:26:20 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100309] [Lines#25]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#2532110159][ob2util.c] src/integ/barutil/ob2util.c [DP:dpsource]
+     First Seen [20190727], Latest Seen [20190729], Continuity [2] Times Hence <[ONGOING]> Error
+     Date 20190729 [V-2] | [:Memory Leak] At src/integ/barutil/ob2util.c:221
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493045101
+     Hash [File] 92b9c7166b64b2456102febbc625d7ebe40721e7afff6ebdfe2715a8 [Error] ad8633a02324900c0b3c96e0873601a8eb9d8b50
+	 >> Git Report Not Available for File src/integ/barutil/ob2util.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#246950663][ob2util.c] src/integ/barutil/ob2util.c [DP:dpsource]
+     First Seen [20190721], Latest Seen [20190722], Continuity [2] Times Hence <[ONGOING]> Error
+     Date 20190722 [V-2] | [:Memory Leak] At src/integ/barutil/ob2util.c:228
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493034813
+     Hash [File] 92b9c7166b64b2456102febbc625d7ebe40721e7afff6ebdfe2715a8 [Error] a3dfd7019e3507be1e1ee147647f33eae04cdd90
+	 >> Git Report Not Available for File src/integ/barutil/ob2util.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#3328644224][sseapi.c] src/integ/smb/sse/sseapi.c [DP:dpsource]
+     First Seen [20190729], Latest Seen [20190729], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190729 [V-1] | [:Memory Leak] At src/integ/smb/sse/sseapi.c:4818
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493040704
+     Hash [File] da2df590d1aa1806fa18d9d1c7df6490a01aac2d73ada3086bc8a789 [Error] 9cc9511e97d06d872ed81008266ace23e77102e7
+	 >> Git Report - Total Commits 8 On This File
+	 	First Instance [Wed Oct 28 15:15:05 2009] By Ext Ales Kolenc [ext_ales_kolenc2@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Mon Feb  3 15:45:20 2014] By Ana Fuks [ana.fuks@comtrade.com][20140203] [Lines#2]
+	 	 2  Wed Jan 22 14:48:22 2014] By Ana Fuks [ana.fuks@comtrade.com][20140122] [Lines#11]
+	 	 3  Thu Apr  5 14:37:04 2012] By Tilen Turnsek [tilen.turnsek@comtrade.com][20120405] [Lines#61]
+	 	 4  Wed Jun  9 17:47:59 2010] By Ext Rok Erjavec [ext_rok_erjavec@hpe.com][20100609] [Lines#41]
+	 	 5  Fri Jun  4 13:01:57 2010] By Ext Rok Erjavec [ext_rok_erjavec@hpe.com][20100604] [Lines#37]
+	 	 6  Mon May  3 13:02:23 2010] By Ext Ales Kolenc [ext_ales_kolenc2@hpe.com][20100503] [Lines#4]
+	 	 7  Thu Apr 15 12:19:58 2010] By Ext Andrej Marolt [ext_andrej_marolt@hpe.com][20100415] [Lines#2]
+	 	 8  Wed Oct 28 15:15:05 2009] By Ext Ales Kolenc [ext_ales_kolenc2@hpe.com][20091028] [Lines#14]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#1920551681][sseapi.c] src/integ/smb/sse/sseapi.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190722], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190722 [V-1] | [:Memory Leak] At src/integ/smb/sse/sseapi.c:4975
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493043356
+     Hash [File] da2df590d1aa1806fa18d9d1c7df6490a01aac2d73ada3086bc8a789 [Error] 7c7bf6b14eeb94672e949240f3cb55842f9bb913
+	 >> Git Report - Total Commits 8 On This File
+	 	First Instance [Wed Oct 28 15:15:05 2009] By Ext Ales Kolenc [ext_ales_kolenc2@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Mon Feb  3 15:45:20 2014] By Ana Fuks [ana.fuks@comtrade.com][20140203] [Lines#2]
+	 	 2  Wed Jan 22 14:48:22 2014] By Ana Fuks [ana.fuks@comtrade.com][20140122] [Lines#11]
+	 	 3  Thu Apr  5 14:37:04 2012] By Tilen Turnsek [tilen.turnsek@comtrade.com][20120405] [Lines#61]
+	 	 4  Wed Jun  9 17:47:59 2010] By Ext Rok Erjavec [ext_rok_erjavec@hpe.com][20100609] [Lines#41]
+	 	 5  Fri Jun  4 13:01:57 2010] By Ext Rok Erjavec [ext_rok_erjavec@hpe.com][20100604] [Lines#37]
+	 	 6  Mon May  3 13:02:23 2010] By Ext Ales Kolenc [ext_ales_kolenc2@hpe.com][20100503] [Lines#4]
+	 	 7  Thu Apr 15 12:19:58 2010] By Ext Andrej Marolt [ext_andrej_marolt@hpe.com][20100415] [Lines#2]
+	 	 8  Wed Oct 28 15:15:05 2009] By Ext Ales Kolenc [ext_ales_kolenc2@hpe.com][20091028] [Lines#14]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#2298799142][sseapi.c] src/integ/smb/sse/sseapi.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190729], Continuity [2] Times Hence <[ONGOING]> Error
+     Date 20190729 [V-2] | [:Memory Leak] At src/integ/smb/sse/sseapi.c:5662
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493050894
+     Hash [File] da2df590d1aa1806fa18d9d1c7df6490a01aac2d73ada3086bc8a789 [Error] fb947104f9d2d4108681adb35272db415f6a3c7d
+	 >> Git Report - Total Commits 8 On This File
+	 	First Instance [Wed Oct 28 15:15:05 2009] By Ext Ales Kolenc [ext_ales_kolenc2@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Mon Feb  3 15:45:20 2014] By Ana Fuks [ana.fuks@comtrade.com][20140203] [Lines#2]
+	 	 2  Wed Jan 22 14:48:22 2014] By Ana Fuks [ana.fuks@comtrade.com][20140122] [Lines#11]
+	 	 3  Thu Apr  5 14:37:04 2012] By Tilen Turnsek [tilen.turnsek@comtrade.com][20120405] [Lines#61]
+	 	 4  Wed Jun  9 17:47:59 2010] By Ext Rok Erjavec [ext_rok_erjavec@hpe.com][20100609] [Lines#41]
+	 	 5  Fri Jun  4 13:01:57 2010] By Ext Rok Erjavec [ext_rok_erjavec@hpe.com][20100604] [Lines#37]
+	 	 6  Mon May  3 13:02:23 2010] By Ext Ales Kolenc [ext_ales_kolenc2@hpe.com][20100503] [Lines#4]
+	 	 7  Thu Apr 15 12:19:58 2010] By Ext Andrej Marolt [ext_andrej_marolt@hpe.com][20100415] [Lines#2]
+	 	 8  Wed Oct 28 15:15:05 2009] By Ext Ales Kolenc [ext_ales_kolenc2@hpe.com][20091028] [Lines#14]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#1616622972][sseapi.c] src/integ/smb/sse/sseapi.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/integ/smb/sse/sseapi.c:6072
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493034951
+     Hash [File] da2df590d1aa1806fa18d9d1c7df6490a01aac2d73ada3086bc8a789 [Error] d2140564527c4115df3b7ce91b33773d4867d98b
+	 >> Git Report - Total Commits 8 On This File
+	 	First Instance [Wed Oct 28 15:15:05 2009] By Ext Ales Kolenc [ext_ales_kolenc2@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Mon Feb  3 15:45:20 2014] By Ana Fuks [ana.fuks@comtrade.com][20140203] [Lines#2]
+	 	 2  Wed Jan 22 14:48:22 2014] By Ana Fuks [ana.fuks@comtrade.com][20140122] [Lines#11]
+	 	 3  Thu Apr  5 14:37:04 2012] By Tilen Turnsek [tilen.turnsek@comtrade.com][20120405] [Lines#61]
+	 	 4  Wed Jun  9 17:47:59 2010] By Ext Rok Erjavec [ext_rok_erjavec@hpe.com][20100609] [Lines#41]
+	 	 5  Fri Jun  4 13:01:57 2010] By Ext Rok Erjavec [ext_rok_erjavec@hpe.com][20100604] [Lines#37]
+	 	 6  Mon May  3 13:02:23 2010] By Ext Ales Kolenc [ext_ales_kolenc2@hpe.com][20100503] [Lines#4]
+	 	 7  Thu Apr 15 12:19:58 2010] By Ext Andrej Marolt [ext_andrej_marolt@hpe.com][20100415] [Lines#2]
+	 	 8  Wed Oct 28 15:15:05 2009] By Ext Ales Kolenc [ext_ales_kolenc2@hpe.com][20091028] [Lines#14]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#2101458257][SysNfoAsr.c] src/recovery/srd/SysNfo/SysNfoAsr/SysNfoAsr.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/recovery/srd/SysNfo/SysNfoAsr/SysNfoAsr.c:363
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493043172
+     Hash [File] 9d2b861867e62c3b0aabbb4c0078aab70ff6f1212957c573f54ad9aa [Error] d41c5f09c32ef52aadae5da258d2b048cc114555
+	 >> Git Report - Total Commits 4 On This File
+	 	First Instance [Tue Jan  5 19:38:36 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Thu May 13 17:03:23 2010] By Ext Damir Dedic [ext_damir_dedic@hpe.com][20100513] [Lines#2]
+	 	 2  Thu Apr  1 12:39:47 2010] By Ext Damir Dedic [ext_damir_dedic@hpe.com][20100401] [Lines#4]
+	 	 3  Wed Mar  3 19:19:36 2010] By Ext Damir Dedic [ext_damir_dedic@hpe.com][20100303] [Lines#8]
+	 	 4  Tue Jan  5 19:38:36 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100105] [Lines#5]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#1818108821][gen_env.c] src/lib/cmn/gen_env.c [DP:dpsource]
+     First Seen [20190729], Latest Seen [20190729], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190729 [V-1] | [:Memory Leak] At src/lib/cmn/gen_env.c:94
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493050682
+     Hash [File] 5cd97f62eefb50aee2ba4f94f7ba961d6f49f501c515f6e2674dfdb8 [Error] c461f63c7370cca2c86f2c074eba79f7f12a1e80
+	 >> Git Report - Total Commits 2 On This File
+	 	First Instance [Sat Apr  1 07:56:21 2017] By Milos Milojkovic [milos.milojkovic@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Tue Apr 16 16:32:35 2019] By VINAY G [vinayg@hpe.com][20190416] [Lines#2]
+	 	 2  Sat Apr  1 07:56:21 2017] By Milos Milojkovic [milos.milojkovic@hpe.com][20170401] [Lines#8]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#323902585][smbmsg.c] src/integ/smb/sse/smbmsg.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190722], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190722 [V-1] | [:Memory Leak] At src/integ/smb/sse/smbmsg.c:323
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493033314
+     Hash [File] 5186cf0fcae753e88a91cea3c08c540c9847a9015ce1c0877e059373 [Error] 78e43dd9b843b9e17343170df162b463076780d7
+	 >> Git Report Not Available for File src/integ/smb/sse/smbmsg.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#3856174185][sys_sec.c] src/da/win32/sys_secs.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190722], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190722 [V-1] | [:Memory Leak] At src/da/win32/sys_secs.c:520
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493058379#TEST
+     Hash [File] 3f2440320f8349a64db1174097fe50a32945f50cab64c940af9db128 [Error] da39a3ee5e6b4b0d3255bfef95601890afd80709
+	 >> Git Report Not Available for File src/da/win32/sys_secs.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#2508670690][cntrlbkp.c] src/integ/sap/cntrlbkp.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190722], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190722 [V-1] | [:Memory Leak] At src/integ/sap/cntrlbkp.c:127
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493033986
+     Hash [File] 82dcf1c817b8a0b000f7d2ac2e35ea720fe4fd4bb0e6679d91af5fa6 [Error] 4e74ce4feac45fc8426f9559d22984a95d855338
+	 >> Git Report Not Available for File src/integ/sap/cntrlbkp.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#2218562109][cntrlbkp.c] src/integ/sap/cntrlbkp.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/integ/sap/cntrlbkp.c:120
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493044326
+     Hash [File] 82dcf1c817b8a0b000f7d2ac2e35ea720fe4fd4bb0e6679d91af5fa6 [Error] 70fd3977e60c535939df985d59a29d467e7526cd
+	 >> Git Report Not Available for File src/integ/sap/cntrlbkp.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#339473527][mbx.c] src/lib/bargui/mbx.c [DP:dpsource]
+     First Seen [20190729], Latest Seen [20190729], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190729 [V-1] | [:Memory Leak] At src/lib/bargui/mbx.c:535
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493043319
+     Hash [File] 28d760b181744fe84b1ee1aa6521ce8f34bb171d46fa2ea0003b2d7d [Error] 20c64de71811f150292e979075abd4c78285bb10
+	 >> Git Report - Total Commits 1 On This File
+	 	First Instance [Fri Apr  4 18:13:12 2014] By Balaji Permi [balaji.permi@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Fri Apr  4 18:13:12 2014] By Balaji Permi [balaji.permi@hpe.com][20140404] [Lines#7]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#2274697326][mbx.c] src/lib/bargui/mbx.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190807], Continuity [2] Times Hence <[ONGOING]> Error
+     Date 20190807 [V-2] | [:Memory Leak] At src/lib/bargui/mbx.c:643
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493053213
+     Hash [File] 28d760b181744fe84b1ee1aa6521ce8f34bb171d46fa2ea0003b2d7d [Error] cbee38e72726dd85512a58ba263ff0911f8a921d
+	 >> Git Report - Total Commits 1 On This File
+	 	First Instance [Fri Apr  4 18:13:12 2014] By Balaji Permi [balaji.permi@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Fri Apr  4 18:13:12 2014] By Balaji Permi [balaji.permi@hpe.com][20140404] [Lines#7]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#4294959727][srdw2k.c] src/recovery/srd/SysNfo/SysNfoW2K/srdw2k.c [DP:dpsource]
+     First Seen [20190802], Latest Seen [20190802], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190802 [V-1] | [:Memory Leak] At src/recovery/srd/SysNfo/SysNfoW2K/srdw2k.c:1442
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493053359
+     Hash [File] 8e5488f5b7ebdf855327171017e2ca66a1d0015bc05bc9b67ec68aab [Error] 7e473a960e8e99b38cc297b9e968c42347f21ca8
+	 >> Git Report - Total Commits 27 On This File
+	 	First Instance [Thu Jan  7 16:02:15 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Thu Jun 20 12:24:59 2019] By VEMURI PRAVEEN [vemuri-praveen@microfocus.com][20190620] [Lines#6]
+	 	 2  Fri Aug 16 17:40:43 2013] By Samir Uzunovic [samir.uzunovic@comtrade.com][20130816] [Lines#13]
+	 	 3  Thu Jun 13 17:35:01 2013] By Aldin Sehmehmedovic [aldin.sehmehmedovic@comtrade.com][20130613] [Lines#9]
+	 	 4  Tue Apr 16 11:17:52 2013] By Gautam Bhasin [gautam.bhasin@hpe.com][20130416] [Lines#10]
+	 	 5  Fri Nov 30 15:27:43 2012] By Aldin Sehmehmedovic [aldin.sehmehmedovic@comtrade.com][20121130] [Lines#2]
+	 	 6  Fri Nov 23 12:38:52 2012] By Rohan-A Kulkarni [rohan-a.kulkarni@hp.com][20121123] [Lines#19]
+	 	 7  Sat Jul 21 18:00:50 2012] By Aldin Sehmehmedovic [aldin.sehmehmedovic@hermes-softlab.com][20120721] [Lines#3]
+	 	 8  Mon Jul  2 19:30:49 2012] By Damir Dedic [damir.dedic@hermes-softlab.com][20120702] [Lines#4]
+	 	 9  Mon Jul  2 17:11:50 2012] By Damir Dedic [damir.dedic@hermes-softlab.com][20120702] [Lines#3]
+	 	 10  Wed Jun 20 16:27:04 2012] By Ekrem Imamovic [ekrem.imamovic@hermes-softlab.com][20120620] [Lines#7]
+	 	 11  Tue Jun 19 14:36:24 2012] By Vrushali Naik [vrushali.naik@hp.com][20120619] [Lines#2]
+	 	 12  Mon Jun 28 09:27:17 2010] By Omprakash Khandelwal [omprakash_khandelwal@hpe.com][20100628] [Lines#21]
+	 	 13  Mon Jun 14 11:01:31 2010] By Omprakash Khandelwal [omprakash_khandelwal@hpe.com][20100614] [Lines#21]
+	 	 14  Tue Jun  8 19:51:19 2010] By Ext Toncek Bezjak [ext_toncek_bezjak@hpe.com][20100608] [Lines#66]
+	 	 15  Mon May 17 19:49:19 2010] By Ext Damir Dedic [ext_damir_dedic@hpe.com][20100517] [Lines#7]
+	 	 16  Thu Apr 22 17:07:53 2010] By Ext Damir Dedic [ext_damir_dedic@hpe.com][20100422] [Lines#49]
+	 	 17  Thu Apr 15 16:43:15 2010] By Ext Damir Dedic [ext_damir_dedic@hpe.com][20100415] [Lines#9]
+	 	 18  Tue Feb 23 21:14:28 2010] By Ext Damir Dedic [ext_damir_dedic@hpe.com][20100223] [Lines#10]
+	 	 19  Tue Feb 23 15:33:39 2010] By Ext Damir Dedic [ext_damir_dedic@hpe.com][20100223] [Lines#7]
+	 	 20  Fri Feb 19 18:01:20 2010] By Ext Damir Dedic [ext_damir_dedic@hpe.com][20100219] [Lines#185]
+	 	 21  Thu Feb  4 14:50:09 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100204] [Lines#79]
+	 	 22  Thu Jan 28 19:33:42 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100128] [Lines#26]
+	 	 23  Mon Jan 25 13:03:54 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100125] [Lines#358]
+	 	 24  Mon Jan 18 17:42:44 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100118] [Lines#2]
+	 	 25  Thu Jan 14 16:03:13 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100114] [Lines#2]
+	 	 26  Wed Jan 13 17:18:55 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100113] [Lines#214]
+	 	 27  Thu Jan  7 16:02:15 2010] By Ext Asim Husanovic [ext_asim_husanovic@hpe.com][20100107] [Lines#34]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#4264105947][barguicommon.c] src/lib/bargui/barguicommon.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/lib/bargui/barguicommon.c:2432
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493055781
+     Hash [File] 93316b65f1da67645f83ab6ec2699e3fa2a8c6e05d9afadd08aa9351 [Error] 0e5934620d7d573e429cc4dd08e3e50ea3c51f7b
+	 >> Git Report - Total Commits 6 On This File
+	 	First Instance [Wed Dec  9 20:00:15 2009] By Ext Matevz Mrak [ext_matevz_mrak@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	[1] Thu Jul 25 05:30:00 2019] By Boris Strzinar [boris.strzinar@comtrade.com][20190725] [Lines#9]
+	 	[2] Wed Jul 24 05:30:00 2019] By Jan Sustar [jan.sustar@hpe.com][20190724] [Lines#2]
+	 	 3  Tue May 18 18:20:44 2010] By Ext Matevz Mrak [ext_matevz_mrak@hpe.com][20100518] [Lines#10]
+	 	 4  Fri Apr  9 18:17:12 2010] By Ext Marius Vasilevskis [ext_marius_vasilevskis@hpe.com][20100409] [Lines#2]
+	 	 5  Mon Jan 11 07:11:13 2010] By Ext Antal Nemes [ext_antal_nemes@hpe.com][20100111] [Lines#3]
+	 	 6  Wed Dec  9 20:00:15 2009] By Ext Matevz Mrak [ext_matevz_mrak@hpe.com][20091209] [Lines#6]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#3292787593][dbsa.c] src/lib/smbdb/dbsa/dbsa.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/lib/smbdb/dbsa/dbsa.c:1043
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493046596
+     Hash [File] 161fea15b4f356152b8c7365437aed0371becdadde32bf1f8d6392e6 [Error] f3245da3c69dbadc32229dea22c20ce129b259b8
+	 >> Git Report Not Available for File src/lib/smbdb/dbsa/dbsa.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#504340502][dbsa.c] src/lib/smbdb/dbsa/dbsa.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/lib/smbdb/dbsa/dbsa.c:844
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493053856
+     Hash [File] 161fea15b4f356152b8c7365437aed0371becdadde32bf1f8d6392e6 [Error] 9e8af2303052996868b88f2461f6d5b48b89b1e2
+	 >> Git Report Not Available for File src/lib/smbdb/dbsa/dbsa.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#3374060989][dbsa.c] src/lib/smbdb/dbsa/dbsa.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/lib/smbdb/dbsa/dbsa.c:1341
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493054448
+     Hash [File] 161fea15b4f356152b8c7365437aed0371becdadde32bf1f8d6392e6 [Error] 93ef830488b65e3081ab2087effb7a950fcf86e7
+	 >> Git Report Not Available for File src/lib/smbdb/dbsa/dbsa.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#3386406085][upgrade_cfg.c] src/integ/barutil/upgrade_cfg/upgrade_cfg.c [DP:dpsource]
+     First Seen [20190729], Latest Seen [20190807], Continuity [2] Times Hence <[ONGOING]> Error
+     Date 20190807 [V-2] | [:Memory Leak] At src/integ/barutil/upgrade_cfg/upgrade_cfg.c:2696
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493046427
+     Hash [File] 53efe434b8acd52895f087700447d4b56f93188bf72294c9d40f7f81 [Error] 1e8e8e07a7611d4fc5ae336e86a70ce172d4aa31
+	 >> Git Report Not Available for File src/integ/barutil/upgrade_cfg/upgrade_cfg.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#116450707][upgrade_cfg.c] src/integ/barutil/upgrade_cfg/upgrade_cfg.c [DP:dpsource]
+     First Seen [20190802], Latest Seen [20190802], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190802 [V-1] | [:Memory Leak] At src/integ/barutil/upgrade_cfg/upgrade_cfg.c:613
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493036268
+     Hash [File] 53efe434b8acd52895f087700447d4b56f93188bf72294c9d40f7f81 [Error] c4e6d47e9b38b47c44516d0e784e8d407887e24c
+	 >> Git Report Not Available for File src/integ/barutil/upgrade_cfg/upgrade_cfg.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#499584236][catalog.c] src/ma/xma/catalog.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/ma/xma/catalog.c:2765
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493040484
+     Hash [File] 56b5f736e969f44d6f088e241934b30a1933fea75c9e4528a61a948e [Error] da39a3ee5e6b4b0d3255bfef95601890afd80709
+	 >> Git Report - Total Commits 7 On This File
+	 	First Instance [Tue Mar 12 21:07:03 2013] By Jernej Jerebic [jernej.jerebic@comtrade.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Fri Jul 28 00:05:44 2017] By Franc Farazin [franc.farazin@hpe.com][20170727] [Lines#23]
+	 	 2  Thu Jul 13 18:24:42 2017] By Boris Springar [boris.springar@hpe.com][20170713] [Lines#8]
+	 	 3  Sat Jun 13 18:41:04 2015] By Gpetrovic [gpetrovic@hpe.com][20150613] [Lines#2]
+	 	 4  Tue Oct  7 04:51:50 2014] By Gpetrovic [gpetrovic@hpe.com][20141006] [Lines#108]
+	 	 5  Mon Nov 18 16:04:11 2013] By Jernej Jerebic [jernej.jerebic@comtrade.com][20131118] [Lines#12]
+	 	 6  Tue Nov 12 13:39:26 2013] By Erwin De-Wolff [erwin.de-wolff@comtrade.com][20131112] [Lines#2]
+	 	 7  Tue Mar 12 21:07:03 2013] By Jernej Jerebic [jernej.jerebic@comtrade.com][20130312] [Lines#3]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#4168185278][backint.c] src/integ/sap/backint.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190722], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190722 [V-1] | [:Memory Leak] At src/integ/sap/backint.c:2139
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493051730
+     Hash [File] 9846838c1a4dde753120b839ea1f722179417bdbf256eb7977552467 [Error] 9b853d362535739081b80c946294788947567a7c
+	 >> Git Report - Total Commits 3 On This File
+	 	First Instance [Mon Jan 30 20:51:57 2012] By Andrej Kucler [andrej.kucler@hermes-softlab.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Thu Mar  7 14:18:04 2013] By Marko Ljubanovic [marko.ljubanovic@comtrade.com][20130307] [Lines#17]
+	 	 2  Wed Feb 27 14:59:30 2013] By Marko Ljubanovic [marko.ljubanovic@comtrade.com][20130227] [Lines#33]
+	 	 3  Mon Jan 30 20:51:57 2012] By Andrej Kucler [andrej.kucler@hermes-softlab.com][20120130] [Lines#20]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#3721917622][ipcmsg.c] src/lib/ipc/ipcmsg.c [DP:dpsource]
+     First Seen [20190729], Latest Seen [20190729], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190729 [V-1] | [:Memory Leak] At src/lib/ipc/ipcmsg.c:520
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493052335
+     Hash [File] 127c291bab344ac360a940d0aa7069914b25977c2e6073128c9285c6 [Error] c3e1c5636428890bd4e88d713a6ae2a2deea6610
+	 >> Git Report - Total Commits 4 On This File
+	 	First Instance [Thu Jun  3 20:50:07 2010] By Ext Damjan Lango [ext_damjan_lango@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Tue Jul 10 17:31:59 2012] By Joze Lesjak [joze.lesjak@comtrade.com][20120710] [Lines#20]
+	 	 2  Tue Jun 26 17:15:01 2012] By Volker Schwarz [volker.schwarz@hp.com][20120626] [Lines#60]
+	 	 3  Tue Jun  8 18:57:25 2010] By Ext Damjan Lango [ext_damjan_lango@hpe.com][20100608] [Lines#195]
+	 	 4  Thu Jun  3 20:50:07 2010] By Ext Damjan Lango [ext_damjan_lango@hpe.com][20100603] [Lines#13]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#4056241165][dbsmis.c] src/lib/smbdb/dbsmis/dbsmis.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/lib/smbdb/dbsmis/dbsmis.c:1455
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493049383
+     Hash [File] b16a89a2ad58a9efc13817b135ac12b361b1b5301d3127ec4f206cfe [Error] 4b86370b42646d0cf39f5936ba036d279dc34ffe
+	 >> Git Report - Total Commits 4 On This File
+	 	First Instance [Mon Mar  1 15:02:44 2010] By Fabian Assmann [fabian_assmann@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Mon Mar 25 20:52:46 2013] By Juergen Hanke [juergen.hanke@hpe.com][20130325] [Lines#4]
+	 	 2  Thu Mar 14 23:21:35 2013] By Juergen Hanke [juergen.hanke@hpe.com][20130314] [Lines#5]
+	 	 3  Thu Jan 10 14:11:26 2013] By Ales Kolenc [ales.kolenc2@comtrade.com][20130110] [Lines#103]
+	 	 4  Mon Mar  1 15:02:44 2010] By Fabian Assmann [fabian_assmann@hpe.com][20100301] [Lines#18]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#1864422349][dbsmis.c] src/lib/smbdb/dbsmis/dbsmis.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/lib/smbdb/dbsmis/dbsmis.c:1537
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493054527
+     Hash [File] b16a89a2ad58a9efc13817b135ac12b361b1b5301d3127ec4f206cfe [Error] ca0d4a47a5479e5250ac602cc153f8a1be82663e
+	 >> Git Report - Total Commits 4 On This File
+	 	First Instance [Mon Mar  1 15:02:44 2010] By Fabian Assmann [fabian_assmann@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Mon Mar 25 20:52:46 2013] By Juergen Hanke [juergen.hanke@hpe.com][20130325] [Lines#4]
+	 	 2  Thu Mar 14 23:21:35 2013] By Juergen Hanke [juergen.hanke@hpe.com][20130314] [Lines#5]
+	 	 3  Thu Jan 10 14:11:26 2013] By Ales Kolenc [ales.kolenc2@comtrade.com][20130110] [Lines#103]
+	 	 4  Mon Mar  1 15:02:44 2010] By Fabian Assmann [fabian_assmann@hpe.com][20100301] [Lines#18]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#1347906646][logArchive.c] src/integ/db2/libob2db2/logArchive.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190722], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190722 [V-1] | [:Memory Leak] At src/integ/db2/libob2db2/logArchive.c:340
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493052534
+     Hash [File] c0e8d45c5dd5b94dd5a50ea67351708e10bde403eb35ae0024d4eec9 [Error] 23cb970aeca135f695fb3c8b0ea2360dd679f06b
+	 >> Git Report Not Available for File src/integ/db2/libob2db2/logArchive.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#235810904][devlist_nt.c] src/ma/devtool/devlist_nt.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/ma/devtool/devlist_nt.c:119
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493048619
+     Hash [File] ceef70a96408a26f94e018e73e88c3eb603e6ba1fb2b73f7cae095a1 [Error] 68f34d4510021d34b2bfc9817ad11b20088d14fc
+	 >> Git Report - Total Commits 2 On This File
+	 	First Instance [Tue May  4 12:58:48 2010] By Ext Drago Fiser [ext_drago_fiser@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Tue Oct 24 22:31:11 2017] By Franc Farazin [franc.farazin@hpe.com][20171024] [Lines#2]
+	 	 2  Tue May  4 12:58:48 2010] By Ext Drago Fiser [ext_drago_fiser@hpe.com][20100504] [Lines#4]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#1651536600][ssedbxp.c] src/integ/smb/sse/ssedbxp.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190722], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190722 [V-1] | [:Memory Leak] At src/integ/smb/sse/ssedbxp.c:808
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493049257
+     Hash [File] 15a5d7a29317a10376b830875dc498cb2657b3135f550b5bcd574786 [Error] a27e9ed1b5676275a06bedff55b3efe497fc2f09
+	 >> Git Report Not Available for File src/integ/smb/sse/ssedbxp.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#602666367][ssedbxp.c] src/integ/smb/sse/ssedbxp.c [DP:dpsource]
+     First Seen [20190802], Latest Seen [20190802], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190802 [V-1] | [:Memory Leak] At src/integ/smb/sse/ssedbxp.c:93
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493034832
+     Hash [File] 15a5d7a29317a10376b830875dc498cb2657b3135f550b5bcd574786 [Error] 35da94f22b6763d6fc5dd5f21b9434a6b8841b73
+	 >> Git Report Not Available for File src/integ/smb/sse/ssedbxp.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#710120324][main.c] src/integ/db2/db2arch/main.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190722], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190722 [V-1] | [:Memory Leak] At src/integ/db2/db2arch/main.c:345
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493056277
+     Hash [File] da5dbcece9b086ecbfb2a7a37097d1e7f8f3b9026c5c47c575493dfa [Error] 23cb970aeca135f695fb3c8b0ea2360dd679f06b
+	 >> Git Report - Total Commits 1 On This File
+	 	First Instance [Tue May 26 20:06:43 2015] By Darko Nikolic [darko.nikolic@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Tue May 26 20:06:43 2015] By Darko Nikolic [darko.nikolic@hpe.com][20150526] [Lines#9]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#1715951840][gen_parser.c] src/lib/parse/gen_parser.c [DP:dpsource]
+     First Seen [20190802], Latest Seen [20190802], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190802 [V-1] | [:Memory Leak] At src/lib/parse/gen_parser.c:1778
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493041907
+     Hash [File] e0a196c45f2d3a69d76e4f1dab34eee14fa5007d24661ced56a226d8 [Error] c577e13c00dd4bb8771a0cfcbc55572e1c27829b
+	 >> Git Report - Total Commits 4 On This File
+	 	First Instance [Thu Oct  3 23:11:51 2013] By Matjaz Potocnik [matjaz.potocnik@comtrade.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Tue Mar 28 23:05:38 2017] By Milos Milojkovic [milos.milojkovic@hpe.com][20170328] [Lines#84]
+	 	 2  Wed Oct 23 18:04:12 2013] By Jakob Gorol [jakob.gorol@hpe.com][20131023] [Lines#2]
+	 	 3  Wed Oct 23 14:57:21 2013] By Jakob Gorol [jakob.gorol@hpe.com][20131023] [Lines#31]
+	 	 4  Thu Oct  3 23:11:51 2013] By Matjaz Potocnik [matjaz.potocnik@comtrade.com][20131003] [Lines#2]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#3390580879][win32.c] src/lib/cmn/win32.c [DP:dpsource]
+     First Seen [20190807], Latest Seen [20190807], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190807 [V-1] | [:Memory Leak] At src/lib/cmn/win32.c:362
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493046904
+     Hash [File] 49c05c86a18a8226891dd315509f50caafd90867d2bdaaea0bdfdb0b [Error] bb1554b8675cbfcce6a52874e9d3f144edc2a89a
+	 >> Git Report - Total Commits 4 On This File
+	 	First Instance [Fri Aug 31 19:37:34 2012] By Jakob Gorol [jakob.gorol@hpe.com] 
+	 	>> Last 5 Commits, Reverse Chronologically, Lastest First
+	 	 1  Mon Jun 17 15:43:46 2019] By Sushant Poojary [sushantha.poojary@microfocus.com][20190617] [Lines#9]
+	 	 2  Fri Sep 22 16:27:08 2017] By Antal Nemes [antal.nemes@hpe.com][20170922] [Lines#2]
+	 	 3  Tue Sep 12 20:16:02 2017] By Adnan Merusic [adnan.merusic@hpe.com][20170912] [Lines#14]
+	 	 4  Fri Aug 31 19:37:34 2012] By Jakob Gorol [jakob.gorol@hpe.com][20120831] [Lines#4]
+	 	[x]Potential Error Owners
+ ---------------------------------------------------------------
+ >>  ErrId: [#3856174185][sys_sec.c] src/da/win32/sys_sec.c [DP:dpsource]
+     First Seen [20190722], Latest Seen [20190724], Continuity [3] Times Hence <[LEGACY]> Error
+     Date 20190724 [V-3] | [:Memory Leak] At src/da/win32/sys_sec.c:627
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493054571
+     Hash [File] 3f2440320f8349a64db1174097fe50a32945f50cab64c940af9db128 [Error] da39a3ee5e6b4b0d3255bfef95601890afd80709
+	 >> Git Report Not Available for File src/da/win32/sys_sec.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#3791699552][win32_suid.c] src/lib/xtra/win32_suid.c [DP:dpsource]
+     First Seen [20190729], Latest Seen [20190729], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190729 [V-1] | [:Memory Leak] At src/lib/xtra/win32_suid.c:148
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493052053
+     Hash [File] f71bb1521bdf74465e98ffd725c7245db29bb1f8d8817b6d4d1797b4 [Error] 2510cfd06cef0c423dd71716db3c41c791a62e9a
+	 >> Git Report Not Available for File src/lib/xtra/win32_suid.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#2776203819][win32_suid.c] src/lib/xtra/win32_suid.c [DP:dpsource]
+     First Seen [20190729], Latest Seen [20190729], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190729 [V-1] | [:Memory Leak] At src/lib/xtra/win32_suid.c:155
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493046379
+     Hash [File] f71bb1521bdf74465e98ffd725c7245db29bb1f8d8817b6d4d1797b4 [Error] c2c50cab96c23fb9b560e9c8d98848ed8304c07a
+	 >> Git Report Not Available for File src/lib/xtra/win32_suid.c
+ ---------------------------------------------------------------
+ >>  ErrId: [#2762033132][scsiop.c] src/recovery/drw/scsiop.c [DP:dpsource]
+     First Seen [20190802], Latest Seen [20190802], Continuity [1] Times Hence <[NEW]> Error
+     Date 20190802 [V-1] | [:Memory Leak] At src/recovery/drw/scsiop.c:416
+     Link https://stat.rndsec.microfocus.com/stat/stat.html?proj=DP&issue=SCA222313476&issue=SCA493034927
+     Hash [File] 0b2050689b361e41ff68b27a35bb77e828c77adf32b2cc33059a1644 [Error] 8dffd793d96e948d30881c7866f63e87d3265395
+	 >> Git Report Not Available for File src/recovery/drw/scsiop.c
+ ---------------------------------------------------------------

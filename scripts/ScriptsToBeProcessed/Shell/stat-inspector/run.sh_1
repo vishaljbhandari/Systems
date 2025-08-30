@@ -1,0 +1,34 @@
+#!/bin/sh
+
+echo "REPORT"
+CURRENT_DIR='pwd'
+LOG_FILE=$CURRENT_DIR/inspector.log
+RESULT_DIR=$CURRENT_DIR/results
+
+GIT_DIR=$CURRENT_DIR/git-reports
+if [ ! -d $GIT_DIR ] then
+	echo "GIT Directory is missing"
+	exit 10
+fi
+
+STAT_DIR=$CURRENT_DIR/stat-reports
+if [ ! -d $STAT_DIR ] then
+	echo "STAT Directory is missing"
+	exit 10
+fi
+
+GIT_REPORT=$GIT_DIR/g_report.txt
+if [ ! -f $GIT_REPORT ] then
+	echo "Git Report is missing"
+	exit 10
+fi
+
+STAT_REPORT=$STAT_DIR/s_report.txt
+if [ ! -f $STAT_REPORT ] then
+	echo "Stat Report is missing"
+	exit 10
+fi
+
+
+
+

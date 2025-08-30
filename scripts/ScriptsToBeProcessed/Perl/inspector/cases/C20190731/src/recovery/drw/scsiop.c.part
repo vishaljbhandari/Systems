@@ -1,0 +1,5 @@
+				if (GetLastError () == ERROR_INSUFFICIENT_BUFFER)
+				{
+					pBusInfo = (PSCSI_ADAPTER_BUS_INFO) REALLOC (pBusInfo, (busInfoSz += sizeof (SCSI_BUS_DATA)));
+					continue;
+				}

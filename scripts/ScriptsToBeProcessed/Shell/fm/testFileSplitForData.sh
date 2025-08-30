@@ -1,0 +1,80 @@
+
+rm  $COMMON_MOUNT_POINT/FMSData/AICumulativeGPRSData/Process/*
+rm  $COMMON_MOUNT_POINT/FMSData/AICumulativeGPRSData/Process/success/*
+
+$SQL_COMMAND -s /nolog << EOF
+CONNECT_TO_SQL
+whenever oserror exit 5;
+whenever sqlerror exit 5;
+
+delete from gprs_cdr;
+delete from subscr_neural_data_profile;
+delete from subscr_neural_voice_profile;
+
+update configurations set value = '1' where config_key = 'AI.MAX_SUBSCRIBER_PER_AICRG_FILE' ;
+	
+insert into subscr_neural_data_profile (subscriber_id, phone_number, network_id, sequence_id, profile_type, profile_matured)
+	values(1025, '+919820535200', 1, 0, 5, 1) ;
+
+insert into gprs_cdr
+	(ID, NETWORK_ID, RECORD_TYPE, TIME_STAMP, DURATION, PHONE_NUMBER,CDR_TYPE, SERVICE_TYPE,UPLOAD_DATA_VOLUME,DOWNLOAD_DATA_VOLUME, QOS_REQUESTED, 
+	QOS_NEGOTIATED, VALUE,SUBSCRIBER_ID ,CHARGING_ID,IMSI_NUMBER,IMEI_NUMBER,GEOGRAPHIC_POSITION,PDP_TYPE,SERVED_PDP_ADDRESS, ACCESS_POINT_NAME, ANI)
+	values(1050,1,1,to_date('06:01:2005 01:00:00','dd:mm:yyyy hh24:mi:ss'),230,'+919820535200', 1,1,15,15,2,2,300,1025,'22','22','222','222',
+				'IP','aaa.aaa','333', '+918') ;
+
+insert into gprs_cdr
+	(ID, NETWORK_ID, RECORD_TYPE, TIME_STAMP, DURATION, PHONE_NUMBER,CDR_TYPE, SERVICE_TYPE,UPLOAD_DATA_VOLUME,DOWNLOAD_DATA_VOLUME, QOS_REQUESTED, 
+	QOS_NEGOTIATED, VALUE,SUBSCRIBER_ID ,CHARGING_ID,IMSI_NUMBER,IMEI_NUMBER,GEOGRAPHIC_POSITION,PDP_TYPE,SERVED_PDP_ADDRESS, ACCESS_POINT_NAME, ANI)
+	values(1050,1,1,to_date('07:01:2005 01:00:00','dd:mm:yyyy hh24:mi:ss'),0,'+919820535200', 1,2,15,15,2,2,1,1025,'22','22','222','222',
+				'IP','aaa.aaa','333', '+818') ;
+
+insert into gprs_cdr
+	(ID, NETWORK_ID, RECORD_TYPE, TIME_STAMP, DURATION, PHONE_NUMBER,CDR_TYPE, SERVICE_TYPE,UPLOAD_DATA_VOLUME,DOWNLOAD_DATA_VOLUME, QOS_REQUESTED, 
+	QOS_NEGOTIATED, VALUE,SUBSCRIBER_ID ,CHARGING_ID,IMSI_NUMBER,IMEI_NUMBER,GEOGRAPHIC_POSITION,PDP_TYPE,SERVED_PDP_ADDRESS, ACCESS_POINT_NAME, ANI)
+	values(1050,1,1,to_date('09:01:2005 21:30:00','dd:mm:yyyy hh24:mi:ss'),230,'+919820535200', 1,1,15,15,2,2,300,1025,'22','22','222','222',
+				'IP','aaa.aaa','333', '+918') ;
+
+insert into gprs_cdr
+	(ID, NETWORK_ID, RECORD_TYPE, TIME_STAMP, DURATION, PHONE_NUMBER,CDR_TYPE, SERVICE_TYPE,UPLOAD_DATA_VOLUME,DOWNLOAD_DATA_VOLUME, QOS_REQUESTED, 
+	QOS_NEGOTIATED, VALUE,SUBSCRIBER_ID ,CHARGING_ID,IMSI_NUMBER,IMEI_NUMBER,GEOGRAPHIC_POSITION,PDP_TYPE,SERVED_PDP_ADDRESS, ACCESS_POINT_NAME, ANI)
+	values(1050,1,1,to_date('09:01:2005 21:00:00','dd:mm:yyyy hh24:mi:ss'),230,'+919820535200', 1,1,15,15,2,2,300,1025,'22','22','222','222',
+				'IP','aaa.aaa','333', '+918') ;
+
+insert into subscr_neural_data_profile (subscriber_id, phone_number, network_id, sequence_id, profile_type, profile_matured)
+	values(1027, '+919820535202', 1, 0, 5, 1) ;
+
+insert into gprs_cdr
+	(ID, NETWORK_ID, RECORD_TYPE, TIME_STAMP, DURATION, PHONE_NUMBER,CDR_TYPE, SERVICE_TYPE,UPLOAD_DATA_VOLUME,DOWNLOAD_DATA_VOLUME, QOS_REQUESTED, 
+	QOS_NEGOTIATED, VALUE,SUBSCRIBER_ID ,CHARGING_ID,IMSI_NUMBER,IMEI_NUMBER,GEOGRAPHIC_POSITION,PDP_TYPE,SERVED_PDP_ADDRESS, ACCESS_POINT_NAME, ANI)
+	values(1055,1,1,to_date('08:01:2005 03:00:00','dd:mm:yyyy hh24:mi:ss'),230,'+919820535202', 2,1,15,15,2,2,300,1027,'22','22','222','222',
+				'IP','aaa.aaa','333', '+818') ;
+
+insert into gprs_cdr
+	(ID, NETWORK_ID, RECORD_TYPE, TIME_STAMP, DURATION, PHONE_NUMBER,CDR_TYPE, SERVICE_TYPE,UPLOAD_DATA_VOLUME,DOWNLOAD_DATA_VOLUME, QOS_REQUESTED, 
+	QOS_NEGOTIATED, VALUE,SUBSCRIBER_ID ,CHARGING_ID,IMSI_NUMBER,IMEI_NUMBER,GEOGRAPHIC_POSITION,PDP_TYPE,SERVED_PDP_ADDRESS, ACCESS_POINT_NAME, ANI)
+	values(1056,1,1,to_date('09:01:2005 10:00:00','dd:mm:yyyy hh24:mi:ss'),230,'+919820535202', 5,1,15,15,2,2,300,1027,'22','22','222','222',
+				'IP','aaa.aaa','333', '') ;
+
+insert into subscr_neural_data_profile (subscriber_id, phone_number, network_id, sequence_id, profile_type, profile_matured)
+	values(1028, '+919820535203', 1, 0, 5, 1) ;
+
+insert into gprs_cdr
+	(ID, NETWORK_ID, RECORD_TYPE, TIME_STAMP, DURATION, PHONE_NUMBER,CDR_TYPE, SERVICE_TYPE,UPLOAD_DATA_VOLUME,DOWNLOAD_DATA_VOLUME, QOS_REQUESTED, 
+	QOS_NEGOTIATED, VALUE,SUBSCRIBER_ID ,CHARGING_ID,IMSI_NUMBER,IMEI_NUMBER,GEOGRAPHIC_POSITION,PDP_TYPE,SERVED_PDP_ADDRESS, ACCESS_POINT_NAME, ANI)
+	values(1060,1,1,to_date('06:01:2005 01:00:00','dd:mm:yyyy hh24:mi:ss'),230,'+919820535203', 1,1,15,15,2,2,300,1028,'22','22','222','222',
+				'IP','aaa.aaa','333', '+918') ;
+
+update gprs_cdr set day_of_year = to_number(to_char(time_stamp, 'DDD')) ;
+commit;
+quit;
+EOF
+if test $? -eq 5
+then
+	exitval=1
+else
+	exitval=0
+fi
+
+exit $exitval
+	
+

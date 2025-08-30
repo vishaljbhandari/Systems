@@ -1,0 +1,5 @@
+                {
+                    barLen   += ALLOC_SIZE;
+                    barNames  = (tchar **)REALLOC(barNames, barLen*sizeof(tchar *));
+                }
+                barNames[barNum++] = StrNewCopy(barName);

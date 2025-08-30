@@ -1,0 +1,59 @@
+-------------------------------------------------
+A Subex Release [254] FOR [DUMMY CUSTOMER] #DATE 2017-02-23:15:01:59 #IP [10.113.58.198]
+-------------------------------------------------
+[INFO] Configurations are loaded from /home/vishalb/local_one_drive/templates/config/configurations.file
+[INFO] Release Tarball Used [/home/vishalb/local_one_drive/templates/contents/release-254.tar.gz]
+[INFO] Release Tarball [/home/vishalb/local_one_drive/templates/contents/release-254.tar.gz] cksum [2331521801]
+[INFO] Release Tarball [/home/vishalb/local_one_drive/templates/contents/release-254.tar.gz] tarred at [/home/vishalb/local_one_drive/templates/contents/release-254/]
+-------------------------------------------------
+
+
+
+
+-------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Thanks For Choosing Subex Release
+-------------------------------------------------
+
+
+
+
+
+-------------------------------------------------
+TO BE ADDED LATER
+DEVELOPER : Name, Email-Id
+DEVELOPER LEAD : Name, Email-Id
+DEVELOPER MANAGER : Name, Email-Id
+TESTER : Name, Email-Id
+TESTER LEAD : Name, Email-Id
+TESTER MANAGER : Name, Email-Id
+SUPPORT ENGINEER : Name, Email-Id
+SUPPORT LEAD : Name, Email-Id
+SUPPORT MANAGER : Name, Email-Id
+-------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+PROMPTING USER CONFIRMATIONS
+[INFO] RELESE PRE REQUISITES, PLEASE CONFIRM [Mandatory] /home/vishalb/local_one_drive/templates/config/prompted_questions
+[INFO] Is DBA Available : Customer Input[N]
+[INFO] Is DBA Available : Customer Input[N]
+[INFO] Is DBA Available : Customer Input[Y]
+[INFO] Is DBA Available : Customer Confirmed
+[INFO] Is Back Up Taken : Customer Input[Y]
+[INFO] Is Back Up Taken : Customer Confirmed
+~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------
+[INFO] Checking System Environment, Storing Environment Backup Internally to [/home/vishalb/local_one_drive/templates/logs/.before_release-254.environment]
+[INFO] [DB_HOSTNAME] Environmental Variable is  set to [10.113.58.198]
+[INFO] [DB_PASSWORD] Environmental Variable is  set to [vishal_dev]
+~~~~~~~~~~~~~~~~~~~~~~~~~
+[INFO] Checking Memory Availability, Reading Memory Requirements /home/vishalb/local_one_drive/templates/config/memory_limits.conf
+[INFO] Memory Required [76 GB] for Mount[/home/vishalb]: Available [80 GB]
+[INFO] Memory Required [44 GB] for Mount[/home/vishalb]: Available [80 GB]
+[INFO] Checking IP Host Availability, Reading Host Requirements /home/vishalb/local_one_drive/templates/config/host_address.conf
+[INFO] HOST IP[10.113.58.198] is Available, Ping Status [0.007/0.035/0.050/0.018 ms]
+[INFO] HOST IP[10.113.59.254] is Available, Ping Status [0.012/0.023/0.049/0.013 ms]
+~~~~~~~~~~~~~~~~~~~~~~~~~
+[INFO] RELEASE INSTALLATION COMPLETED
+[INFO] Release Log file : [/home/vishalb/local_one_drive/templates/logs/release_installer.log]
+[INFO] Release Log Directory : [/home/vishalb/local_one_drive/templates/logs]

@@ -1,0 +1,5 @@
+            {
+                vsNumber++;
+                vsArray=REALLOC(vsArray, sizeof(tchar)*vsNumber);
+                vsArray[vsNumber-1]=StrNewCopy(vsName);
+            }

@@ -1,0 +1,5 @@
+              if (( ir == IR_NOT_SET ) || ( ir == newIR ))
+              {
+                  uniqueList = (tchar**)REALLOC( uniqueList, ( size+1 )*sizeof(tchar*) );
+                  uniqueList[i] = (tchar*)MALLOC( ( STRLEN_STD+1 )*sizeof(tchar) );
+                  StrCpy( uniqueList[ size ], sessID) ;

@@ -1,0 +1,28 @@
+stat Run History
+RunDate, Total Errors, Critical, High, Medium, Low, File Count, New Errors, Solved Errors, Carry Forward Errors
+
+
+
+For each error
+chrono logical history
+
+ERROR-ID [Based on continuity level] [0 to high]
+Each Error
+HEADER: [ERROR-ID] [Priority] [Category] [File]
+Path | Commit Count on file [total|in month] | Continuity Count | First Sighted
+[ Date,ErrorHashCode,DescriptionLink,FileVersion,FileHashCode ] Chronological Order
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Error-id: Each error is identified based on its characterstics(line text, location, context) and given an unique id internally. Errors between consecutive runs are compared based on this unique id for their existance and continuity.
+

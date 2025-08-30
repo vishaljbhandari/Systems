@@ -1,0 +1,74 @@
+BACKUP OPTION SELECTED [BACKUP]
+BACKUP STARTS
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test1|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/target/test1] IS COPIED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/backup/backup1/]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test2|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/target/test2] IS COPIED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/backup/backup1/]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test3|/home/vishalb/myworkspace/directorybackup/backup/backup1
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/target/test3] IS COPIED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/backup/backup1]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test1|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/target/test1] IS COPIED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/backup/backup1/]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+TARGET DIRECTORY : /home/vishalb/myworkspace/directorybackup/target/test IS NOT VALID
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/demo|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+TARGET DIRECTORY : /home/vishalb/myworkspace/directorybackup/target/demo IS NOT VALID
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/demo1|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/target/demo1] IS COPIED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/backup/backup1/]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/demo2|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/target/demo2] IS COPIED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/backup/backup1/]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/demo3|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+TARGET DIRECTORY : /home/vishalb/myworkspace/directorybackup/target/demo3 IS NOT VALID
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test1/test5|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/target/test1/test5] IS COPIED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/backup/backup1/]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test1/test8|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/target/test1/test8] IS COPIED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/backup/backup1/]
+CONFIG FILE : [directory.backup.config] PROCESSED WITH 3 ERRORS
+PLEASE CHECK LOG FILE ./directory.backup.sh_LOG
+---------------------------------------------INVALID OPTION PARAMETER [RESTORE]
+REVERT OPTION SELECTED [REVERT]
+RESTORE STARTS
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test1|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//test1] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test2|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//test2] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test3|/home/vishalb/myworkspace/directorybackup/backup/backup1
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1/test3] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test1|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//test1] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+DIRECTORY : /home/vishalb/myworkspace/directorybackup/backup/backup1//test IS NOT VALID
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/demo|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+DIRECTORY : /home/vishalb/myworkspace/directorybackup/backup/backup1//demo IS NOT VALID
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/demo1|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//demo1] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/demo2|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//demo2] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/demo3|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+DIRECTORY : /home/vishalb/myworkspace/directorybackup/backup/backup1//demo3 IS NOT VALID
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test1/test5|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//test5] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target/test1]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test1/test8|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//test8] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target/test1]
+CONFIG FILE : [directory.backup.config] PROCESSED WITH 3 ERRORS
+PLEASE CHECK LOG FILE ./directory.backup.sh_LOG
+---------------------------------------------REVERT OPTION SELECTED [REVERT]
+RESTORE STARTS
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test1|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//test1] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test2|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//test2] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test3|/home/vishalb/myworkspace/directorybackup/backup/backup1
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1/test3] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test1|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//test1] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/demo1|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//demo1] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/demo2|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//demo2] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test1/test5|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//test5] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target/test1]
+ENTRY : /home/vishalb/myworkspace/directorybackup/target/test1/test8|/home/vishalb/myworkspace/directorybackup/backup/backup1/
+BACKUP OF [/home/vishalb/myworkspace/directorybackup/backup/backup1//test8] IS RESTORED TO DIRECTORY [/home/vishalb/myworkspace/directorybackup/target/test1]
+CONFIG FILE : [directory.backup.config] PROCESSED WITH 0 ERRORS
+PLEASE CHECK LOG FILE ./directory.backup.sh_LOG
+---------------------------------------------

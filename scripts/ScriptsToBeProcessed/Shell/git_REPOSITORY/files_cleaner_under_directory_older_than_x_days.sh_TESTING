@@ -1,0 +1,52 @@
+#! /bin/bash
+#################################################################################
+#
+#
+#
+#################################################################################
+# DELETE FILES OLDER THAN A TIME
+#
+#
+#################################################################################
+
+TARGS=$#
+if [ $# -ne 2 ] ; then
+	echo -e "[ERROR] USAGE :  $0 [ABSOLUTE DIRECTORY PATH] [RETENTION IN DAYS]"
+	exit 2
+fi
+CURRENTTIME=`date +"%Y%m%d%H%M%S"`
+LOG_PREFIX=prefix
+LOG_SUFFIX=suffix
+LOG_FILE_FORMATE=log
+MODULE_NAME=$0
+CWD=`pwd`
+LOG_DIRECTORY=$CWD
+if [ ! -d $LOG_DIRECTORY ]
+then
+	echo -e "[ERROR] LOG_DIRECTORY : [$LOG_DIRECTORY] DOESNT EXIST"
+	LOG_DIRECTORY=$CWD
+	echo -e "[INFO] TAKING CURRENT WORKING DIRECTORY AS LOG DIRECTORY[$LOG_DIRECTORY]"
+else
+	echo -e "[INFO] LOG DIRECTORY[$LOG_DIRECTORY]"
+fi
+LOG_FILE=$LOG_DIRECTORY/$LOG_PREFIX.$MODULE_NAME.$CURRENTTIME.$LOG_SUFFIX.$LOG_FILE_FORMATE
+DIRECTORY=$1
+if [ ! -d $DIRECTORY ]
+then
+                echo -e "[ERROR] DIRECTORY : [$DIRECTORY] DOESNT EXIST" >> $LOG_FILE
+                exit 1
+else
+                echo -e "[INFO] DIRECTORY[$DIRECTORY]" >> $LOG_FILE
+fi
+
+NUM_DAY=$2
+NumericReg='^[0-9]+$'
+if ! [[ $NUM_DAY =~ $NumericReg ]] ; then
+	echo -e "[ERROR] INVALID RETENTION IN DAYS[$NUM_DAY]" >> $LOG_FILE
+	exit 5
+fi
+cd $DIRECTORY
+echo "find . -mtime +$NUM_DAY" >> $LOG_FILE
+find . -mtime +$NUM_DAY | xargs ls -ltr >> $LOG_FILE
+#find . -mtime +$NUM_DAY | xargs rm 2> /dev/null
+echo -e "[INFO] FILES UNDER $DIRECTORY OLDER THAN $NUM_DAY ARE DELETED" >> $LOG_FILE

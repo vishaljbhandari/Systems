@@ -1,0 +1,5 @@
+                    bytes += BUFFER_SIZE;
+                    DbgPlain(10, _T("DeviceIOControl() failed (ERROR_INSUFFICIENT_BUFFER). %d. Trying to REALLOC %d bytes"), ret, bytes);
+                    Buffer = (UCHAR *)REALLOC(Buffer, bytes);
+                    if (Buffer == NULL)
+                    {

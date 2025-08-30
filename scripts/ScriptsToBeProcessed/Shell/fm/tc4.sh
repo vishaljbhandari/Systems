@@ -1,0 +1,2 @@
+. ~/ravinjai/deploy/bin/classpath.sh
+java -Xmx1024M -XX:MaxPermSize=128M -server -XX:+UseParallelGC -XX:+UseAdaptiveSizePolicy -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=6004 -DbreakPointInstrumentationEnabled=true -Dfile.encoding=windows-1252 com.subex.nikira.main.TaskControllerService -HIBERNATEPROPERTIES_DC='../config/DistributedCacheManagerResources/hibernate_dc.cfg.xml' -ControllerId=4 -DEBUGDISTCACHE=1  -DEBUGDISTCACHE_PORT=26050

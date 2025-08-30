@@ -1,0 +1,28 @@
+bash - GNU Bourne-Again SHell
+
+
+Script File BASIC
+#! Shebang -> first two characters, then followed by Bash or env
+
+it tells kernel about shell interpreter for your program
+
+example
+
+#!/bash
+OR
+#!/bin/bash
+OR
+#!/usr/bin/bash
+
+
+make script file executable using chmod u+x    which means for u(user) add x(execute permission)
+
+if current directory is in path variable then you can run the script with only . or with only file name
+exmaple
+. file.sh
+file.sh
+
+else you need to give extire path or run from same directory
+
+
+

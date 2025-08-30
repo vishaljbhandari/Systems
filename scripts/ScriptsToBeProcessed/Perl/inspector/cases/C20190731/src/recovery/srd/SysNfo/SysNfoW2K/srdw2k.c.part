@@ -1,0 +1,5 @@
+                    {
+                        ulSize = sizeof(VOLMTINFO) + ulCurrent * sizeof(PVOLMTINFOPARENT);
+                        pVolMt = REALLOC(pVolMt, ulSize);
+                        if(pVolMt == NULL)
+                            __leave;

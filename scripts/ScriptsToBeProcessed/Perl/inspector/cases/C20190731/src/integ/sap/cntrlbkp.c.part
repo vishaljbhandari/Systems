@@ -1,0 +1,5 @@
+
+    /* add sentinel at the end, but don't increment the counter */
+    szA = REALLOC( szA, (iCount+1) * sizeof(tchar *) );
+    szA[iCount] = NULL;
+

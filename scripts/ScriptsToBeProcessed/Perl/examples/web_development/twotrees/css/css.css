@@ -1,0 +1,225 @@
+body {
+    text-align: center;
+    background-color: #FFF;
+}
+#wrapper {
+    margin: auto;
+    padding: 0px;
+    width: 950px;
+    position: relative;
+    background-color: #e2e7d3;
+    text-align: left;
+}
+#breadImage {
+    margin: 10px;
+    padding: 0px;
+    float: right;
+    height: 316px;
+    width: 438px;
+}
+#header {
+    margin: 0px;
+    padding: 0px;
+    width: 950px;
+    background-color: #e2e7d3;
+    height: 235px;
+}
+#leftSide {
+    padding: 0px;
+    width: 625px;
+    float: left;
+    background-color: #e2e7d3;
+    margin: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+#wrapper #leftSide p {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin-left: 20px;
+    color: #000;
+    margin-right: 20px;
+}
+#sidebarTop {
+    float: right;
+    width: 325px;
+    margin: 0px;
+    padding: 0px;
+}
+#leftSidePhoto {
+    margin: 10px;
+    padding: 0px;
+    float: right;
+    height: 232px;
+    width: 200px;
+}
+#wrapper #rightSide p {
+    font-family: "Trebuchet MS", Helvetica, Geneva, Arial, sans-serif;
+    font-size: 100%;
+    color: #000;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+#footer {
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    width: 950px;
+    clear: both;
+    float: none;
+    background-color: #403a19;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 100%;
+    color: #FFF;
+    text-align: center;
+}
+#sidebarBottom {
+    width: 325px;
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    color: #759b46;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-left: 20px;
+}
+#navbar {
+    float: right;
+    width: 777px;
+    margin: 0px;
+    padding: 0px;
+    height: 188px;
+    background-color: #b9c6aa;
+}
+#about {
+    position: absolute;
+    height: 91px;
+    width: 82px;
+    left: 367px;
+    top: 50px;
+}
+#process {
+    position: absolute;
+    height: 91px;
+    width: 97px;
+    left: 527px;
+    top: 50px;
+}
+#shop {
+    position: absolute;
+    height: 91px;
+    width: 77px;
+    left: 692px;
+    top: 50px;
+}
+#contact {
+    position: absolute;
+    height: 91px;
+    width: 105px;
+    left: 829px;
+    top: 50px;
+}
+#home {
+    position: absolute;
+    height: 91px;
+    width: 81px;
+    left: 226px;
+    top: 50px;
+}
+#rightSide {
+    margin: 0px;
+    padding: 0px;
+    width: 325px;
+    float: right;
+    background-color: #b9c6aa;
+}
+#wrapper #header img {
+    margin: 0px;
+    padding: 0px;
+    background-color: #b9c6aa;
+}
+#wrapper #leftSide p #FlashID {
+    float: left;
+    padding: 0px;
+    margin: 10px;
+}
+#ProcessPageMain {
+    margin: 10px;
+    width: 930px;
+    padding: 0px;
+    font-family: "Trebuchet MS", Helvetica, Geneva, Arial, sans-serif;
+    font-size: 100%;
+}
+#wrapper #ProcessPageMain p {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#wrapper #ProcessPageMain p #FlashID {
+    float: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+}
+#leftSidePhoto2 {
+    padding: 0px;
+    float: left;
+    height: 289px;
+    width: 400px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 105px;
+}
+#wrapper #PageMain {
+    margin: 10px;
+    padding: 0px;
+    width: 930px;
+}
+#wrapper #PageMain p {
+    list-style-image: none;
+    list-style-type: none;
+    margin: 20px;
+    padding: 0px;
+    font-family: "Trebuchet MS", Helvetica, Geneva, Arial, sans-serif;
+    font-size: 100%;
+}
+#wrapper #PageMain ul li {
+    font-family: "Trebuchet MS", Helvetica, Geneva, Arial, sans-serif;
+    font-size: 100%;
+}
+h3 {
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 130%;
+    font-weight: bold;
+}
+h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 100%;
+    font-weight: bold;
+    color: #759b46;
+    padding: 0px;
+    margin-left: 20px;
+}
+
+/* ====== BW ======= */
+#flavorimage {
+    float: left;
+    margin-top: 0;
+}
+
+#testimonials .quote, #testimonials .testimonial {
+    font-style: italic;
+    font-size: 85%;
+    margin-bottom: 0;
+}
+
+#testimonials .byline {
+    text-align: right;
+    font-size: 90%;
+    margin-top: 0;
+}

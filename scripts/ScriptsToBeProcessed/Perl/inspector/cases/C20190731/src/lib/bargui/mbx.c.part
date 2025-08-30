@@ -1,0 +1,5 @@
+                if ((*IntegObjCount+1)>iAllocCount)
+                {
+                    integObj=(IntegObj*)REALLOC(integObj,
+                        (iAllocCount+=BG_ALLOC_COUNT)*sizeof(IntegObj) );
+                }

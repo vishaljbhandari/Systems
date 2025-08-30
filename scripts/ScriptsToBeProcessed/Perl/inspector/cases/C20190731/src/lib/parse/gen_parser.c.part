@@ -1,0 +1,5 @@
+        {
+            i++;
+            pt = REALLOC(pt, sizeof(ParserTable) * (i+1));
+            if (!pt) return NULL;
+            pt[i].key = NULL; pt[i].desc = NULL; pt[i].nlsSet = 0; pt[i].nlsId = 0;

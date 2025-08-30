@@ -1,0 +1,143 @@
+Cat command in Linux with examples
+Difficulty Level : Easy
+Last Updated : 06 Dec, 2021
+Read
+Discuss
+
+Cat(concatenate) command is very frequently used in Linux. It reads data from the file and gives their content as output. It helps us to create, view, concatenate files. So let us see some frequently used cat commands. 
+
+1) To view a single file 
+Command: 
+ 
+
+$cat filename
+Output 
+ 
+
+It will show content of given filename
+2) To view multiple files 
+Command: 
+ 
+
+
+$cat file1 file2
+Output 
+ 
+
+This will show the content of file1 and file2.
+3) To view contents of a file preceding with line numbers. 
+Command: 
+ 
+
+$cat -n filename
+Output 
+ 
+
+It will show content with line number
+example:-cat-n  geeks.txt
+1)This is geeks
+2)A unique array
+4) Create a file 
+Command: 
+ 
+
+$ cat > newfile
+Output 
+ 
+
+Will create a file named newfile
+5) Copy the contents of one file to another file. 
+Command: 
+ 
+
+$cat [filename-whose-contents-is-to-be-copied] > [destination-filename]
+Output 
+ 
+
+The content will be copied in destination file
+6) Cat command can suppress repeated empty lines in output 
+Command: 
+ 
+
+$cat -s geeks.txt
+Output 
+ 
+
+Will suppress repeated empty lines in output
+7) Cat command can append the contents of one file to the end of another file. 
+Command: 
+ 
+
+$cat file1 >> file2
+Output 
+ 
+
+Will append the contents of one file to the end of another file
+8) Cat command can display content in reverse order using tac command. 
+Command: 
+ 
+
+ $tac filename
+Output 
+ 
+
+Will display content in reverse order 
+9) Cat command can highlight the end of line. 
+Command: 
+ 
+
+$cat -E "filename"
+Output 
+ 
+
+Will highlight the end of line
+10) If you want to use the -v, -E and -T option together, then instead of writing -vET in the command, you can just use the -A command line option. 
+Command 
+ 
+
+$cat -A  "filename"
+11) Cat command to open dashed files. 
+Command: 
+ 
+
+$cat -- "-dashfile"
+Output 
+ 
+
+Will display the content of -dashfile
+12) Cat command if the file has a lot of content and can’t fit in the terminal. 
+Command: 
+ 
+
+$cat "filename" | more
+Output 
+ 
+
+Will show that much content, which could fit in terminal and will ask to show more.
+13) Cat command to merge the contents of multiple files. 
+Command: 
+ 
+
+$cat "filename1" "filename2" "filename3" > "merged_filename"
+Output 
+ 
+
+Will merge the contents of file in respective order and will insert that content in "merged_filename".
+14) Cat command to display the content of all text files in the folder. 
+Command: 
+ 
+
+$cat *.txt
+Output 
+ 
+
+Will show the content of all text files present in the folder.
+15) Cat command to write in an already existing file. 
+
+Command :
+
+$cat >> geeks.txt
+The newly added text.
+Output
+
+Will append the text "The newly added text." to the end of the file.

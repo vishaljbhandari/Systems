@@ -1,0 +1,108 @@
+[idea@gauravp-ux migration]$ ls
+total 16
+-rw-rw-r-- 1 idea idea 1664 2014-01-09 18:19 migration_outroamer_gprs_vpmn_rates_installkira-DDL-db-idea-contentdownloads.sql
+                nikira-DML-db-idea-contentdownloads.sql
+                nikira-idea-ds-db.sql
+                nikira-idea-ds-exec.sql
+                nikira-DML-db-idea-specific-entries.sql
+                nikira-idea-patch.sql
+                nikira-DDL-idea-rater.sql
+                nikira-DML-idea-rater.sql
+                Migrations/outroamer_gprs_vpmn_rates_install.sql
+                Migrations/outroamer_gprs_vpmn_rates_uninstall.sql
+)
+
+########  Please don't add any migrartion script in the above list
+
+.sh
+-rw-rw-r-- 1 idea idea 1668 2014-01-09 18:19 migration_outroamer_gprs_vpmn_rates_uninstall.sh
+-rw-rw-r-- 1 idea idea   46 2014-01-09 18:24 outroamer_gprs_vpmn_rates_uninstall.sql
+-rw-rw-r-- 1 idea idea  274 2014-01-09 18:26 outroamer_gprs_vpmn_rates_install.sql
+[idea@gauravp-ux migration]$ scriptlauncher migration_outroamer_gprs_vpmn_rates_install.sh 
+[Thu Jan  9 18:27:20 IST 2014] Migration Success...
+Please check the log at /home/idea/RangerRoot/LOG/migration_outroamer_gprs_vpmn_rates_install.log 
+[idea@gauravp-ux migration]$ s
+
+SQL*Plus: Release 11.2.0.2.0 Production on Thu Jan 9 18:27:23 2014
+
+Copyright (c) 1982, 2010, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> desc OUTROAMER_GPRS_VPMN_RATES;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ VPMN                                      NOT NULL VARCHAR2(50)
+ VPMN_TYPE                                 NOT NULL VARCHAR2(20)
+ PULSE                                     NOT NULL NUMBER(5)
+ VALUE                                     NOT NULL NUMBER(10,2)
+
+SQL> exit
+Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+[idea@gauravp-ux migration]$ scriptlauncher migration_outroamer_gprs_vpmn_rates_uninstall.sh 
+[Thu Jan  9 18:27:34 IST 2014] Migration Success...
+Please check the log at /home/idea/RangerRoot/LOG/migration_outroamer_gprs_vpmn_rates_uninstall.log 
+[idea@gauravp-ux migration]$ s
+
+SQL*Plus: Release 11.2.0.2.0 Production on Thu Jan 9 18:27:37 2014
+
+Copyright (c) 1982, 2010, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> desc OUTROAMER_GPRS_VPMN_RATES;
+ERROR:
+ORA-04043: object OUTROAMER_GPRS_VPMN_RATES does not exist
+
+
+SQL> exit
+Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+[idea@gauravp-ux migration]$
+drwxrwxr-x 2 idea idea  4096 2014-01-09 18:28 migration
+[idea@gauravp-ux VPMN_Load_CR]$ cd migration/
+[idea@gauravp-ux migration]$ ls
+total 20
+-rw-rw-r-- 1 idea idea 1664 2014-01-09 18:19 migration_outroamer_gprs_vpmn_rates_install.sh
+-rw-rw-r-- 1 idea idea 1668 2014-01-09 18:19 migration_outroamer_gprs_vpmn_rates_uninstall.sh
+-rw-rw-r-- 1 idea idea   46 2014-01-09 18:24 outroamer_gprs_vpmn_rates_uninstall.sql
+-rw-rw-r-- 1 idea idea  274 2014-01-09 18:26 outroamer_gprs_vpmn_rates_install.sql
+-rw-rw-r-- 1 idea idea 2452 2014-01-09 18:28 help
+[idea@gauravp-ux migration]$ cp outroamer_gprs_vpmn_rates_* /home/idea/Workspace/ROC_FM-7.4.2/Customizations/Datasource/IDEA/DBScripts/Migrations
+[idea@gauravp-ux migration]$ cp migration_outroamer_gprs_vpmn_* /home/idea/Workspace/ROC_FM-7.4.2/Customizations/Datasource/IDEA/DBScripts/Migrations
+
+[idea@gauravp-ux migration]$ ls /home/idea/Workspace/ROC_FM-7.4.2/Customizations/Datasource/IDEA/DBScripts/Migrations
+-rw-rw-r-- 1 idea idea    46 2014-01-09 18:24 outroamer_gprs_vpmn_rates_uninstall.sql
+-rw-rw-r-- 1 idea idea   274 2014-01-09 18:26 outroamer_gprs_vpmn_rates_install.sql
+-rw-rw-r-- 1 idea idea 1664 2014-01-09 18:19 migration_outroamer_gprs_vpmn_rates_install.sh
+-rw-rw-r-- 1 idea idea 1668 2014-01-09 18:19 migration_outroamer_gprs_vpmn_rates_uninstall.sh
+
+
+============== PUT YOUR ALL migration & SQL files here ==============
+/home/idea/Workspace/ROC_FM-7.4.2/Customizations/Datasource/IDEA/DBScripts/Migrations/
+
+
+
+
+
+
+                nikira-DDL-db-idea-contentdownloads.sql
+                nikira-DML-db-idea-contentdownloads.sql
+                nikira-idea-ds-db.sql
+                nikira-idea-ds-exec.sql
+                nikira-DML-db-idea-specific-entries.sql
+                nikira-idea-patch.sql
+                nikira-DDL-idea-rater.sql
+                nikira-DML-idea-rater.sql
+                Migrations/outroamer_gprs_vpmn_rates_install.sql
+                Migrations/outroamer_gprs_vpmn_rates_uninstall.sql
+)
+
+########  Please don't add any migrartion script in the above list

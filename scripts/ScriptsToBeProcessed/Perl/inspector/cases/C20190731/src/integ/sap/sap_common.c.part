@@ -1,0 +1,5 @@
+            buff[i]='\0';
+        case '\0':
+            {
+                tchar *tmpFileName=StrNewCopyA2T(fileName);
+                if(StrLen(tmpFileName))  

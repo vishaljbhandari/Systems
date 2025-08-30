@@ -1,0 +1,5 @@
+                    __leave;
+                strcpy(pGUIDs, pszVolGUID);
+                ulSizeInChars = ulLen / sizeof(R_TCHAR);
+            }
+            else

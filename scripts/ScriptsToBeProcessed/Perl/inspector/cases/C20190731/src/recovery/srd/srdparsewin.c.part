@@ -1,0 +1,5 @@
+        {
+            R_ULONG ulAllocSize = sizeof(ASRDATA) + (pAsrData->Count - 1) * sizeof(PASRFILEBUF);
+            pAsrData = REALLOC(pAsrData, ulAllocSize);
+            if(pAsrData == NULL)
+                _LEAVE_;

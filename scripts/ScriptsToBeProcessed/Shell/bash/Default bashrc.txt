@@ -1,0 +1,16 @@
+
+
+# Genral Commands
+alias bash='. ~/.bashrc'
+alias ls='ls -F'
+alias ltr='ls -ltr'
+alias clr='clear'
+alias www='cd ~/public_html/'
+alias w='cd ~/public_html/'
+
+
+
+# Site Specific
+
+
+

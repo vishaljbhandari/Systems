@@ -1,0 +1,62 @@
+SQL*Loader: Release 11.2.0.2.0 - Production on Wed Jan 15 14:35:23 2014
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /home/idea/RangerRoot/tmp/loadVPMNData.ctl.tmp
+Data File:      TestData/vpmn_loader_all_valid.bulky.data
+  Bad File:     /home/idea/RangerRoot/tmp/loadVPMNData.bad
+  Discard File: /home/idea/RangerRoot/tmp/loadVPMNData.discard
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+
+Table OUTROAMER_GPRS_VPMN_RATES, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+VPMN                                FIRST     *   |       CHARACTER
+VPMN_TYPE                            NEXT     *   |       CHARACTER
+PULSE                                NEXT     *   |       CHARACTER
+VALUE                                NEXT     *   |       CHARACTER
+
+
+Table OUTROAMER_GPRS_VPMN_RATES:
+  15519 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  66048 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         15519
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Wed Jan 15 14:35:23 2014
+Run ended on Wed Jan 15 14:35:24 2014
+
+Elapsed time was:     00:00:00.99
+CPU time was:         00:00:00.05
+
+-------------------------------------
+
+Lines in datafile	Records		count of already record 		Load | Append 		Time taken
+			15519			1680				Load			CPU 00.00.05 Elapsed 00.00.99
+			15519			1680				APPEND			CPU 00.00.03 Elapsed 00.00.33
+			15519			17199				APPEND			CPU 00.00.04 Elapsed 00.00.29
+			15519			32718				APPEND			CPU 00.00.04 Elapsed 00.00.34
+			
+
+4609144			4,609,143		0				LOAD 			CPU 00.14.53 Elapsed 02.46.01
+4609144			4,609,143		4,609,143			APPEND			CPU 00:14.40 Elapsed 02:46.99

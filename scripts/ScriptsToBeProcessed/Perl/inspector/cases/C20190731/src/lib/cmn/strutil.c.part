@@ -1,0 +1,5 @@
+        in++; save = e[0]; e[0] = _T('\0');
+        val = map(in, userptr);
+        e[0] = save;
+        if (val)
+        {
